@@ -3,7 +3,7 @@ header {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	margin-bottom: $scale-2;
-	padding: 3em 1em 15em;
+	padding: 3em 1em 10em;
 	div {
 		display: flex;
 		justify-content: space-between;
@@ -17,6 +17,21 @@ header {
 	}
 	div, nav {
 		grid-column: 1/13;
+	}
+}
+
+.logo {
+	background: url(../img/semi-logo.svg) no-repeat;
+	background-size: contain;
+	border: 0 !important;
+	width: 10em;
+	&:hover, &:focus, &:active {
+		background: url(../img/semi-logo.svg) no-repeat;
+		background-size: contain;
+		outline: none;
+	}
+	i {
+		display: none;
 	}
 }
 
@@ -66,10 +81,19 @@ footer {
 
 
 @media screen and (min-width: 48em) {
-	header {	
+	header {
 		padding: 3em 0 10em;
 		div, nav {
 			grid-column: 2/12;
+		}
+	}
+	.logo {
+		background: url(../img/semi-logo-h.svg) no-repeat;
+		background-size: contain;
+		width: 20em;
+		&:hover, &:focus, &:active {
+			background: url(../img/semi-logo-h.svg) no-repeat;
+			background-size: contain;
 		}
 	}
 	main {
@@ -96,6 +120,7 @@ footer {
 
 @media screen and (min-width: 80em) {
 	header {
+		padding: 3em 0 15em;
 		div, nav {
 			grid-column: 3/11;
 		}

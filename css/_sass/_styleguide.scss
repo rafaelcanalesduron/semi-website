@@ -8,6 +8,28 @@
 	}
 }
 
+.body--styleguide::before {
+	background: $color-helper-2;
+	color: $color-helper-1;
+	content: 'brkpnt 20em – 48em';
+	opacity: .6;
+	padding: .5em 1em;
+	right: 0;
+	position: fixed;
+	top: 0;
+}
+@media (min-width: 48em) {
+	.body--styleguide::before {
+		content: 'brkpnt 48em – 80em';
+	}
+}
+@media (min-width: 80em) {
+	.body--styleguide::before {
+		content: 'brkpnt > 80em';
+	}
+}
+
+
 .dimension {
 	li {
 		list-style: none;

@@ -14,9 +14,6 @@
 		//color: $color-black;
 		margin-bottom: .5em;
 	}
-	p {
-		font-size: 1.5em;
-	}
 }
 
 #intro-who {
@@ -28,8 +25,15 @@
 	border-top-left-radius: $scale-1;
 	margin-bottom: -$scale-1;
 	padding: 15em 1em 5em;
-	text-align: center;
 	h1, h2, h3, h4, h5, h6, p, a, label {
 		color: $color-white;
+	}
+}
+
+@media screen and (min-width: 48em) {
+	.section-support {
+		display: flex;
+		justify-content: center;
+		text-align: center;
 	}
 }

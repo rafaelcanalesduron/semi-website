@@ -5,12 +5,12 @@ body {
 	line-height: $line-height;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
 	color: $color-support;
 	font-family: $typeface-brand;
 	letter-spacing: .01em;
 	line-height: 1.3;
-	font-size: 3em;
+	font-size: 2.5em;
 	font-weight: 400;
 	margin-bottom: 1em;
 	+ ul {
@@ -18,21 +18,55 @@ h1, h2, h3, h4, h5 {
 	}
 }
 h2 {
-	font-size: 2.5em;
-}
-h3 {
 	font-size: 2em;
 }
-h4 {
-	font-size: 1.5em;
+h3 {
+	font-size: 1.75em;
 }
-h5 {
+h4 {
 	font-size: 1.25em;
+}
+h5, h6 {
+	font-size: 1em;
+}
+h6 {
+	color: $color-black;
 }
 
 p {
-	font-size: 1.25em;
+	font-size: 1em;
 	margin-bottom: $scale-0;
+}
+p.intro {
+	font-size: 1.25em;
+}
+
+@media screen and (min-width: 48em) {
+	h1 {
+		font-size: 3em;
+	}
+	h2 {
+		font-size: 2.5em;
+	}
+	h3 {
+		font-size: 2em;
+	}
+	h4 {
+		font-size: 1.5em;
+	}
+	h5, h6 {
+		font-size: 1.25em;
+	}
+	p {
+		font-size: 1.25em;
+	}
+	p.intro {
+		font-size: 1.5em;
+	}
+}
+
+li {
+	margin-bottom: $scale--1;
 }
 
 a {

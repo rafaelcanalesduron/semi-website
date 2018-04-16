@@ -3,7 +3,14 @@ label, button, [type='submit'] {
 }
 
 label {
+	margin-bottom: 1em;
 	margin-right: $scale-0;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	margin-top: 3em;
 }
 
 [type='email'], [type='number'], [type='password'], [type='search'], [type='tel'], [type='text'], [type='url'], textarea {
@@ -12,10 +19,12 @@ label {
 	border: 0;
 	border-bottom: 3px solid $color-semi;
 	border-top-left-radius: $scale-1;
+	border-top-right-radius: $scale-1;
 	color: $color-black;
 	font-family: $typeface-brand;
+	margin-bottom: 1em;
 	padding: $scale-0;
-	width: $scale-6;
+	width: 100%;
 	&:hover, &:focus, &:active {
 		@include transition-in;
 
@@ -51,7 +60,6 @@ label {
 	~ [type='submit'] {
 		border-bottom: 3px solid $color-semi;
 		border-bottom-left-radius: 0;
-		margin-left: -$scale-1;
 	}
 }
 
@@ -71,7 +79,6 @@ label {
 	}
 	[type='email'] {
 		~ [type='submit'] {
-			margin-left: -$scale-1;
 			border-bottom: 3px solid $color-interactive;
 			border-bottom-left-radius: 0;
 			&:focus, &:active {
@@ -82,6 +89,22 @@ label {
 	}
 }
 
-.section-inverse {
-	
+@media screen and (min-width: 48em) {
+	form {
+		align-items: baseline;
+		flex-direction: row;
+		margin-top: 2em;
+	}
+	label {
+		white-space: nowrap;
+	}
+	[type='email'], [type='number'], [type='password'], [type='search'], [type='tel'], [type='text'], [type='url'], textarea {
+		border-top-right-radius: 0;
+		margin-bottom: 0;
+	}
+	[type='email'] {
+		~ [type='submit'] {		
+			margin-left: -$scale-1;
+		}
+	}
 }
