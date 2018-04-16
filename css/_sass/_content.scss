@@ -1,22 +1,20 @@
 .intro {
-	border-bottom: 1em solid $color-support;
+//	border-bottom: 1em solid $color-semi-accent;
 	section:not(:last-of-type) {
 		margin-bottom: 3em;
 	}
 }
 
 #intro-why {
-	background: url(../img/samuel-zeller-90479-unsplash.jpg);
-//	background-blend-mode: luminosity;
-	background-size: cover;
-	padding-bottom: 0;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+	padding: 5em 2em 3em;
 	text-align: center;
 	h1, h2 {
-		color: $color-black;
+		//color: $color-black;
 		margin-bottom: .5em;
 	}
 	p {
-		font-family: $typeface-brand;
 		font-size: 1.5em;
 	}
 }
@@ -25,10 +23,13 @@
 	padding-bottom: 0; // Exception
 }
 
-.semi-workshop {
-	background: $color-semi;
+.section-support {
+	background: $color-semi-tint-1;
 	border-top-left-radius: $scale-1;
 	margin-bottom: -$scale-1;
 	padding: 15em 1em 5em;
 	text-align: center;
+	h1, h2, h3, h4, h5, h6, p, a, label {
+		color: $color-white;
+	}
 }

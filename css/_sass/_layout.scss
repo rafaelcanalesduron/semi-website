@@ -3,14 +3,14 @@ header {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	margin-bottom: $scale-2;
-	padding: 3em 1em 10em;
+	padding: 3em 1em 15em;
 	div {
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 2em;
 	}
 	img {
-		height: $scale-2;
+		height: $scale-3;
 	}
 	nav {
 		margin-bottom: 2em;
@@ -25,7 +25,6 @@ main {
 	grid-template-columns: repeat(12, 1fr);
 	margin-bottom: -10em;
 	margin-top: -10em;
-	//max-width: 80em;
 	article {
 		background: $color-white;
 		grid-column: 1/13;
