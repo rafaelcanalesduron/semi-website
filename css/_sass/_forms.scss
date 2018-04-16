@@ -1,0 +1,62 @@
+label, button, [type='submit'] {
+	cursor: pointer;
+}
+
+label {
+	margin-right: $scale-0;
+}
+
+[type='email'], [type='number'], [type='password'], [type='search'], [type='tel'], [type='text'], [type='url'], textarea {
+	@include transition-out;
+	background: $color-white;
+	border: 0;
+	border-bottom: 3px solid $color-semi;
+	border-top-left-radius: $scale-1;
+	color: $color-black;
+	font-family: $typeface-brand;
+	padding: $scale-0 $scale-1;
+	width: $scale-6;
+	&:hover, &:focus, &:active {
+		@include transition-in;
+		border-bottom-color: $color-semi;
+	}
+	&:focus, &:active {
+		border-color: $color-semi-accent;
+		border-top-left-radius: 0;
+		outline: none;
+	}
+}
+
+button, [type='reset'], [type='submit'] {
+	@include transition-out;
+	background: $color-semi;
+	border: 0;
+	border-radius: $scale-1;
+	border-bottom-left-radius: 0;
+	color: #fff;
+	font-family: $typeface-brand;
+	padding: $scale-0 $scale-2;
+	&:hover, &:focus, &:active {
+		@include transition-in;
+		background: $color-semi;
+		border-radius: $scale-1;
+		border-top-right-radius: 0;
+	}
+	&:focus, &:active {
+		background: $color-semi-accent;
+		outline: none;
+	}
+}
+
+[type='submit'] {
+//	background: $color-semi-accent;
+	&:hover {
+		background: $color-semi;
+	}
+}
+
+[type='email'] ~ [type='submit'] {
+	margin-left: -$scale-1;
+	border-bottom: 3px solid $color-semi;
+	border-bottom-left-radius: 0;
+}

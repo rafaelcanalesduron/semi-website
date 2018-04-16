@@ -1,0 +1,12 @@
+@mixin transition-in {
+	transition: background .128s ease-out, border-color .128s ease-out, border-radius .128s ease-out, color .128s ease-out, outline .128s ease-out, color .128s ease-out;
+};
+@mixin transition-out {
+	transition: background .256s ease-out, border-color .256s ease-out, border-radius .256s ease-out, color .256s ease-out, outline .256s ease-out, color .256s ease-out;
+};
+
+@mixin focus-inset {
+	@include transition-in;
+	box-shadow: 0 0 0 2px $color-semi-accent inset;
+	outline: none;
+}

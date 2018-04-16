@@ -1,0 +1,45 @@
+sudo: required
+# Ruby for bundle and Jekyll
+language: ruby
+rvm:
+  - 2.2
+branches:
+  only:
+  # Only process on Master
+  - master
+cache:
+  directories:
+  # Get GCLOUD from Travis-ci cache
+  - "$HOME/google-cloud-sdk/"
+before_install:
+# decrypt key file
+- openssl aes-256-cbc -K $encrypted_79b548fb7a17_key -iv $encrypted_79b548fb7a17_iv -in key.json.enc -out key.json -d
+# check if gcloud is installed
+- gcloud version || true
+# install gcloud if not
+- if [ ! -d "$HOME/google-cloud-sdk/bin" ]; then rm -rf $HOME/google-cloud-sdk; export CLOUDSDK_CORE_DISABLE_PROMPTS=1; curl https://sdk.cloud.google.com | bash; fi
+# set home path foor gcloud
+- source /home/travis/google-cloud-sdk/path.bash.inc
+# validate installation based on version echo
+- gcloud version
+# set service account
+- gcloud auth activate-service-account --key-file key.json
+# select the correct project
+- gcloud config set project $PROJECT
+script:
+# on error, quit directly
+- set -e
+# exec Jekyll (on error the website will not be replaced)
+- bundle exec jekyll build
+# set website details for the correct bucket
+- gsutil web set -m index.html -e 404.html gs://$BUCKET
+# empty bucket (website stays alive on the CDN)
+- gsutil -m rm -r gs://$BUCKET/**
+# cd into website dir
+- cd _site
+# Upload data to bucket, GZIP (-Z) and set Cache Control for CDN
+- gsutil -m -h "Cache-Control:public" cp -Z -r ./ gs://$BUCKET
+# Allow viewing of files (for website purposes)
+- gsutil iam ch allUsers:objectViewer gs://$BUCKET
+# Invalidate the CDN
+- gcloud compute url-maps invalidate-cdn-cache www-semi-network --host www.semi.network --path "/*"

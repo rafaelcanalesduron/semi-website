@@ -1,0 +1,30 @@
+details {
+	margin-bottom: $margin-single;
+	&[open] {
+		summary {			
+			&:before {
+				content: '▼';
+				color: $color-semi;
+				display: inline-block;
+				font-size: $scale-1;
+				width: $scale-0;
+			}
+		}
+	}
+}
+summary {
+	cursor: pointer;
+	&::-webkit-details-marker {
+		display: none;
+	}
+	&:before {
+		content: '▶';
+		color: $color-semi;
+		display: inline-block;
+		font-size: $scale-1;
+		width: $scale-0;
+	}
+	&:focus {
+		@include focus-inset;
+	}
+}

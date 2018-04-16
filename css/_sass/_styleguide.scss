@@ -1,0 +1,129 @@
+// Begin: Style guide
+.semi-sg {
+	> h2 {
+		border-bottom: $border-1;
+		margin-bottom: $scale--1;
+		margin-top: $scale-1;
+		padding-bottom: $scale--1;
+	}
+}
+
+.dimension {
+	li {
+		list-style: none;
+		margin-bottom: $scale-0;
+		&:after {
+			border: 1px dotted $color-helper-1;
+			content: '';
+			background: $color-helper-2;
+			display: block;
+		}
+	}
+}
+.dimension-scale-0:after {
+	height: $scale-0;
+	width: $scale-0;
+}
+.dimension-scale--1:after {
+	height: $scale--1;
+	width: $scale--1;
+}
+.dimension-scale-1:after {
+	height: $scale-1;
+	width: $scale-1;
+}
+.dimension-scale-2:after {
+	height: $scale-2;
+	width: $scale-2;
+}
+.dimension-scale-3:after {
+	height: $scale-3;
+	width: $scale-3;
+}
+.dimension-scale-4:after {
+	height: $scale-4;
+	width: $scale-4;
+}
+.dimension-scale-5:after {
+	height: $scale-5;
+	width: $scale-5;
+}
+.dimension-scale-6:after {
+	height: $scale-6;
+	width: $scale-6;
+}
+
+.semi-sg-palette {
+	display: flex;
+	justify-content: space-between;
+}
+
+.semi-sg-swatch {
+	list-style: none;
+	margin-bottom: 2em;
+	width: 9em;
+	li {
+		padding: 0;
+	}
+	i {
+		font-size: 1.25em;
+		&:before {
+			background: $color-semi;
+			content: '';
+			display: block;
+			height: 5em;
+			margin-bottom: .5em;
+		}
+	}
+}
+
+.semi-sg-swatch--color-semi-tint--5 i:before {background: $color-semi-tint--5;}
+.semi-sg-swatch--color-semi-tint--4 i:before {background: $color-semi-tint--4;}
+.semi-sg-swatch--color-semi-tint--3 i:before {background: $color-semi-tint--3;}
+.semi-sg-swatch--color-semi-tint--2 i:before {background: $color-semi-tint--2;}
+.semi-sg-swatch--color-semi-tint--1 i:before {background: $color-semi-tint--1;}
+.semi-sg-swatch--color-semi-tint-1 i:before {background: $color-semi-tint-1;}
+.semi-sg-swatch--color-semi-tint-2 i:before {background: $color-semi-tint-2;}
+.semi-sg-swatch--color-semi-tint-3 i:before {background: $color-semi-tint-3;}
+.semi-sg-swatch--color-semi-tint-4 i:before {background: $color-semi-tint-4;}
+
+.semi-sg-swatch--color-semi-accent-tint--5 i:before {background: $color-semi-accent-tint--5;}
+.semi-sg-swatch--color-semi-accent-tint--4 i:before {background: $color-semi-accent-tint--4;}
+.semi-sg-swatch--color-semi-accent-tint--3 i:before {background: $color-semi-accent-tint--3;}
+.semi-sg-swatch--color-semi-accent-tint--2 i:before {background: $color-semi-accent-tint--2;}
+.semi-sg-swatch--color-semi-accent-tint--1 i:before {background: $color-semi-accent-tint--1;}
+.semi-sg-swatch--color-semi-accent i:before {background: $color-semi-accent;}
+.semi-sg-swatch--color-semi-accent-tint-1 i:before {background: $color-semi-accent-tint-1;}
+.semi-sg-swatch--color-semi-accent-tint-2 i:before {background: $color-semi-accent-tint-2;}
+.semi-sg-swatch--color-semi-accent-tint-3 i:before {background: $color-semi-accent-tint-3;}
+.semi-sg-swatch--color-semi-accent-tint-4 i:before {background: $color-semi-accent-tint-4;}
+
+
+.semi-sg-swatch--color-interactive--5 i:before {background: $color-interactive-tint--5;}
+.semi-sg-swatch--color-interactive--4 i:before {background: $color-interactive-tint--4;}
+.semi-sg-swatch--color-interactive--3 i:before {background: $color-interactive-tint--3;}
+.semi-sg-swatch--color-interactive--2 i:before {background: $color-interactive-tint--2;}
+.semi-sg-swatch--color-interactive--1 i:before {background: $color-interactive-tint--1;}
+.semi-sg-swatch--color-interactive i:before {background: $color-interactive;}
+.semi-sg-swatch--color-interactive-1 i:before {background: $color-interactive-tint-1;}
+.semi-sg-swatch--color-interactive-2 i:before {background: $color-interactive-tint-2;}
+.semi-sg-swatch--color-interactive-3 i:before {background: $color-interactive-tint-3;}
+.semi-sg-swatch--color-interactive-4 i:before {background: $color-interactive-tint-4;}
+
+.semi-sg-grid {
+	ul {
+		display: flex;
+		list-style: none;
+	}
+	li {
+		background: $color-helper-2;
+		border: 1px dotted $color-helper-1;
+		flex: 1 1 16px;
+		font-size: $scale--1;
+		&:not(:last-child) {
+			margin-right: $scale-0;
+		}
+	}
+}
+
+// End: Style guide

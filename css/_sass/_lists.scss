@@ -1,0 +1,51 @@
+.list-nav {
+//	display: inline-block;
+	margin-left: -$scale-1;
+	li {
+		display: inline-block;
+		font-family: $typeface-brand;
+		a {
+			@include transition-out;
+			border-bottom: 0;
+			border-bottom-right-radius: $scale-0;
+			border-top-left-radius: $scale-0;
+			color: $color-black;
+			font-size: 1.5em;
+			letter-spacing: 0.05em;
+			padding: $scale--1 $scale-0;
+			&:hover, &:focus, &:active {
+				@include transition-in;
+				background: $color-semi;
+				border-radius: 0;
+				color: $color-white;
+			}
+			&:focus {
+				background: $color-semi-accent;
+				outline: none;
+			}
+		}
+	}
+}
+
+.list-bullet {
+	li {
+		list-style: none;
+		list-style-image: url(/img/bullet.svg);
+		list-style-position: outside;
+	}
+}
+
+.list-ui {
+	li {
+		list-style: none;
+	}
+}
+
+.list-ui-hor {
+	li {
+		display: inline-block;
+		&:not(:last-of-type) {
+			margin-right: $scale-1;
+		}
+	}
+}

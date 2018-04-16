@@ -1,0 +1,84 @@
+// Begin: Cross-browser normalization
+
+html {
+	box-sizing: border-box; // Cross-browser box model equalization
+	overflow-y: scroll; // Force a vertical scrollbar on pages that have none, avoiding content jumping between pages
+	text-size-adjust: 100%; // Prevent text size adjust after orientation change, without disabling user zoom
+}
+
+*, *::before, *::after {
+	box-sizing: inherit; // Inherit cross-browser box model normalization yet allows for easier changes to box-sizing in components
+	margin: 0; // Cross browser margin normalisation
+	padding: 0; // Cross browser padding normalisation
+	vertical-align: baseline; // Cross browser text-alignment normalisation
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block; // Correct block display not defined for HTML5 element in IE8/9, not defined for Details and Summary elements in IE10/11/Firefox and Main element in IE11
+}
+
+audio, canvas, progress, video {
+	display: inline-block; // Correct inline-block display not defined in IE8/9
+	vertical-align: baseline; // Normalize vertical alignment of Progress element in Chrome, Firefox and Opera
+}
+
+audio:not([controls]) {
+	display: none; // Prevent browsers from displaying audio without controls
+	height: 0; // Remove excess height in iOS5
+}
+
+button {
+	overflow: visible; // Address overflow set to hidden in IE8—11
+}
+
+button, html [type='button'], [type='reset'], [type='submit'] {
+	-webkit-appearance: button; // Correct inability to style clickable input types in iOS, Correct WebKit bug in Android 4.0.* destroying audio and video controls
+}
+
+button, input, optgroup, option, select, textarea {
+	color: inherit; // Correct color not being inherited, Note: Affects color of disabled elements
+	font: inherit; // Correct font family, size and weight properties not being inherited by default
+	margin: 0; // Address margin differences between Firefox 4+, Safari and Chrome
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+	border: 0; // Remove inner border in Firefox 4+
+	padding: 0; // Remove inner padding in Firefox 4+
+}
+
+canvas, iframe, img, video, svg {
+	max-width: 100%; // Shrink-wrap elements to a maximum width of 100% of parent to make them responsive by default
+}
+
+hr { // Address differences in horizontal rules between Firefox and other browsers
+    border: 0;
+    border-top: 1px solid currentcolor;
+	box-sizing: content-box;
+    height: 1px;
+}
+
+[hidden], template {
+	display: none; // Address [hidden] styling not present in IE8/9/10, hide the template element in IE8/9/11, Safari and Firefox <22
+}
+
+input {
+	line-height: normal; // Address Firefox 4+ setting line-height !important on input elements through its UA stylesheet
+}
+
+[type='checkbox'], [type='radio'] {
+	padding: 0; // Remove excess padding in IE8/9/10
+}
+
+[type='number']::-webkit-inner-spin-button, [type='number']::-webkit-outer-spin-button {
+	height: auto; // Fix the cursor style for Chrome's increment/decrement buttons
+}
+
+pre {
+	overflow: auto; // Contain overflow
+}
+
+svg:not(:root) {
+	overflow: hidden; // Correct overflow not hidden in IE9/10/11
+}
+
+// End: Cross-browser normalization

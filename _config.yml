@@ -1,0 +1,12 @@
+auto: true
+markdown: rdiscount
+rdiscount extensions: [smart]
+sass:
+    style: expanded
+    sass_dir: css/_sass
+exclude:
+    - "*.json"
+    - "Gemfile*"
+    - "*.txt"
+    - "*.enc"
+    - vendor
