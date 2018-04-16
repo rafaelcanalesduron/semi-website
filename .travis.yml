@@ -34,7 +34,7 @@ script:
 - bundle exec jekyll build
 # run for Master
 - |
-    if [ $BRANCH = "master" ]; then
+    if [ $TRAVIS_BRANCH = "master" ]; then
       # set website details for the correct bucket
       gsutil web set -m index.html -e 404.html gs://$BUCKET
       # empty bucket (website stays alive on the CDN)
@@ -50,7 +50,7 @@ script:
     fi
 # run for Develop
 - |
-    if [ $BRANCH = "develop" ]; then
+    if [ $TRAVIS_BRANCH = "develop" ]; then
       # set website details for the correct bucket
       gsutil web set -m index.html -e 404.html gs://$BUCKET-DEV
       # empty bucket (website stays alive on the CDN)
