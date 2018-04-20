@@ -42,11 +42,9 @@ main {
 	margin-top: -10em;
 	article {
 		background: $color-white;
+		border-top-left-radius: 1em;
 		grid-column: 1/13;
 		padding: 1em 2em;
-		&:not(:last-of-type) {
-			margin-bottom: 3em;
-		}
 		section {
 			margin-bottom: 2em;
 		}
