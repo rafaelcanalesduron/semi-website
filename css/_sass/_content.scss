@@ -1,23 +1,31 @@
 .intro {
 //	border-bottom: 1em solid $color-semi-accent;
-	section:not(:last-of-type) {
-		margin-bottom: 3em;
+	section {
+		margin: 0 auto;
+		max-width: 38em;
 	}
+//	section:not(:last-of-type) {
+//		margin-bottom: 3em;
+//	}
 }
 
 #intro-why {
 	border-top-left-radius: 1em;
 	border-top-right-radius: 1em;
-	padding: 5em 2em 3em;
+	padding: 5em 2em 2em;
 	text-align: center;
 	h1, h2 {
-		//color: $color-black;
+		color: $color-gray-2;
 		margin-bottom: .5em;
 	}
 }
 
 #intro-who {
 	padding-bottom: 0; // Exception
+}
+
+#intro-what {
+	padding-bottom: 5em;
 }
 
 .section-support {
