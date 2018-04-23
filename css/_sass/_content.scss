@@ -53,17 +53,18 @@ html {
 			height: 100%;
 			text-align: center;
 			.illustration {
-				grid-column: 1/-1;
-				margin: 4em 0 3em 0;
-				order: 2;
+				display: none;
+				//grid-column: 1/-1;
+				//margin: 4em 0 3em 0;
+				//order: 2;
 			}
 			.logo {
 				background: url('../img/semi-logo-inv-h.svg');
 				background-position: center center;
 				background-repeat: no-repeat;
 				background-size: contain;
-				grid-column: 2/7;
-				margin-bottom: 2em;
+				grid-column: 2/8;
+				//margin-bottom: 2em;
 				min-height: 8em;
 				order: 1;
 				width: 100%;
@@ -132,6 +133,7 @@ html {
 				grid-column: 2/4;
 				justify-content: space-around;
 				.illustration {
+					display: block;
 					order: 1;
 				}
 				.logo {
