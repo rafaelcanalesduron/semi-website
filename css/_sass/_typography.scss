@@ -108,6 +108,44 @@ sup {
 	vertical-align: super;
 }
 
+abbr {
+	font-size: 1.3em;
+	font-variant-caps: small-caps;
+	line-height: 1;
+	letter-spacing: .03em;
+	margin: auto .025em;
+	text-decoration: none !important;
+	text-transform: lowercase;
+	&[title] {
+		cursor: help;
+	}
+}
+
+blockquote {
+	margin-bottom: 3em;
+	position: relative;
+	&:before {
+		color: $color-white;
+		content: '\201c';
+		font-family: 'Alegreya', serif;
+		font-size: 10em;
+		left: -.5em;
+		position: absolute;
+		top: -.5em;
+	}
+	p {
+		font-size: 2em;
+		font-style: italic;
+	}
+	footer {
+		&:before {
+			color: $color-semi;
+			content: '—';
+			margin-right: .5em;
+		}
+	}
+}
+
 footer, .semi-workshop, .semi-newsletter {
 	font-family: $typeface-brand;
 	h2 {
