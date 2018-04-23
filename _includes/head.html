@@ -8,8 +8,9 @@
 	<meta name="description" content="SeMI is a Knowledge Network of companies, who want enrich their market and customer insights by collaborating with each other." />
 	<title>{{ page.title }}</title>
 	<script>
+		// Redirect to https
 		var loc = window.location.href+'';
-		if (loc.indexOf('http://')==0){
+		if (loc.indexOf('http://')==0 && location.hostname !== "127.0.0.1"){
 		    window.location.href = loc.replace('http://','https://');
 		}
 	</script>
