@@ -10,7 +10,7 @@ header {
 		margin-bottom: 2em;
 	}
 	img {
-		height: $scale-2;
+		height: $scale-3;
 	}
 	nav {
 		margin-bottom: 2em;
@@ -20,19 +20,31 @@ header {
 	}
 }
 
+.logo {
+	background: url(../img/semi-logo.svg) no-repeat;
+	background-size: contain;
+	border: 0 !important;
+	width: 10em;
+	&:hover, &:focus, &:active {
+		background: url(../img/semi-logo.svg) no-repeat;
+		background-size: contain;
+		outline: none;
+	}
+	i {
+		display: none;
+	}
+}
+
 main {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	margin-bottom: -10em;
 	margin-top: -10em;
-	//max-width: 80em;
 	article {
 		background: $color-white;
+		border-top-left-radius: 1em;
 		grid-column: 1/13;
 		padding: 1em 2em;
-		&:not(:last-of-type) {
-			margin-bottom: 3em;
-		}
 		section {
 			margin-bottom: 2em;
 		}
@@ -67,10 +79,19 @@ footer {
 
 
 @media screen and (min-width: 48em) {
-	header {	
+	header {
 		padding: 3em 0 10em;
 		div, nav {
 			grid-column: 2/12;
+		}
+	}
+	.logo {
+		background: url(../img/semi-logo-h.svg) no-repeat;
+		background-size: contain;
+		width: 20em;
+		&:hover, &:focus, &:active {
+			background: url(../img/semi-logo-h.svg) no-repeat;
+			background-size: contain;
 		}
 	}
 	main {
@@ -97,6 +118,7 @@ footer {
 
 @media screen and (min-width: 80em) {
 	header {
+		padding: 3em 0 13em;
 		div, nav {
 			grid-column: 3/11;
 		}

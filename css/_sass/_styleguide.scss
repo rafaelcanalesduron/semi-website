@@ -8,6 +8,28 @@
 	}
 }
 
+.body--styleguide::before {
+	background: $color-helper-2;
+	color: $color-helper-1;
+	content: 'brkpnt 20em – 48em';
+	opacity: .6;
+	padding: .5em 1em;
+	right: 0;
+	position: fixed;
+	top: 0;
+}
+@media (min-width: 48em) {
+	.body--styleguide::before {
+		content: 'brkpnt 48em – 80em';
+	}
+}
+@media (min-width: 80em) {
+	.body--styleguide::before {
+		content: 'brkpnt > 80em';
+	}
+}
+
+
 .dimension {
 	li {
 		list-style: none;
@@ -55,15 +77,20 @@
 
 .semi-sg-palette {
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	list-style: none;
 }
 
 .semi-sg-swatch {
 	list-style: none;
 	margin-bottom: 2em;
-	width: 9em;
+	width: 12em;
 	li {
 		padding: 0;
+		&:not(:first-of-type) {	
+			color: $color-gray-3;
+		}
 	}
 	i {
 		font-size: 1.25em;
@@ -109,6 +136,35 @@
 .semi-sg-swatch--color-interactive-2 i:before {background: $color-interactive-tint-2;}
 .semi-sg-swatch--color-interactive-3 i:before {background: $color-interactive-tint-3;}
 .semi-sg-swatch--color-interactive-4 i:before {background: $color-interactive-tint-4;}
+
+.semi-sg-swatch--color-olive--5 i:before {background: $color-support-tint--5;}
+.semi-sg-swatch--color-olive--4 i:before {background: $color-support-tint--4;}
+.semi-sg-swatch--color-olive--3 i:before {background: $color-support-tint--3;}
+.semi-sg-swatch--color-olive--2 i:before {background: $color-support-tint--2;}
+.semi-sg-swatch--color-olive--1 i:before {background: $color-support-tint--1;}
+.semi-sg-swatch--color-olive i:before {background: $color-support;}
+.semi-sg-swatch--color-olive-1 i:before {background: $color-support-tint-1;}
+.semi-sg-swatch--color-olive-2 i:before {background: $color-support-tint-2;}
+.semi-sg-swatch--color-olive-3 i:before {background: $color-support-tint-3;}
+.semi-sg-swatch--color-olive-4 i:before {background: $color-support-tint-4;}
+
+
+.semi-sg-swatch--color-black i:before {background: $color-black;}
+.semi-sg-swatch--color-gray-1 i:before {background: $color-gray-1;}
+.semi-sg-swatch--color-gray-2 i:before {background: $color-gray-2;}
+.semi-sg-swatch--color-gray-3 i:before {background: $color-gray-3;}
+.semi-sg-swatch--color-gray-4 i:before {background: $color-gray-4;}
+.semi-sg-swatch--color-gray-5 i:before {background: $color-gray-5;}
+.semi-sg-swatch--color-gray-6 i:before {background: $color-gray-6;}
+
+.semi-sg-swatch--color-info i:before {background: $color-info;}
+.semi-sg-swatch--color-info-bg i:before {background: $color-info-bg;}
+.semi-sg-swatch--color-success i:before {background: $color-success;}
+.semi-sg-swatch--color-success-bg i:before {background: $color-success-bg;}
+.semi-sg-swatch--color-warning i:before {background: $color-warning;}
+.semi-sg-swatch--color-warning-bg i:before {background: $color-warning-bg;}
+
+.semi-sg-swatch--color-mark i:before {background: $color-mark;}
 
 .semi-sg-grid {
 	ul {
