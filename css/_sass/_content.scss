@@ -34,12 +34,13 @@
 // Temporary landing page
 .landing {
 	color: $color-white !important;
+	display: flex;
+	flex-direction: column;
 	main {
 		background: $color-semi-tint-1;
 		font-family: 'Alegreya', serif;
 		grid-gap: $scale-1;
 		margin: 0 0 -2em;
-		min-height: 100vh;
 		aside {
 			display: grid;
 			flex-direction: column;
@@ -49,6 +50,7 @@
 			text-align: center;
 			.illustration {
 				grid-column: 1/-1;
+				margin: 4em 0 3em 0;
 				order: 2;
 			}
 			.logo {
@@ -86,8 +88,11 @@
 					font-size: 105%;
 				}
 			}
+			.percentage {
+				font-size: 150%;
+			}
 			a {
-				border-bottom: .06em solid $color-support-tint--2;
+				border-bottom: .08em solid $color-support-tint--2;
 				color: $color-gray-6;
 				&:hover, &:focus, &:active {
 					background: $color-black;
@@ -121,7 +126,7 @@
 				display: flex;
 				flex-direction: column;
 				grid-column: 2/4;
-				justify-content: space-evenly;
+				justify-content: space-around;
 				.illustration {
 					order: 1;
 				}
@@ -130,24 +135,28 @@
 					background-repeat: no-repeat;
 					background-size: contain;
 					grid-row: 3/4;
+					margin-bottom: 8em;
 					order: 2;
 				}
 			}
 			section {
 				h1, h2 {
-					font-size: calc(1.5em + 2vw);
+					//font-size: calc(1.5em + 2vw);
+					font-size: 2em;
 					text-align: left;
 				}
 				h1 {
-					font-size: calc(3em + 2vw);
+					//font-size: calc(3em + 2vw);
+					font-size: 3.5em;
+				}
+				p {
+					//font-size: calc(.75em + 1vw);
+					font-size: 1.5em;
 				}
 			}
 		}
 		article {
 			grid-column: 4/13;
-		}
-		p {
-			font-size: calc(.75em + 1vw);
 		}
 		.footer-copyright {
 			text-align: right;
