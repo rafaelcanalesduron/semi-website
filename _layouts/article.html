@@ -1,0 +1,30 @@
+{% include head.html %}
+
+<body>
+
+<header>
+	<div>
+		<a class="logo" href="/"><i>Homepage</i></a> <a class="button" href="mailto:hello@semi.network">Contact us</a>
+	</div>
+<!--
+	<nav class="list-nav">
+		<ul>
+			<li><a href="#intro-why">Why SeMI</a></li><li><a href="#intro-what">What</a></li><li><a href="#intro-how">How</a></li><li><a href="#intro-who">Who</a></li>
+		</ul>
+	</nav>
+-->
+</header>
+
+<main>
+	<article>
+
+			<h1>{{ page.title }}</h1>
+
+			Author: <a href="mailto:{{ page.email }}?subject=Question about: {{ page. title }}">{{ page.author }}</a>
+			
+			{{ content }}
+
+	</article>
+</main>
+
+{% include foot.html %}
