@@ -3,11 +3,11 @@ header {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	margin-bottom: $scale-2;
-	padding: 3em 1em 10em;
+	padding: 1.5em 1em 10em;
 	div {
 		display: flex;
+		flex-direction: column;
 		justify-content: space-between;
-		margin-bottom: 2em;
 	}
 	img {
 		height: $scale-3;
@@ -24,6 +24,7 @@ header {
 	background: url(../img/semi-logo.svg) no-repeat;
 	background-size: contain;
 	border: 0 !important;
+	height: 5em;
 	width: 10em;
 	&:hover, &:focus, &:active {
 		background: url(../img/semi-logo.svg) no-repeat;
@@ -84,6 +85,10 @@ footer {
 		div, nav {
 			grid-column: 2/12;
 		}
+		div {
+			align-items: flex-start;
+			flex-direction: row;
+		}
 	}
 	.logo {
 		background: url(../img/semi-logo-h.svg) no-repeat;
@@ -97,6 +102,7 @@ footer {
 	main {
 		article {
 			grid-column: 2/12;
+			padding-bottom: 4em;
 		}
 	}
 	.semi-newsletter {
