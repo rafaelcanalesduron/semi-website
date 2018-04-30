@@ -1,14 +1,16 @@
 auto: true
 markdown: kramdown
 kramdown:  
-  parse_block_html: true
+	parse_block_html: true
 rdiscount extensions: [smart]
 sass:
-    style: expanded
-    sass_dir: css/_sass
+	style: expanded
+	sass_dir: css/_sass
 exclude:
-    - "*.json"
-    - "Gemfile*"
-    - "*.txt"
-    - "*.enc"
-    - vendor
+	- "*.json"
+	- "Gemfile*"
+	- "*.txt"
+	- "*.enc"
+	- vendor
+plugins:
+	- "jekyll-autoprefixer"
