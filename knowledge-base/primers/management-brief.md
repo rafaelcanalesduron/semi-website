@@ -1,6 +1,7 @@
 ---
 layout: article
 title: Management brief
+description: foobar
 topic: Primers
 author: BVL
 relating-articles: []

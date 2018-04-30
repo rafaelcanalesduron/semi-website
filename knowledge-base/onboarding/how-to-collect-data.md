@@ -1,6 +1,7 @@
 ---
 layout: article
 title: How to collect data?
+description: foobar
 topic: Onboarding
 author: null
 relating-articles: []

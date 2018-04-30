@@ -1,6 +1,7 @@
 ---
 layout: article
 title: How to deal with translations?
+description: foobar
 topic: Onboarding
 author: null
 relating-articles: []

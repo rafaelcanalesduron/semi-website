@@ -1,13 +1,13 @@
 ---
 layout: article
 title: Use Case Exploration
+description: foobar
+description: This document is to give you an overview of the SeMI Use Case Exploration Workshop.
 topic: primers
 author: MM
 relating-articles: []
 previous-article: null
 ---
-
-_This document is to give you an overview of the SeMI Use Case Exploration Workshop._
 
 ## Purpose
 

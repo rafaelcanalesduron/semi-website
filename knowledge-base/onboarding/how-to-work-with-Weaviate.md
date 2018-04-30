@@ -1,6 +1,7 @@
 ---
 layout: article
 title: How to work with weaviate?
+description: foobar
 topic: Onboarding
 author: null
 relating-articles: []

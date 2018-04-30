@@ -29,6 +29,10 @@
 			{% endif %}
 
 			{% include author.md %}
+
+			{% if page.description != null %}
+				<i>{{ page.description }}</i>
+			{% endif %}
 			
 			{{ content }}
 

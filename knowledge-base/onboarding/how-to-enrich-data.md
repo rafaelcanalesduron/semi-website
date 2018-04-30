@@ -1,6 +1,7 @@
 ---
 layout: article
 title: How to enrich data?
+description: foobar
 topic: Onboarding
 author: null
 relating-articles: []
