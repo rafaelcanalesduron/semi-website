@@ -1,10 +1,11 @@
+url: "https://www.semi.network"
 auto: true
 markdown: kramdown
 kramdown:  
     parse_block_html: true
 rdiscount extensions: [smart]
 sass:
-    style: expanded
+    style: compressed # opposed to "expanded"
     sass_dir: css/_sass
 exclude:
     - "*.json"
@@ -14,6 +15,12 @@ exclude:
     - vendor
 plugins:
     - jekyll-autoprefixer
+    - jekyll-sitemap
 autoprefixer:
     browsers:
         - last 2 versions
+html_press:
+    unquoted_attributes: false
+    drop_empty_values: false
+    strip_crlf: false
+    js_minifier_options: false
