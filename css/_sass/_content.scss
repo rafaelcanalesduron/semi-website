@@ -44,7 +44,7 @@ html {
 	flex-direction: column;
 	main {
 		background: $color-semi-tint-1;
-		font-family: 'Alegreya', serif;
+		font-family: $typeface-brand;
 		grid-gap: $scale-1;
 		margin: 0 0 -2em;
 		aside {
@@ -178,4 +178,38 @@ html {
 			grid-column: 5/12;
 		}
 	}
-} 
+}
+
+.article {
+	li {
+		list-style: none;
+		list-style-image: url(/img/bullet.svg);
+		list-style-position: outside;
+		margin-left: -.25em;
+		padding-left: .25em;
+	}
+}
+
+.article-author {
+	padding: 1em;
+	width: 16em;
+	h2 {
+		font-family: $typeface-body;
+		font-size: 1em;
+		margin-bottom: 1em;
+	}
+	img {
+		border-radius: 1em;
+		border-bottom-left-radius: 0;
+		width: 8em;
+	}
+	[href^='mailto'] {
+		&:before {
+			content: '@';
+			font-family: $typeface-brand;
+		//	font-size: 3em;
+		//	line-height: 0;
+			margin-right: .25em;
+		}
+	}
+}

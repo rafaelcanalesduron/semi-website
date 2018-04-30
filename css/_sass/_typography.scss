@@ -13,6 +13,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 2em;
 	font-weight: 400;
 	margin: 1em 0 .25em;
+	max-width: 38em;
 	+ ul {
 		margin-top: 1em;
 	}
@@ -35,10 +36,14 @@ h6 {
 
 p {
 	font-size: 1em;
-	margin-bottom: $scale-0;
+	margin: 0 0 $scale-0;
+	max-width: 38em;
 }
 p.intro {
 	font-size: 1.25em;
+	font-family: $typeface-brand;
+	font-style: italic;
+	max-width: 32em;
 }
 
 hr {

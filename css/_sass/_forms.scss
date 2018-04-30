@@ -36,7 +36,7 @@ form {
 	}
 }
 
-.button, button, [type='reset'], [type='submit'] {
+.button, .button--small, button, [type='reset'], [type='submit'] {
 	@include transition-out;
 	background: $color-semi;
 	border: 0;
@@ -54,6 +54,10 @@ form {
 	&:focus, &:active {
 		background: $color-semi-accent;
 	}
+}
+
+.button--small {
+	padding: .25em 1em;
 }
 
 [type='email'] {
