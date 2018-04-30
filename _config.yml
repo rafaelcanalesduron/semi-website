@@ -13,6 +13,7 @@ exclude:
     - "*.txt"
     - "*.enc"
     - vendor
+    - README.md
 plugins:
     - jekyll-autoprefixer
     - jekyll-sitemap
