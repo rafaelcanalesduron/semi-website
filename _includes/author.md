@@ -8,7 +8,7 @@
     <a href="mailto:bob@semi.network">email</a>
 
 <!-- Author: Laura Ham -->
-{% else if page.author == "LH" %}
+{% if page.author == "LH" %}
 
     Author: Laura Ham<br>
     <img src="/img/authors/laura.jpg" alt="Laura Ham" style="width:75px"><br>
