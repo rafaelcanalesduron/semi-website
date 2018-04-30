@@ -18,8 +18,11 @@
 <main>
 	<article>
 
-			<h1>Article overview</h1>
-			
+			<!-- Breadcrumbs for overview-->
+			<div class="breadcrumbs">
+				<a href="/knowledge-base">knowledge base</a> / {{ page.show-topic }}
+			</div>
+
 			{{ content }}
 
 	</article>

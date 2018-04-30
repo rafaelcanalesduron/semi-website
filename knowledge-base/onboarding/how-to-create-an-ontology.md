@@ -2,7 +2,7 @@
 layout: article
 title: How to create an ontology?
 description: foobar
-topic: Onboarding
+topic: onboarding
 author: null
 relating-articles: []
 next-article: onboarding/how-to-enrich-data

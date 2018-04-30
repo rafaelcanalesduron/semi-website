@@ -2,7 +2,7 @@
 layout: article
 title: How to deal with translations?
 description: foobar
-topic: Onboarding
+topic: onboarding
 author: null
 relating-articles: []
 previous-article: null

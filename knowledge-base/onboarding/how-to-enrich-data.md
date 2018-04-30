@@ -2,7 +2,7 @@
 layout: article
 title: How to enrich data?
 description: foobar
-topic: Onboarding
+topic: onboarding
 author: null
 relating-articles: []
 previous-article: onboarding/how-to-create-an-ontology

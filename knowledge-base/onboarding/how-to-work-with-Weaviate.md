@@ -2,7 +2,7 @@
 layout: article
 title: How to work with weaviate?
 description: foobar
-topic: Onboarding
+topic: onboarding
 author: null
 relating-articles: []
 previous-article: onboarding/how-to-enrich-data

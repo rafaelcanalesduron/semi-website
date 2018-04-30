@@ -2,7 +2,7 @@
 layout: article
 title: Management brief
 description: foobar
-topic: Primers
+topic: primers
 author: BVL
 relating-articles: []
 previous-article: null
