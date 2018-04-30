@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Management brief
-topic: primers
+topic: Primers
 author: BVL
 relating-articles: []
 previous-article: null

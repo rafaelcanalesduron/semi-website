@@ -1,7 +1,7 @@
 ---
 layout: article
 title: How to enrich data?
-topic: onboarding
+topic: Onboarding
 author: null
 relating-articles: []
 previous-article: onboarding/how-to-create-an-ontology

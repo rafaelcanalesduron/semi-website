@@ -1,7 +1,7 @@
 ---
 layout: article
 title: How to create an ontology?
-topic: onboarding
+topic: Onboarding
 author: null
 relating-articles: []
 next-article: onboarding/how-to-enrich-data

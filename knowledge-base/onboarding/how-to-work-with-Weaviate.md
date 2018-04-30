@@ -1,7 +1,7 @@
 ---
 layout: article
 title: How to work with weaviate?
-topic: onboarding
+topic: Onboarding
 author: null
 relating-articles: []
 previous-article: onboarding/how-to-enrich-data

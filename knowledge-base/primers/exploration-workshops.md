@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Exploration workshop
-topic: primers
+topic: Primers
 author: MM
 relating-articles: []
 previous-article: null

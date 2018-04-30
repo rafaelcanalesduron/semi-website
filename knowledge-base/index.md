@@ -2,14 +2,17 @@
 layout: article-overview
 ---
 
-<ul>
+<ul class="article-overview">
 {% for page in site.pages %}
-
-    <h2> {{ page.topic }} </h2>
 
     {% if page.layout == "article" %}
 
-        <li><a href="{{ page.url }}">{{ page.date | date: '%B %d, %Y' }} - {{ page.title }}</a></li>
+        <li>
+        	<h2>{{ page.topic }}</h2>
+        	<ul>
+        		<li><a href="{{ page.url }}">{{ page.date | date: '%B %d, %Y' }} {{ page.title }}</a></li>
+        	</ul>
+        </li>
 
     {% endif %}
 
