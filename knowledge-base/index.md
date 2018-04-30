@@ -2,8 +2,6 @@
 layout: article-overview
 ---
 
-OVERVIEW!
-
 <ul>
 {% for page in site.pages %}
 
