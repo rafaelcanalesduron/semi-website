@@ -7,6 +7,8 @@
     <img src="/img/authors/bob.jpg" alt="Bob van Luijt" style="width:75px"><br>
     <a href="mailto:bob@semi.network">email</a>
 
+{% endif %}
+
 <!-- Author: Laura Ham -->
 {% if page.author == "LH" %}
 
@@ -14,11 +16,13 @@
     <img src="/img/authors/laura.jpg" alt="Laura Ham" style="width:75px"><br>
     <a href="mailto:laura@semi.network">email</a>
 
-<!-- Author unknown -->
-{% else %}
-
-Author: <i>unknown</i>
-
 {% endif %}
+
+<!-- Author: Marta Marszal -->
+{% if page.author == "MM" %}
+
+    Author: Marta Marszal<br>
+    <img src="/img/authors/marta.jpg" alt="Marta Marszal" style="width:75px"><br>
+    <a href="mailto:marta@semi.network">email</a>
 
 {% endif %}
