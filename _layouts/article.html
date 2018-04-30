@@ -28,7 +28,7 @@
 
 			{% endif %}
 
-			Author: <a href="mailto:{{ page.email }}?subject=Question about: {{ page. title }}">{{ page.author }}</a>
+			{% include author.md %}
 			
 			{{ content }}
 
