@@ -31,7 +31,7 @@ script:
 # on error, quit directly
 - set -e
 # exec Jekyll (on error the website will not be replaced)
-- JEKYLL_ENV=production bundle exec jekyll build
+- JEKYLL_ENV=production bundle exec jekyll build --config "_config.prod.yml"
 # run for Master
 - |
     if [ $TRAVIS_BRANCH = "master" ]; then
