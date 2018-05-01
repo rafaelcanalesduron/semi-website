@@ -8,4 +8,8 @@ relating-articles: []
 previous-article: null
 ---
 
-Write the article here in Markdown, header is not needed.
+The goal of this management brief is to...
+
+## Header
+
+Or _cursive_.
