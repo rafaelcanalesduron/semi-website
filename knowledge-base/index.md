@@ -18,6 +18,9 @@ This is the SeMI knowledge base; it contains all information about our products,
                 {% if page.topic == group.name %}
                     <ul>
                         <li><a href="{{ page.url }}">{{ page.date | date: '%B %d, %Y' }} {{ page.title }}</a>
+                        ({% for tag in page.tags %}
+                            {{ tag }}, 
+                        {% endfor %})
                         <br>
                         <i>
                             {{ page.description }}

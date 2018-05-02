@@ -1,6 +1,6 @@
 ---
 layout: article-overview
-show-topic: primers
+show-topic: data strategy
 ---
 
 <!-- THIS PAGE CONTAINS THE INDEX FOR THIS FOLDER -->
