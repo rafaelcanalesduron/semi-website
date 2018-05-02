@@ -31,3 +31,14 @@
     </section>
 
 {% endif %}
+
+<!-- Author: Micha Verhagen -->
+{% if page.author == "MV" %}
+
+    <section class="article-author">
+        <img src="/img/authors/micha.jpg" alt="Portrait of Micha Verhagen">
+        <h2>Author: Micha Verhagen</h2>
+        <a class="button--small" href="mailto:micha@semi.network">Email Micha</a>
+    </section>
+
+{% endif %}
