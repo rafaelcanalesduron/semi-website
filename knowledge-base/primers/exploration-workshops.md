@@ -7,6 +7,7 @@ topic: primers
 author: MM
 relating-articles: []
 previous-article: null
+tags: ['business', 'workshops']
 ---
 
 ## Purpose

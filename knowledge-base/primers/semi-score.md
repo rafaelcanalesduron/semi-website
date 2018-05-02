@@ -6,6 +6,7 @@ topic: primers
 author: BVL
 relating-articles: []
 previous-article: null
+tags: ['business']
 ---
 
 Write the article here in Markdown, header is not needed.
