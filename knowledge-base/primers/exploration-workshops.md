@@ -41,6 +41,7 @@ If you'd like to host us at your office we'll send further instructions about th
 If you decide to participate in the workshop we'll ask you to sign a standard NDA.
 
 ## More information?
-If you have any additional questions please do not hesitate to get in touch:<br>
+If you have any additional questions please do not hesitate to get in touch:
+
 Marta Marszal, Experiment Lead
-marta@semi.network
+[marta@semi.network](mailto:marta@semi.network)
