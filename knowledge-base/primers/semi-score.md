@@ -2,7 +2,7 @@
 layout: article
 title: SeMI Score
 description: A brief overview of the SeMI Score
-topic: primers
+topic: Primers
 author: BVL
 relating-articles: []
 previous-article: null

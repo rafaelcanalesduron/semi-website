@@ -1,6 +1,6 @@
 ---
 layout: article-overview
-show-topic: data strategy
+show-topic: Data strategy
 ---
 
 <!-- THIS PAGE CONTAINS THE INDEX FOR THIS FOLDER -->
@@ -13,17 +13,18 @@ To learn how to onboard SeMI, these pages will help you get a better understandi
     <li>
         {% for subpage in site.pages %}
             {% if subpage.topic == page.show-topic %}
-                <ul>
-                    <li><a href="{{ subpage.url }}">{{ subpage.date | date: '%B %d, %Y' }} {{ subpage.title }}</a>
-                    ({% for tag in subpage.tags %}
-                        {{ tag }}, 
-                    {% endfor %})
-                    <br>
-                    <i>
+                <ol>
+                    <li><h3><a href="{{ subpage.url }}">{{ subpage.date | date: '%B %d, %Y' }} {{ subpage.title }}</a></h3>
+                    <p>
                         {{ subpage.description }}
-                    </i>
+                    </p>
+                    <ul class="tags">
+            			{% for tag in subpage.tags %}
+        					<li>{{ tag }}</li>
+        				{% endfor %}
+        			</ul>
                     </li>
-                </ul>
+                </ol>
             {% endif %}
         {% endfor %}
     </li>

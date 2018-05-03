@@ -6,7 +6,7 @@ topic: SeMI tool
 author: null
 relating-articles: []
 previous-article: null
-tags: ['technology', 'semi-tool']
+tags: ['Technology', 'SeMI-tool']
 ---
 
 Write the article here in Markdown, header is not needed.

@@ -17,15 +17,15 @@ This is the SeMI knowledge base; it contains all information about our products,
 	            {% for page in site.pages %}
 	                {% if page.topic == group.name %}
 	                    <li>
-                            <ul class="tags">
-                                {% for tag in page.tags %}
-	                                <li>{{ tag }}</li>
-                                {% endfor %}
-	                        </ul>
                             <h3><a href="{{ page.url }}">{{ page.date | date: '%B %d, %Y' }}{{ page.title }}</a></h3>
 	                        <p>
 	                            {{ page.description }}
 	                        </p>
+	                        <ul class="tags">
+                                {% for tag in page.tags %}
+	                                <li>{{ tag }}</li>
+                                {% endfor %}
+	                        </ul>
 	                    </li>
 	                {% endif %}
 	            {% endfor %}
