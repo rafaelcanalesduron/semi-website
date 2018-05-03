@@ -40,15 +40,13 @@ form {
 	@include transition-out;
 	background: $color-semi;
 	border: 0;
-	border-radius: $scale-1;
-	border-bottom-left-radius: 0;
+	border-radius: $border-radius-1;
 	color: #fff;
 	font-family: $typeface-body;
 	padding: $scale-0 $scale-2;
 	&:hover, &:focus, &:active {
 		@include transition-in;
-		border-radius: $scale-1;
-		border-top-right-radius: 0;
+		border-radius: $border-radius-2;
 		outline: none;
 	}
 	&:focus, &:active {

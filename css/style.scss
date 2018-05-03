@@ -3,21 +3,39 @@
 
 @charset 'utf-16';
 
+// Variables
 @import 'var-color';
 @import 'var-typography';
 @import 'var-scale';
 @import 'var-borders';
+
+// Mixins
 @import 'mixins';
 
-@import 'debug';
-
+// Cross-browser normalization
 @import 'normalize';
-@import 'typography';
+
+// Layout
 @import 'layout';
+
+// Atoms
+@import 'typography';
 @import 'forms';
-@import 'lists';
-@import 'details';
 
+// Molecules
+@import 'molecule-tags';
+
+// Components
+@import 'component-article-overview';
+@import 'component-breadcrumb';
+@import 'component-details';
+@import 'component-lists';
+
+// Templates
 @import 'content';
+@import 'template-article';
+@import 'template-landing';
 
+// Styleguide
+@import 'debug';
 @import 'styleguide';
