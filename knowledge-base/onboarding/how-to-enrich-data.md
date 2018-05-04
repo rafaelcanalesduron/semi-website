@@ -7,4 +7,6 @@ relating-articles: []
 previous-article: onboarding/how-to-create-an-ontology
 ---
 
-Write the article here in Markdown, header is not needed.
+An ontology schema describes all classes and properties of meta information of your own dataset. The schema (e.g. fields, names, keywords, columns etc) of your dataset are not the only indicators for your schema components. Data values of the original dataset can contain valuable (meta) information about the instance, which could be assigned to classes or property value of classes.
+An example is a description of a bank transaction. In this transaction, sometimes the name of a place, product or company is stated. This could be extracted from the description field and be linked to the location, product or company classes. This way, more meta information about objects and actions can be revealed.
+The [SeMI-tool](semi-tool/semi-tool) helps to extract entities like locations and organizations using Named Entity Recognition and Classification methods. 
