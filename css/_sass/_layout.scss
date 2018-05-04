@@ -1,5 +1,5 @@
 header {
-	background: $color-gray-6;
+	background: $color-gray-7;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	margin-bottom: $scale-2;
@@ -37,6 +37,7 @@ header {
 }
 
 main {
+	background: $color-white;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	margin-bottom: -10em;
@@ -81,7 +82,7 @@ footer {
 
 @media screen and (min-width: 48em) {
 	header {
-		padding: 3em 0 10em;
+		padding: 3em 0 13em;
 		div, nav {
 			grid-column: 2/12;
 		}
@@ -102,7 +103,8 @@ footer {
 	main {
 		article {
 			grid-column: 2/12;
-			padding-bottom: 4em;
+			margin-top: -3em;
+			padding-bottom: 2em;
 		}
 	}
 	.semi-newsletter {

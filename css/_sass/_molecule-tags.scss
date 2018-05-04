@@ -1,0 +1,14 @@
+.tags {
+	margin-bottom: $scale-0;
+	li {
+		background: $color-semi-tint-4;
+		border-radius: $border-radius-1;
+		color: $color-gray-6;
+		display: inline;
+		font-size: .75em;
+		margin-right: .5em;
+		padding: .25em .75em;
+		text-decoration: none;
+		text-transform: capitalize;
+	}
+}

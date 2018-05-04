@@ -1,0 +1,32 @@
+.article {
+	li {
+		list-style: none;
+		list-style-image: url(/img/bullet.svg);
+		list-style-position: outside;
+		margin-left: -.25em;
+		padding-left: .25em;
+	}
+}
+
+.article-author {
+	padding: 1em;
+	width: 16em;
+	h2 {
+		font-family: $typeface-body;
+		font-size: 1em;
+		margin-bottom: 1em;
+	}
+	img {
+		border-radius: $border-radius-1;
+		width: 8em;
+	}
+	[href^='mailto'] {
+		&:before {
+			content: '@';
+			font-family: $typeface-brand;
+		//	font-size: 3em;
+		//	line-height: 0;
+			margin-right: .25em;
+		}
+	}
+}

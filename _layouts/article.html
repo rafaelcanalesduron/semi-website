@@ -6,19 +6,23 @@
 	<div>
 		<a class="logo" href="/"><i>Homepage</i></a> <a class="button" href="mailto:hello@semi.network">Contact us</a>
 	</div>
-<!--
-	<nav class="list-nav">
-		<ul>
-			<li><a href="#intro-why">Why SeMI</a></li><li><a href="#intro-what">What</a></li><li><a href="#intro-how">How</a></li><li><a href="#intro-who">Who</a></li>
-		</ul>
-	</nav>
--->
 </header>
 
 <main>
 	<article>
 
+			<!-- Breadcrumbs for sub overview-->
+			<div class="breadcrumb">
+				<a href="/knowledge-base">Knowledge base</a> / <a href="./">{{ page.topic }}</a> / {{ page.title }}
+			</div>
+
 			<h1>{{ page.title }}</h1>
+
+			<ul class="tags">
+    			{% for tag in page.tags %}
+					<li>{{ tag }}</li>
+				{% endfor %}
+			</ul>
 
 			{% if page.related_to != null %}
 
@@ -27,10 +31,18 @@
 				{% endfor %}
 
 			{% endif %}
+            
+            <section>
+    			{% include author.md %}
+            </section>
 
-			{% include author.md %}
+            <section class="article">
+			{% if page.description != null %}
+				<p class="intro">{{ page.description }}</p>
+			{% endif %}
 			
 			{{ content }}
+            </section>
 
 	</article>
 </main>

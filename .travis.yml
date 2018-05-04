@@ -31,7 +31,7 @@ script:
 # on error, quit directly
 - set -e
 # exec Jekyll (on error the website will not be replaced)
-- bundle exec jekyll build
+- JEKYLL_ENV=production bundle exec jekyll build --config "_config.prod.yml"
 # run for Master
 - |
     if [ $TRAVIS_BRANCH = "master" ]; then
@@ -42,7 +42,7 @@ script:
       # cd into website dir
       cd _site
       # Upload data to bucket, GZIP (-Z) and set Cache Control for CDN
-      gsutil -m -h "Cache-Control:public" cp -Z -r ./ gs://$BUCKET
+      gsutil -m -h "Cache-Control:public,max-age=14400" cp -Z -r ./ gs://$BUCKET
       # Allow viewing of files (for website purposes)
       gsutil iam ch allUsers:objectViewer gs://$BUCKET
       # Invalidate the CDN
@@ -58,7 +58,7 @@ script:
       # cd into website dir
       cd _site
       # Upload data to bucket, GZIP (-Z) and set Cache Control for CDN
-      gsutil -m -h "Cache-Control:public" cp -Z -r ./ gs://$BUCKETDEV
+      gsutil -m -h "Cache-Control:public,max-age=900" cp -Z -r ./ gs://$BUCKETDEV
       # Allow viewing of files (for website purposes)
       gsutil iam ch allUsers:objectViewer gs://$BUCKETDEV
     fi

@@ -1,10 +1,12 @@
 ---
 layout: article
 title: How to create an ontology?
-topic: onboarding
+description: Your ontology to describe your data is the most important part of onboarding data. In this article, you will learn all best practices to achieve this.
+topic: Onboarding
 author: null
 relating-articles: []
 next-article: onboarding/how-to-enrich-data
+tags: ['technology', 'preparing']
 ---
 
 ## What is an ontology and why do you need it?

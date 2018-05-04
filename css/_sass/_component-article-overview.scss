@@ -1,0 +1,12 @@
+.article-overview {
+	list-style: none;
+	h3 {
+		font-family: $typeface-body;
+		a {
+			border-bottom: 0;
+		}
+	}
+	ol {
+    	list-style: none;
+	}
+}

@@ -1,3 +1,4 @@
+url: "https://www.semi.network"
 auto: true
 markdown: kramdown
 kramdown:  
@@ -13,8 +14,17 @@ exclude:
     - "*.enc"
     - vendor
     - README.md
+    - "grid.html"
+    - "styleguide.html"
+    - "styletiles.html"
 plugins:
     - jekyll-autoprefixer
+    - jekyll-sitemap
 autoprefixer:
     browsers:
         - last 2 versions
+html_press:
+    unquoted_attributes: false
+    drop_empty_values: false
+    strip_crlf: false
+    js_minifier_options: false
