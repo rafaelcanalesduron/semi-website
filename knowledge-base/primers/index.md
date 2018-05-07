@@ -16,14 +16,19 @@ To learn how to onboard SeMI, these pages will help you get a better understandi
                 {% if subpage.topic == page.show-topic %}
                     <ol>
                         <li><h3><a href="{{ subpage.url }}">{{ subpage.date | date: '%B %d, %Y' }} {{ subpage.title }}</a></h3>
-                        <p>
-                            {{ subpage.description }}
-                        </p>
-                        <ul class="tags">
-                			{% for tag in subpage.tags %}
-            					<li>{{ tag }}</li>
-            				{% endfor %}
-            			</ul>
+                            <p>
+                                {{ subpage.description }}
+                            </p>
+                            <dl class="tags">
+                                <dt>Tags</dt>
+                                <dd>
+                                    <ul class="tags">
+                            			{% for tag in subpage.tags %}
+                        					<li>{{ tag }}</li>
+                        				{% endfor %}
+                        			</ul>
+                                </dd>
+                            </dl>
                         </li>
                     </ol>
                 {% endif %}

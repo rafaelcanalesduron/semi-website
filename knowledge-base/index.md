@@ -22,11 +22,16 @@ This is the SeMI knowledge base; it contains all information about our products,
     	                        <p>
     	                            {{ page.description }}
     	                        </p>
-    	                        <ul class="tags">
-                                    {% for tag in page.tags %}
-    	                                <li>{{ tag }}</li>
-                                    {% endfor %}
-    	                        </ul>
+    	                        <dl class="tags">
+                                    <dt>Tags</dt>
+                                    <dd>
+            	                        <ul class="tags">
+                                            {% for tag in page.tags %}
+            	                                <li>{{ tag }}</li>
+                                            {% endfor %}
+            	                        </ul>
+                                    </dd>
+                                </dl>
     	                    </li>
     	                {% endif %}
     	            {% endfor %}
