@@ -72,7 +72,9 @@ $ docker-compose up
 
 ## Configure Weaviate
 
+<section class="help">
 You can download an example file [here](https://github.com/creativesoftwarefdn/weaviate/blob/master/weaviate.conf.json).
+</section>
 
 Weaviate settings can be created in a <abbr>JSON</abbr> config file in an array of `environments` this means that you can have multiple settings in one configuration file.
 
@@ -154,7 +156,9 @@ You can add custom development settings.
 
 ## Available Databases
 
+<section class="help">
 Learn more about the database architecture [here](/weaviate/concept-in-a-nutshell/#database-agnostic).
+</section>
 
 Weaviate is connected to a database through a connector. You can also [create other connectors](/weaviate/create-a-database-connector/).
 
@@ -183,7 +187,9 @@ Weaviate's [docker compose](#run-with-docker) also contains Cassandra.
 
 ## Ontology Schemas for Things and Actions
 
+<section class="help">
 Learn more about web semantics and the value of ontologies [here](/weaviate/concept-in-a-nutshell/).
+</section>
 
 One of the core features of Weaviate are the ontologies. You will use the ontologies to define what specific data means. For example, you can define that when you store data about an apple, it refers to the fruit “apple” or the company “Apple”. You have to do this both for “things” and for “actions”.
 
@@ -260,7 +266,9 @@ Ontologies are defined in a <abbr>JSON</abbr> file and should contain the follow
 }
 ```
 
+<section class="help">
 You can find a simple example [here](https://github.com/creativesoftwarefdn/weaviate/tree/master/test/schema) or a more complex example [here](https://github.com/creativesoftwarefdn/weaviate-semantic-schemas).
+</section>
 
 ## Run Weaviate
 
@@ -271,7 +279,7 @@ Make sure to fetch the API-token and API-key when running Weaviate for the first
 
 ### Running a Basic Instance
 
-_Note: assumes the database is running and configuration files are set._
+_Note: Assumes the database is running and configuration files are set._
 
 ```
 $ weaviate --scheme=http --port=8080 --host=127.0.0.1 --config="cassandra_docker" --config-file="./weaviate.conf.json"
