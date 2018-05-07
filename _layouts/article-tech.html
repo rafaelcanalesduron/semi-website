@@ -1,0 +1,55 @@
+{% include head.html %}
+
+<body>
+
+<header>
+	<div>
+		<a class="logo" href="/"><i>Homepage</i></a> <a class="button" href="mailto:hello@semi.network">Contact us</a>
+	</div>
+</header>
+
+<main>
+	<article>
+
+			<!-- Breadcrumbs for sub overview-->
+			<div class="breadcrumb">
+				<a href="/knowledge-base">Knowledge base</a> / <a href="./">{{ page.topic }}</a> / {{ page.title }}
+			</div>
+
+			<h1>{{ page.title }}</h1>
+
+			<ul class="tags">
+    			{% for tag in page.tags %}
+					<li>{{ tag }}</li>
+				{% endfor %}
+			</ul>
+
+			{% if page.related_to != null %}
+
+				{% for rels in page.related_to %}
+					<a href="#">{{ rels }}</a>
+				{% endfor %}
+
+			{% endif %}
+            
+            <section>
+    			{% include author.md %}
+            </section>
+
+            <section class="article">
+			{% if page.description != null %}
+				<p class="intro">{{ page.description }}</p>
+			{% endif %}
+			
+			{{ content }}
+            </section>
+
+	</article>
+</main>
+
+<!-- code highlights -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+{% include foot.html %}
