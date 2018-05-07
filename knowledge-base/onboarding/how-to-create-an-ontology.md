@@ -18,10 +18,10 @@ An ontology together with a set of data instances form a knowledge base. To init
 ## How to build an ontology
 Developing an ontology includes defining classes, properties and describing allowed values and references for the properties. The structure of the ontology is simple and straightforward as described, but building an ontology from scratch can be challenging. Suggested is to take an iterative approach to ontology development. It is important to keep in mind that an ontology is a model of the reality of the world, so the classes should describe concepts and objects that reflect this reality (in your domain). 
 
-**Steps to build an ontology (inspired by [Ontology Development 101](https://protege.stanford.edu/publications/ontology_development/ontology101.pdf)):**
+### Steps to build an ontology (inspired by [Ontology Development 101](https://protege.stanford.edu/publications/ontology_development/ontology101.pdf)):
 
 1. Determine the scope of the ontology.
-The domain of the ontology won't be hard to define assuming you are going to describe an existing dataset. It is, however, important to keep the purpose of the ontology in mind. What kind of information should be in the ontology to provide answers to the questions you will ask?
+The domain of the ontology won’t be hard to define assuming you are going to describe an existing dataset. It is, however, important to keep the purpose of the ontology in mind. What kind of information should be in the ontology to provide answers to the questions you will ask?
 2. Consider reusing existing ontologies.
 There are open source libraries of reusable ontologies and knowledge bases available. Be inspired by the structure and definitions of names in these ontologies. Assuming that have your own (non-semantic) dataset as a basis, you might be able to enrich existing ontologies with your classes.
 3. Define the classes
@@ -32,7 +32,7 @@ The properties are the semantics of the instances in a database. Properties have
 
 ### Common practices and tips
 
-**Schema structure**
+#### Schema structure
 
 - Keep the distinction between a class and its name in mind. Classes don't represent the words of the concepts in your domain, but the concepts itself. Therefore, synonyms for the same concept represent the same class.
 - Sometimes it's hard to decide whether a specific distinction should be modeled as property value or as a new class. Some tips:
@@ -40,7 +40,7 @@ The properties are the semantics of the instances in a database. Properties have
 	- If a distinction is important in the domain, then create a new class.
 	- Classes of individual instances don't change often, so if the concept you have in mind is rather static, then create a new class for it.
 
-**Naming**
+#### Naming
 
 - Class name labeling: use CamelCase (an uppercase working as delimiter) notation and the use of the singular form of nouns. e.g. WineGrape
 - Property name labeling: property labels should always start with lowercase, but should still use uppercase word delimitation. e.g. madeFromGrape. Property names referring to classes often need prefixes and suffixes. Common practices are to have 'has' as a prefix or to have the suffix 'of', e.g. hasMaker and makerOf. 

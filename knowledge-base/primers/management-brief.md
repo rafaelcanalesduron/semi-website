@@ -22,14 +22,15 @@ SeMI is a decentralized knowledge network, that enables cross-company data colla
 
 ## SeMI products
 
-- **SeMI-I**: Generate meaningful market insights for your own use cases based on your company's internally generated and/or externally acquired data.
+- **SeMI-I**: Generate meaningful market insights for your own use cases based on your company’s internally generated and/or externally acquired data.
 
-- **SeMI-You** Monetize your data on SeMI's decentralised, secure and GDPR proof platform through the exchange of valuable — but privacy insensitive — metadata
+- **SeMI-You** Monetize your data on SeMI’s decentralised, secure and <abbr title="The General Data Protection Regulation is the upcoming EU regulation protecting the data privacy and security of EU citizens.">GDPR</abbr> proof platform through the exchange of valuable&#8201;—&#8201;but privacy insensitive&#8201;—&#8201;metadata
 
 - **SeMI-Our**: Enrich enrich your market and customer insights by combining valuable your insights with those of other companies on the network.
 
 
 ## More information?
-If you have any additional questions please do not hesitate to get in touch:<br>
+If you have any additional questions please do not hesitate to get in touch:
+
 Micha Verhagen, Business Lead
-micha@semi.network
+[micha@semi.network](mailto:micha@semi.network)
