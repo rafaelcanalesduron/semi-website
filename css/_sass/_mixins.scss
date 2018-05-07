@@ -9,7 +9,7 @@ $transition-easing-out: ease-out;
 				border-color $transition-speed-in $transition-easing-in,
 				border-radius $transition-speed-in $transition-easing-in,
 				color $transition-speed-in $transition-easing-in,
-				outline $transition-speed-in $transition-easing-in,
+				outline-color $transition-speed-in $transition-easing-in,
 				color $transition-speed-in $transition-easing-in;
 };
 @mixin transition-out {
@@ -17,7 +17,7 @@ $transition-easing-out: ease-out;
 				border-color $transition-speed-out $transition-easing-out,
 				border-radius $transition-speed-out $transition-easing-out,
 				color $transition-speed-out $transition-easing-out,
-				outline $transition-speed-out $transition-easing-out,
+				outline-color $transition-speed-out $transition-easing-out,
 				color $transition-speed-out $transition-easing-out;
 };
 

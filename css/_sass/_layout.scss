@@ -40,42 +40,19 @@ main {
 	background: $color-white;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	margin-bottom: -10em;
+	margin-bottom: -2em;
 	margin-top: -10em;
 	article {
 		background: $color-white;
 		border-top-left-radius: 1em;
 		grid-column: 1/13;
 		padding: 1em 2em;
+/*
 		section {
 			margin-bottom: 2em;
 		}
+*/
 	}
-}
-
-footer {
-	background: $color-black;
-	border-top-left-radius: $scale-1;
-	color: $color-white;
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	padding: 3em 2em 2em;
-	form {
-		margin-bottom: 5em;
-	}
-}
-
-.footer-links {
-	grid-column: 1/13;
-	li {
-		margin-bottom: 1em;
-	}
-}
-
-.footer-copyright {
-	grid-column: 1/13;
-	margin-top: 3em;
-	text-align: right;
 }
 
 
@@ -103,24 +80,13 @@ footer {
 	main {
 		article {
 			grid-column: 2/12;
+			margin-bottom: -2em;
 			margin-top: -3em;
 			padding-bottom: 2em;
 		}
 	}
 	.semi-newsletter {
 		grid-column: 2/12;
-	}
-	.footer-links {
-		grid-column: 1/13;
-		grid-row: 2/3;
-		li {
-			margin-bottom: 0;
-		}
-	}
-	.footer-copyright {
-		grid-column: 1/13;
-		grid-row: 3/3;
-		text-align: right;
 	}
 }
 
@@ -138,15 +104,5 @@ footer {
 	}
 	.semi-newsletter {
 		grid-column: 4/11;
-	}
-	
-	.footer-links {
-		grid-column: 1/10;
-		grid-row: 2/3;
-	}
-	.footer-copyright {
-		grid-column: 10/13;
-		grid-row: 2/3;
-		margin-top: 0;
 	}
 }
