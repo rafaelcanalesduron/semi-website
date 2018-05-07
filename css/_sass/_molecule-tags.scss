@@ -1,11 +1,13 @@
 .tags {
+    color: $color-gray-3;
+    font-size: 1rem;
 	margin-bottom: $scale-0;
 	li {
 		background: $color-semi-tint-4;
 		border-radius: $border-radius-1;
 		color: $color-gray-6;
 		display: inline;
-		font-size: .75em;
+        font-size: 1rem;
 		margin-right: .5em;
 		padding: .25em .75em;
 		text-decoration: none;

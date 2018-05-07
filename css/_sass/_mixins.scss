@@ -26,3 +26,7 @@ $transition-easing-out: ease-out;
 	box-shadow: 0 0 0 2px $color-semi-accent inset;
 	outline: none;
 }
+
+@function data-uri-color($color) {
+    @return '%23' + str-slice('#{$color}', 2, -1)
+}

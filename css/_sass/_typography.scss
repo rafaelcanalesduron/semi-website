@@ -84,7 +84,7 @@ li {
 
 a {
 	@include transition-out;
-	border-bottom: 1px solid $color-support;
+	border-bottom: 2px solid $color-support;
 	color: $color-interactive;
 	outline: 0 solid transparant;
 	text-decoration: none;
@@ -104,10 +104,15 @@ a {
     	border-bottom: none;
     	//outline: 0;
 	}
+	&[href$=".pdf"]:after { // Links to PDF documents
+    	content:' (PDF)';
+        font-variant-caps: small-caps;
+        text-transform: lowercase;
+    }
 }
 
 strong {
-	font-weight: 700;
+	font-weight: 500;
 }
 
 sub, sup {
