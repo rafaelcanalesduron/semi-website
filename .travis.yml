@@ -1,64 +1,55 @@
 sudo: required
-# Ruby for bundle and Jekyll
 language: ruby
 rvm:
-  - 2.2
+- 2.2
 branches:
   only:
-  # Only process on Master & Develop
   - master
   - develop
 cache:
   directories:
-  # Get GCLOUD from Travis-ci cache
   - "$HOME/google-cloud-sdk/"
 before_install:
-# decrypt key file
-- openssl aes-256-cbc -K $encrypted_79b548fb7a17_key -iv $encrypted_79b548fb7a17_iv -in key.json.enc -out key.json -d
-# check if gcloud is installed
+- openssl aes-256-cbc -K $encrypted_79b548fb7a17_key -iv $encrypted_79b548fb7a17_iv
+  -in key.json.enc -out key.json -d
 - gcloud version || true
-# install gcloud if not
-- if [ ! -d "$HOME/google-cloud-sdk/bin" ]; then rm -rf $HOME/google-cloud-sdk; export CLOUDSDK_CORE_DISABLE_PROMPTS=1; curl https://sdk.cloud.google.com | bash; fi
-# set home path foor gcloud
+- if [ ! -d "$HOME/google-cloud-sdk/bin" ]; then rm -rf $HOME/google-cloud-sdk; export
+  CLOUDSDK_CORE_DISABLE_PROMPTS=1; curl https://sdk.cloud.google.com | bash; fi
 - source /home/travis/google-cloud-sdk/path.bash.inc
-# validate installation based on version echo
 - gcloud version
-# set service account
 - gcloud auth activate-service-account --key-file key.json
-# select the correct project
 - gcloud config set project $PROJECT
 script:
-# on error, quit directly
 - set -e
-# exec Jekyll (on error the website will not be replaced)
 - JEKYLL_ENV=production bundle exec jekyll build --config "_config.prod.yml"
-# run for Master
 - |
-    if [ $TRAVIS_BRANCH = "master" ]; then
-      # set website details for the correct bucket
-      gsutil web set -m index.html -e 404.html gs://$BUCKET
-      # empty bucket (website stays alive on the CDN)
-      gsutil -m rm -r gs://$BUCKET/**
-      # cd into website dir
-      cd _site
-      # Upload data to bucket, GZIP (-Z) and set Cache Control for CDN
-      gsutil -m -h "Cache-Control:public,max-age=14400" cp -Z -r ./ gs://$BUCKET
-      # Allow viewing of files (for website purposes)
-      gsutil iam ch allUsers:objectViewer gs://$BUCKET
-      # Invalidate the CDN
-      gcloud compute url-maps invalidate-cdn-cache www-semi-network --host www.semi.network --path "/*"
-    fi
-# run for Develop
-- |
-    if [ $TRAVIS_BRANCH = "develop" ]; then
-      # set website details for the correct bucket
-      gsutil web set -m index.html -e 404.html gs://$BUCKETDEV
-      # empty bucket (website stays alive on the CDN)
-      gsutil -m rm -r gs://$BUCKETDEV/**
-      # cd into website dir
-      cd _site
-      # Upload data to bucket, GZIP (-Z) and set Cache Control for CDN
-      gsutil -m -h "Cache-Control:public,max-age=900" cp -Z -r ./ gs://$BUCKETDEV
-      # Allow viewing of files (for website purposes)
-      gsutil iam ch allUsers:objectViewer gs://$BUCKETDEV
-    fi
+  if [ $TRAVIS_BRANCH = "master" ]; then
+    # set website details for the correct bucket
+    gsutil web set -m index.html -e 404.html gs://$BUCKET
+    # empty bucket (website stays alive on the CDN)
+    gsutil -m rm -r gs://$BUCKET/**
+    # cd into website dir
+    cd _site
+    # Upload data to bucket, GZIP (-Z) and set Cache Control for CDN
+    gsutil -m -h "Cache-Control:public,max-age=14400" cp -Z -r ./ gs://$BUCKET
+    # Allow viewing of files (for website purposes)
+    gsutil iam ch allUsers:objectViewer gs://$BUCKET
+    # Invalidate the CDN
+    gcloud compute url-maps invalidate-cdn-cache www-semi-network --host www.semi.network --path "/*"
+  fi
+- |-
+  if [ $TRAVIS_BRANCH = "develop" ]; then
+    # set website details for the correct bucket
+    gsutil web set -m index.html -e 404.html gs://$BUCKETDEV
+    # empty bucket (website stays alive on the CDN)
+    gsutil -m rm -r gs://$BUCKETDEV/**
+    # cd into website dir
+    cd _site
+    # Upload data to bucket, GZIP (-Z) and set Cache Control for CDN
+    gsutil -m -h "Cache-Control:public,max-age=900" cp -Z -r ./ gs://$BUCKETDEV
+    # Allow viewing of files (for website purposes)
+    gsutil iam ch allUsers:objectViewer gs://$BUCKETDEV
+  fi
+notifications:
+  slack:
+    secure: DOpQAFFKSgONCUnAfdo9lkny4iyagwRbCl5KaV6sF8FU292LQkPncLdhD5lb7LjafKUxZricNBDTQXZxN2BxdgTprVbQPuiuMjn13WGS96ecHnzLL8lsGMk04WTG5OElytgRFwcaRvr/rS2rickmR6WQ8IRjCCBUNdKnMKFvaInCB5UjtADDhS/HWKysHl+4dA//LIJwibbnThl8peCO/45AboLMyJb0BwTAyzozpDQOj0NiPUsB4l+7ly7D3gffXqZHFwcbUcSHRVq1EDihhhITjDgF6k/3HkWH3xBt2ArAh5t4FwK0R0bacsrWNr7OlpoGju0Oefx1/9zEnqSwa5A5Q2UgGH3CdS1IZtSFNiDqN+E0LqKeckfZVwWGhLFRniEW/3GaUx+AuV+1jcEzxb2CHO9P8PTki6OycTidef3YwPxV9eH7rqtF3aEBN5DfoJbLE05AGKswmMKR1FDa1dShhrYisWTytvL+bWBKmzLcYUtY+PFgUghaotLXyNbWFSl9yTqJYBg2R8U7YR3cbbitTIBwXyLDH7fk/eZPlavTL/Dmdlyo7VviQEQ4c04QjLvPstwGLsJKVsrSN74uZy0g+DEnLA0yAT4pKQMFs9jv8YOZ1U8XWRGScqhqm1E8thal4sCblDqjMgWQTXuQ8U2nem1J5inhJXtswdnM324=
