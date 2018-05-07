@@ -183,7 +183,9 @@ You can also run Cassandra with Docker directly
 docker run -t --name weaviate_db_1_travis -e CASSANDRA_BROADCAST_ADDRESS=127.0.0.1 -p 7000:7000 -p 9042:9042 -v ~/cassandra:/var/lib/cassandra -d cassandra:3
 ```
 
+<section class="help">
 Weaviate's [docker compose](#run-with-docker) also contains Cassandra.
+</section>
 
 ## Ontology Schemas for Things and Actions
 
@@ -195,7 +197,9 @@ One of the core features of Weaviate are the ontologies. You will use the ontolo
 
 ### Defining a Things Ontology
 
+<section class="help">
 Classes should always be written with a capital.
+</section>
 
 Ontologies are defined in a <abbr>JSON</abbr> file and should contain the following information;
 
@@ -274,7 +278,9 @@ You can find a simple example [here](https://github.com/creativesoftwarefdn/weav
 
 With a configuration file and two ontologies (things and actions) you can start running Weaviate.
 
+<section class="help">
 Make sure to fetch the API-token and API-key when running Weaviate for the first time.
+<section>
 
 
 ### Running a Basic Instance
