@@ -9,6 +9,6 @@
 	}
 	img {
 		border-radius: $border-radius-1;
-		width: 8em;
+		grid-column: 1/6;
 	}
 }

@@ -280,7 +280,7 @@ With a configuration file and two ontologies (things and actions) you can start 
 
 <section class="help">
 Make sure to fetch the API-token and API-key when running Weaviate for the first time.
-<section>
+</section>
 
 
 ### Running a Basic Instance

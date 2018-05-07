@@ -1,9 +1,9 @@
 .article-overview {
 	list-style: none;
 	section {
-    	margin-bottom: 4em;
+    	margin-bottom: 3em;
     	li {
-        	margin-bottom: 2em;
+        	margin-bottom: 1em;
     	}
 	}
 	h2 {
@@ -17,6 +17,10 @@
 	}
 	h3 {
 		font-family: $typeface-body;
+		font-size: 2rem;
+		a {		
+        	border-bottom: none;
+		}
 	}
 	ol {
     	list-style: none;
