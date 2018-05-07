@@ -1,12 +1,27 @@
 .article-overview {
 	list-style: none;
+	section {
+    	margin-bottom: 4em;
+    	li {
+        	margin-bottom: 2em;
+    	}
+	}
+	h2 {
+    	a {
+        	border-bottom: none;
+        	color: $color-black;
+        	&:hover, &:focus, &:active {
+            	color: $color-white;
+        	}
+    	}
+	}
 	h3 {
 		font-family: $typeface-body;
-		a {
-			border-bottom: 0;
-		}
 	}
 	ol {
     	list-style: none;
+	}
+	.tags {
+    	margin-top: -.5em;
 	}
 }

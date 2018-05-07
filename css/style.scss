@@ -23,15 +23,19 @@
 @import 'forms';
 
 // Molecules
+@import 'molecule-anchor';
 @import 'molecule-tags';
 
 // Components
 @import 'component-article-overview';
 @import 'component-breadcrumb';
+@import 'component-card-author';
+@import 'component-code';
 @import 'component-details';
 @import 'component-footer';
 @import 'component-lists';
 @import 'component-media';
+@import 'component-table';
 
 // Templates
 @import 'content';

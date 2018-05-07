@@ -1,0 +1,13 @@
+a {
+	&[href$=".pdf"]:after { // Links to PDF documents
+    	content:' (PDF)';
+        font-variant-caps: small-caps;
+        text-transform: lowercase;
+    }
+    &[href$=".json"]:after {
+        
+    }
+    &[href$=".zip"]:after {
+        
+    }
+}

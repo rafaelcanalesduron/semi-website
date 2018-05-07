@@ -1,0 +1,13 @@
+table {
+    border-spacing: 0 .5em;
+    table-layout: auto;
+}
+
+th {
+    font-weight: 500;
+    text-align: left;
+}
+
+td:not(:last-of-type) {
+    padding-right: 2em;
+}

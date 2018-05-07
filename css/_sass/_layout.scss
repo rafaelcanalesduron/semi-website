@@ -40,13 +40,13 @@ main {
 	background: $color-white;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	margin-bottom: -2em;
+	//margin-bottom: -2em;
 	margin-top: -10em;
 	article {
 		background: $color-white;
 		border-top-left-radius: 1em;
 		grid-column: 1/13;
-		padding: 1em 2em;
+		padding: 1em 2em 0;
 /*
 		section {
 			margin-bottom: 2em;
@@ -80,9 +80,9 @@ main {
 	main {
 		article {
 			grid-column: 2/12;
-			margin-bottom: -2em;
+			margin-bottom: -4em;
 			margin-top: -3em;
-			padding-bottom: 2em;
+			//padding-bottom: 2em;
 		}
 	}
 	.semi-newsletter {

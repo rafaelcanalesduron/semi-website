@@ -6,14 +6,14 @@ topic: Technology
 author: BVL
 relating-articles: []
 previous-article: null
-tags: ['technology', 'weaviate']
+tags: ['Technology', 'Weaviate']
 ---
 
 ## Access Tokens
 
-Tokens and keys give you access to Weaviate's API's. They are set in the header (`X-API-KEY: [[apiKey]]` and `X-API-TOKEN: [[apiToken]]`) and are formatted as a UUID; every key is related to a request if you create a thing or action, the key that you use will be attached to this object. You can create as many keys and children of keys, creating a new key automatically makes the key a child of the request key.
+Tokens and keys give you access to Weaviate's <abbr>API</abbr>’s. They are set in the header (`X-API-KEY: [[apiKey]]` and `X-API-TOKEN: [[apiToken]]`) and are formatted as a <abbr>UUID</abbr>; every key is related to a request if you create a thing or action, the key that you use will be attached to this object. You can create as many keys and children of keys, creating a new key automatically makes the key a child of the request key.
 
-When starting Weaviate for the first time, the tokens will be displayed in the command line. It is adviced to directly refresh the tokens.
+When starting Weaviate for the first time, the tokens will be displayed in the command line. It is advised to directly refresh the tokens.
 
 The rules for keys within Weaviate are:
 
@@ -46,7 +46,7 @@ $ curl -X GET -H "X-API-KEY: [[apiKey]]" -H "X-API-TOKEN: [[apiKey]]" "https://w
 
 ## Meta Informatiom
 
-All Weaviate instances have a meta end-point that can be used to learn more about the instane. The meta endpoint contains the ontology and general information from the ontology files.
+All Weaviate instances have a meta end-point that can be used to learn more about the instance. The meta endpoint contains the ontology and general information from the ontology files.
 
 ```
 $ curl -X GET -H "X-API-KEY: [[apiKey]]" -H "X-API-TOKEN: [[apiKey]]" "https://weaviate-host/weaviate/v1/meta"
@@ -54,13 +54,13 @@ $ curl -X GET -H "X-API-KEY: [[apiKey]]" -H "X-API-TOKEN: [[apiKey]]" "https://w
 
 ## Creating Things &amp; Actions
 
-Things and Actions are created based on the ontology. If you work with a Weaviate instance of which you don't know the ontology, you can always request the ontologies via the meta end-point.
+Things and Actions are created based on the ontology. If you work with a Weaviate instance of which you don’t know the ontology, you can always request the ontologies via the meta end-point.
 
 ### Creating a Thing
 
-You can create a thing by POSTing a body to the things endpoint. The body should contain the right values. In case the body can't be processed an error code will be returned.
+You can create a thing by <abbr>POST</abbr>ing a body to the things endpoint. The body should contain the right values. In case the body can't be processed an error code will be returned.
 
-**body**
+#### body
 
 ```
 {
@@ -75,7 +75,7 @@ You can create a thing by POSTing a body to the things endpoint. The body should
 }
 ```
 
-**request**
+#### request
 
 ```
 $ curl -X POST -H "X-API-KEY: [[apiKey]]" -H "X-API-TOKEN: [[apiKey]]" -H "Content-Type: application/json" --data '[[DATA]]' "https://weaviate-host/weaviate/v1/things"
@@ -89,9 +89,9 @@ $ curl -X POST -H "X-API-KEY: [[apiKey]]" -H "X-API-TOKEN: [[apiKey]]" -H "Conte
 
 ### Creating an Action
 
-Creating actions is similar to creating things. You can create an action by POSTing a body to the actions endpoint. The body should contain the right values. In case the body can't be processed an error code will be returned.
+Creating actions is similar to creating things. You can create an action by <abbr>POST</abbr>ing a body to the actions endpoint. The body should contain the right values. In case the body can't be processed an error code will be returned.
 
-**body**
+#### body
 
 ```
 {
@@ -106,7 +106,7 @@ Creating actions is similar to creating things. You can create an action by POST
 }
 ```
 
-**request**
+#### request
 
 ```
 $ curl -X POST -H "X-API-KEY: [[apiKey]]" -H "X-API-TOKEN: [[apiKey]]" -H "Content-Type: application/json" --data '[[DATA]]' "https://weaviate-host/weaviate/v1/actions"
@@ -127,7 +127,7 @@ When you've created things and actions, you can request a list with all things a
 | `maxResults` | Max amount of results as a number (i.e. `maxResults=5`)
 | `page` | Page number (i.e., `page=2`)
 
-**Things**
+### Things
 
 ```
 $ curl -X GET -H "X-API-KEY: [[apiKey]]" -H "X-API-TOKEN: [[apiKey]]" "https://weaviate-host/weaviate/v1/things"
@@ -141,15 +141,15 @@ $ curl -X GET -H "X-API-KEY: [[apiKey]]" -H "X-API-TOKEN: [[apiKey]]" "https://w
 
 ## Getting Things &amp; Actions
 
-You can request a thing or an action based on its UUID or by using the GraphQL endpoint. In this you can learn how to fetch a thing or action if you know the UUID. You can learn more about using Graphql [here](#).
+You can request a thing or an action based on its <abbr>UUID</abbr> or by using the GraphQL endpoint. In this you can learn how to fetch a thing or action if you know the <abbr>UUID</abbr>. You can learn more about using GraphQL [here](#).
 
-**Things**
+### Things
 
 ```
 $ curl -X GET -H "X-API-KEY: [[apiKey]]" -H "X-API-TOKEN: [[apiKey]]" "https://weaviate-host/weaviate/v1/things/[[THING-ID]]"
 ```
 
-**Actions**
+### Actions
 
 ```
 $ curl -X GET -H "X-API-KEY: [[apiKey]]" -H "X-API-TOKEN: [[apiKey]]" "https://weaviate-host/weaviate/v1/actions/[[ACTION-ID]]"
@@ -161,7 +161,7 @@ You can update a thing or action when you know its UUID.
 
 ### Updating Things
 
-**body**
+#### body
 
 ```
 {
@@ -176,13 +176,13 @@ You can update a thing or action when you know its UUID.
 }
 ```
 
-**request**
+#### request
 
 ```
 $ curl -X PUT -H "X-API-KEY: [[apiKey]]" -H "X-API-TOKEN: [[apiKey]]" -H "Content-Type: application/json" --data '[[DATA]]' "https://weaviate-host/weaviate/v1/things"
 ```
 
-You can also validate a request by sending the body to the `/weaviate/v1/things/validate` end-point. Weaviate will validate the request without sending it to the database. Note that you need to use POST instead of PUT.
+You can also validate a request by sending the body to the `/weaviate/v1/things/validate` end-point. Weaviate will validate the request without sending it to the database. Note that you need to use <abbr>POST</abbr> instead of <abbr>PUT</abbr>.
 
 ```
 $ curl -X POST -H "X-API-KEY: [[apiKey]]" -H "X-API-TOKEN: [[apiKey]]" -H "Content-Type: application/json" --data '[[DATA]]' "https://weaviate-host/weaviate/v1/things/validate"
@@ -190,7 +190,7 @@ $ curl -X POST -H "X-API-KEY: [[apiKey]]" -H "X-API-TOKEN: [[apiKey]]" -H "Conte
 
 ### Updating Actions
 
-**body**
+#### body
 
 ```
 {
@@ -205,51 +205,25 @@ $ curl -X POST -H "X-API-KEY: [[apiKey]]" -H "X-API-TOKEN: [[apiKey]]" -H "Conte
 }
 ```
 
-**request**
+#### request
 
 ```
 $ curl -X PUT -H "X-API-KEY: [[apiKey]]" -H "X-API-TOKEN: [[apiKey]]" -H "Content-Type: application/json" --data '[[DATA]]' "https://weaviate-host/weaviate/v1/actions"
 ```
 
-You can also validate a request by sending the body to the `/weaviate/v1/actions/validate` end-point. Weaviate will validate the request without sending it to the database. Note that you need to use POST instead of PUT.
+You can also validate a request by sending the body to the `/weaviate/v1/actions/validate` end-point. Weaviate will validate the request without sending it to the database. Note that you need to use <abbr>POST</abbr> instead of <abbr>PUT</abbr>.
 
 ```
 $ curl -X POST -H "X-API-KEY: [[apiKey]]" -H "X-API-TOKEN: [[apiKey]]" -H "Content-Type: application/json" --data '[[DATA]]' "https://weaviate-host/weaviate/v1/actions/validate"
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Patching Updating Things &amp; Actions
 
-You can update a thing or action using [PATCH semantics](https://en.wikipedia.org/wiki/Patch_verb) when you know its UUID. 
+You can update a thing or action using [PATCH semantics](https://en.wikipedia.org/wiki/Patch_verb) when you know its <abbr>UUID</abbr>. 
 
 ### Patching Things
 
-**body**
+#### body
 
 ```
 [{
@@ -259,7 +233,7 @@ You can update a thing or action using [PATCH semantics](https://en.wikipedia.or
 }]
 ```
 
-**request**
+#### request
 
 ```
 $ curl -X PATCH -H "X-API-KEY: [[apiKey]]" -H "X-API-TOKEN: [[apiKey]]" -H "Content-Type: application/json" --data '[[DATA]]' "https://weaviate-host/weaviate/v1/things"
@@ -267,7 +241,7 @@ $ curl -X PATCH -H "X-API-KEY: [[apiKey]]" -H "X-API-TOKEN: [[apiKey]]" -H "Cont
 
 ### Patching Actions
 
-**body**
+#### body
 
 ```
 [{
@@ -277,7 +251,7 @@ $ curl -X PATCH -H "X-API-KEY: [[apiKey]]" -H "X-API-TOKEN: [[apiKey]]" -H "Cont
 }]
 ```
 
-**request**
+#### request
 
 ```
 $ curl -X PATCH -H "X-API-KEY: [[apiKey]]" -H "X-API-TOKEN: [[apiKey]]" -H "Content-Type: application/json" --data '[[DATA]]' "https://weaviate-host/weaviate/v1/actions"
@@ -319,6 +293,6 @@ listThings(first: X, offset: Y, class: Z) {
 
 ...
 
-## Complete API overview.
+## Complete <abbr>API</abbr> overview.
 
 ...

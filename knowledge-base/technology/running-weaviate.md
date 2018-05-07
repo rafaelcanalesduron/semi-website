@@ -6,12 +6,12 @@ topic: Technology
 author: BVL
 relating-articles: []
 previous-article: null
-tags: ['technology', 'weaviate']
+tags: ['Technology', 'Weaviate']
 ---
 
 ## Download Binary
 
-**Directly Download and Install**
+### Directly Download and Install
 
 Latest Version {{ site.weaviate_version }} (stable):
 
@@ -33,7 +33,7 @@ $ chmod +x weaviate
 $ export PATH=/var/weaviate:$PATH
 ```
 
-**Manually Download and Install**
+### Manually Download and Install
 
 | Lastest Stable ({{ site.weaviate_version }}) | Nightly (unstable) | 
 | ----------------- | ------------------ |
@@ -53,7 +53,7 @@ $ export PATH=/var/weaviate:$PATH
 | ----------------- | ------------------ |
 | [Checksum file](https://storage.cloud.google.com/weaviate-dist/releases/{{ site.weaviate_version }}/checksums.txt) | [Checksum file](https://storage.cloud.google.com/weaviate-dist/releases/nightly/checksums.txt)
 
-**Build Status**
+### Build Status
 
 | Branch | Status        |
 | ------ |:-------------:|
@@ -72,9 +72,9 @@ $ docker-compose up
 
 ## Configure Weaviate
 
-> You can download an example file [here](https://github.com/creativesoftwarefdn/weaviate/blob/master/weaviate.conf.json).
+You can download an example file [here](https://github.com/creativesoftwarefdn/weaviate/blob/master/weaviate.conf.json).
 
-Weaviate settings can be created in a JSON config file in an array of `environments` this means that you can have multiple settings in one configuration file.
+Weaviate settings can be created in a <abbr>JSON</abbr> config file in an array of `environments` this means that you can have multiple settings in one configuration file.
 
 | environments[].key                            | Value         |
 | --------------------------------------------- | ------------- |
@@ -88,7 +88,7 @@ Weaviate settings can be created in a JSON config file in an array of `environme
 | `limit`                                         | Limit of list requests |
 | `debug`                                         | Boolean (output in cli) |
 
-**Example Configuration**
+### Example Configuration
 
 ```
 {
@@ -119,7 +119,7 @@ Weaviate settings can be created in a JSON config file in an array of `environme
 }
 ```
 
-**For Development**
+### For Development
 
 You can add custom development settings.
 
@@ -129,12 +129,12 @@ You can add custom development settings.
 | `development.external_instances[].api_key`      | Related API key for external Weaviate |
 | `development.external_instances[].api_token`    | Related API token for external Weaviate |
 
-**Example Configuration**
+#### Example Configuration
 
 ```
 {
   "environments": [{
-    // ALL OTHER CONFIGRATIONS
+    // ALL OTHER CONFIGURATIONS
     "development": {
       "external_instances": [{
           "url": "http://localhost:8070",
@@ -154,11 +154,11 @@ You can add custom development settings.
 
 ## Available Databases
 
-> Learn more about the database architecture [here](/weaviate/concept-in-a-nutshell/#database-agnostic).
+Learn more about the database architecture [here](/weaviate/concept-in-a-nutshell/#database-agnostic).
 
 Weaviate is connected to a database through a connector. You can also [create other connectors](/weaviate/create-a-database-connector/).
 
-**Cassandra**
+### Cassandra
 
 Add to the "database" section of the [configuration](#configure-weaviate) the following settings.
 
@@ -173,25 +173,25 @@ Add to the "database" section of the [configuration](#configure-weaviate) the fo
 }
 ```
 
-You can also run cassandra with Docker directly
+You can also run Cassandra with Docker directly
 
 ```
 docker run -t --name weaviate_db_1_travis -e CASSANDRA_BROADCAST_ADDRESS=127.0.0.1 -p 7000:7000 -p 9042:9042 -v ~/cassandra:/var/lib/cassandra -d cassandra:3
 ```
 
-> Weaviate's [docker compose](#run-with-docker) also contains Cassandra.
+Weaviate's [docker compose](#run-with-docker) also contains Cassandra.
 
 ## Ontology Schemas for Things and Actions
 
-> Learn more about web semantics and the value of ontologies [here](/weaviate/concept-in-a-nutshell/).
+Learn more about web semantics and the value of ontologies [here](/weaviate/concept-in-a-nutshell/).
 
-One of the core features of Weaviate are the ontologies. You will use the ontologies to define what specific data means. For example, you can define that when you store data about an apple, it refers to the fruit "apple" or the company "Apple." You have to do this both for "things" and for "actions."
+One of the core features of Weaviate are the ontologies. You will use the ontologies to define what specific data means. For example, you can define that when you store data about an apple, it refers to the fruit “apple” or the company “Apple”. You have to do this both for “things” and for “actions”.
 
-**Defining a Things Ontology**
+### Defining a Things Ontology
 
-> Classes should always be written with a capital.
+Classes should always be written with a capital.
 
-Ontologies are defined in a JSON file and should contain the following information;
+Ontologies are defined in a <abbr>JSON</abbr> file and should contain the following information;
 
 | Key                                 | Value         |
 | ----------------------------------- | ------------- |
@@ -208,7 +208,7 @@ Ontologies are defined in a JSON file and should contain the following informati
 | `classes[].properties[].description`| A description of the property. For example: `Name of the company` |
 | `classes[].properties[].@dataType[]`| Datatype of the property. Available types are: `string`, `int`, `boolean`, `number`, `date`, `[name of class]` (for example: `Country`, always with capital) |
 
-**Example of Things ontology JSON**
+### Example of Things ontology <abbr>JSON</abbr>
 
 ```
 {
@@ -260,61 +260,61 @@ Ontologies are defined in a JSON file and should contain the following informati
 }
 ```
 
-> You can find a simple example [here](https://github.com/creativesoftwarefdn/weaviate/tree/master/test/schema) or a more complex example [here](https://github.com/creativesoftwarefdn/weaviate-semantic-schemas).
+You can find a simple example [here](https://github.com/creativesoftwarefdn/weaviate/tree/master/test/schema) or a more complex example [here](https://github.com/creativesoftwarefdn/weaviate-semantic-schemas).
 
 ## Run Weaviate
 
 With a configuration file and two ontologies (things and actions) you can start running Weaviate.
 
-> Make sure to fetch the API-token and API-key when running Weaviate for the first time.
+Make sure to fetch the API-token and API-key when running Weaviate for the first time.
 
 
-**Running a Basic Instance**
+### Running a Basic Instance
 
-_Note: assumes the database is runnng and configuration files are set._
+_Note: assumes the database is running and configuration files are set._
 
 ```
 $ weaviate --scheme=http --port=8080 --host=127.0.0.1 --config="cassandra_docker" --config-file="./weaviate.conf.json"
 ```
 
-**Getting Help**
+### Getting Help
 
 ```
 $ weaviate --help
 ```
 
-**Arguments**
+### Arguments
 
 | Argument               | Description
 |  --------------------- | ------------
 | `--scheme=`            | the listeners to enable, this can be repeated and defaults to the schemes in the swagger spec
 | `--cleanup-timeout=`   | grace period for which to wait before shutting down the server (default: 10s)
-| `--max-header-size=`   | controls the maximum number of bytes the server will read parsing the request header's keys and values, including the request line. It does not limit the size of the request body. (default: 1MiB)
+| `--max-header-size=`   | controls the maximum number of bytes the server will read parsing the request header's keys and values, including the request line. It does not limit the size of the request body. (default: 1<abbr>MiB</abbr>)
 | `--socket-path=`       | the unix socket to listen on (default: /var/run/weaviate.sock)
-| `--host=`              | the IP to listen on (default: localhost) [$HOST]
+| `--host=`              | the <abbr>IP</abbr> to listen on (default: localhost) [$HOST]
 | `--port=`              | the port to listen on for insecure connections, defaults to a random value [$PORT]
 | `--listen-limit=`      | limit the number of outstanding requests
-| `--keep-alive=`        | sets the TCP keep-alive timeouts on accepted connections. It prunes dead TCP connections ( e.g. closing laptop mid-download) (default: 3m)
+| `--keep-alive=`        | sets the <abbr>TCP</abbr> keep-alive timeouts on accepted connections. It prunes dead <abbr>TCP</abbr> connections ( e.g. closing laptop mid-download) (default: 3m)
 | `--read-timeout=`      | maximum duration before timing out read of the request (default: 30s)
 | `--write-timeout=`     | maximum duration before timing out write of the response (default: 60s)
-| `--tls-host=`          | the IP to listen on for tls, when not specified it's the same as --host [$TLS_HOST]
+| `--tls-host=`          | the <abbr>IP</abbr> to listen on for <abbr>TLS</abbr>, when not specified it's the same as --host [$TLS_HOST]
 | `--tls-port=`          | the port to listen on for secure connections, defaults to a random value [$TLS_PORT]
 | `--tls-certificate=`   | the certificate to use for secure connections [$TLS_CERTIFICATE]
 | `--tls-key=`           | the private key to use for secure conections [$TLS_PRIVATE_KEY]
 | `--tls-ca=`            | the certificate authority file to be used with mutual tls auth [$TLS_CA_CERTIFICATE]
 | `--tls-listen-limit=`  | limit the number of outstanding requests
-| `--tls-keep-alive=`    | sets the TCP keep-alive timeouts on accepted connections. It prunes dead TCP connections ( e.g. closing laptop mid-download)
+| `--tls-keep-alive=`    | sets the <abbr>TCP</abbr> keep-alive timeouts on accepted connections. It prunes dead <abbr>TCP</abbr> connections ( e.g. closing laptop mid-download)
 | `--tls-read-timeout=`  | maximum duration before timing out read of the request
 | `--tls-write-timeout=` | maximum duration before timing out write of the response
 | `--config=`            | the section inside the config file that has to be used
 | `--config-file=`       | path to config file (default: ./weaviate.conf.json)
 
-#### Understanding LOGs
+#### Understanding <abbr>LOG</abbr>s
 
-When running Weaviate, all logs will be visible in the CLI. The logs will also contain the root API tokens. Make sure to refresh them after starting the server.
+When running Weaviate, all logs will be visible in the <abbr>CLI</abbr>. The logs will also contain the root <abbr>API</abbr> tokens. Make sure to refresh them after starting the server.
 
-**Debugging**
+### Debugging
 
-When debugging is enabled in the config file, information will be displayed in the CLI as `DEBUG`.
+When debugging is enabled in the config file, information will be displayed in the <abbr>CLI</abbr> as `DEBUG`.
 
 [back](../)

@@ -1,0 +1,14 @@
+.article-author {
+    margin-bottom: 2em;
+    padding: 2em 0;
+	width: 16em;
+	h2 {
+		font-family: $typeface-body;
+		font-size: 1em;
+		margin-bottom: 1em;
+	}
+	img {
+		border-radius: $border-radius-1;
+		width: 8em;
+	}
+}
