@@ -86,7 +86,7 @@ a {
 	@include transition-out;
 	border-bottom: 2px solid $color-support;
 	color: $color-interactive;
-	outline: 0 solid transparant;
+	outline: none;
 	text-decoration: none;
 	&:hover, &:focus, &:active {
 		@include transition-in;
@@ -104,6 +104,10 @@ a {
     	border-bottom: none;
     	//outline: 0;
 	}
+}
+
+small {
+    font-size: 1em;
 }
 
 strong {

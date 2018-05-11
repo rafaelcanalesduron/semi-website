@@ -1,0 +1,15 @@
+.pilars {
+    ol {
+        display: flex;
+        list-style: none;
+    }
+    li {
+        width: calc(100%/3);
+        > section {
+            background: $color-gray-6;
+			border-radius: $border-radius-3;
+            margin: 1em;
+            padding: 1em;
+        }
+    }
+}

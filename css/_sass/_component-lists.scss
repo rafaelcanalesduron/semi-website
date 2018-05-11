@@ -4,8 +4,7 @@
 		a {
 			@include transition-out;
 			border-bottom: 0;
-			border-bottom-right-radius: $scale-0;
-			border-top-left-radius: $scale-0;
+			border-radius: $border-radius-3;
         	font-size: 1.05em;
         	font-variant-caps: small-caps;
 			padding: .5em 1em;
@@ -15,12 +14,19 @@
 				background: $color-semi;
 				border-radius: 0;
 				color: $color-white;
+				outline: none;
 			}
 			&:focus {
 				background: $color-semi-accent;
 				outline: none;
 			}
 		}
+	}
+	.selected {
+    	a {
+        	background: $color-black;
+        	color: $color-white;
+    	}
 	}
 }
 

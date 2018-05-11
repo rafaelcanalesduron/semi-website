@@ -3,14 +3,14 @@ header {
 	background: $color-gray-7;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 	padding: 2em 1em 10em;
 	div {
 		grid-column: 6/13;
         justify-self: flex-end;
 	}
 	nav {
-    	grid-column: 3/11;
+    	grid-column: 1/13;
     	padding: 2em 0 0;
 	}
 }
@@ -42,7 +42,7 @@ main {
 		border-top-left-radius: 1em;
 		grid-column: 1/13;
 		min-height: 50vh;
-		padding: 1em 2em 0;
+		padding: 1em 2em 1em;
 	}
 }
 
@@ -63,6 +63,9 @@ main {
 		padding: 2em 0 13em;
 		div {
 			grid-column: 9/12;
+		}
+		nav {		
+        	grid-column: 2/12;
 		}
 	}
 	.logo {
@@ -91,6 +94,9 @@ main {
         div {
 			grid-column: 9/11;
         }
+		nav {		
+        	grid-column: 3/11;
+		}
     }
     .logo {
         grid-column: 3/5;
