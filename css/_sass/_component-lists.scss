@@ -1,18 +1,15 @@
 .list-nav {
-//	display: inline-block;
-	margin-left: -$scale-1;
 	li {
 		display: inline-block;
-		font-family: $typeface-brand;
 		a {
 			@include transition-out;
 			border-bottom: 0;
 			border-bottom-right-radius: $scale-0;
 			border-top-left-radius: $scale-0;
-			color: $color-black;
-			font-size: 1.5em;
-			letter-spacing: 0.05em;
-			padding: $scale--1 $scale-0;
+        	font-size: 1.05em;
+        	font-variant-caps: small-caps;
+			padding: .5em 1em;
+			text-transform: lowercase;
 			&:hover, &:focus, &:active {
 				@include transition-in;
 				background: $color-semi;
