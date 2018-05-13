@@ -21,6 +21,9 @@
 			</div>
 
 			<h1>{{ page.title }}</h1>
+			{% if page.description != null %}
+				<p class="intro">{{ page.description }}</p>
+			{% endif %}
             
             <dl class="tags">
                 <dt>Tags</dt>
@@ -46,9 +49,6 @@
             </section>
 
             <section class="article">
-			{% if page.description != null %}
-				<p class="intro">{{ page.description }}</p>
-			{% endif %}
 			
 			{{ content }}
             </section>
