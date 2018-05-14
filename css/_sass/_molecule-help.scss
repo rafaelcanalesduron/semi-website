@@ -18,7 +18,10 @@
 		position: absolute;
 		top: 100%;
 	}
-	p:last-of-type {
-    	margin-bottom: 0;
+	p {
+    	max-width: 32em;
+    	&:last-of-type {
+        	margin-bottom: 0;
+    	}    	
 	}
 }

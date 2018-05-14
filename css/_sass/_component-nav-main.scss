@@ -1,6 +1,12 @@
 .nav-main {
+    ul {
+        display: flex;
+        list-style: none;
+    }
+    .search {
+        margin-left: auto;
+    }
 	li {
-		display: inline-block;
 		a {
 			@include transition-out;
 			border-bottom: 0;
@@ -9,6 +15,7 @@
         	font-variant-caps: small-caps;
 			padding: .5em .75em;
 			text-transform: lowercase;
+			white-space: nowrap;
 			&:hover, &:focus, &:active {
 				@include transition-in;
 				background: $color-semi;
@@ -21,12 +28,6 @@
 				outline: none;
 			}
 		}
-	}
-	.selected {
-    	a {
-        	background: $color-black;
-        	color: $color-white;
-    	}
 	}
 }
 
@@ -52,21 +53,21 @@
 }
 
 .nav-article {
-    li:nth-child(3) a {
+    li:nth-child(2) a {
     	background: $color-black;
     	color: $color-white;
     }
 }
 
 .nav-team {
-    li:nth-child(4) a {
+    li:nth-child(3) a {
     	background: $color-black;
     	color: $color-white;
     }
 }
 
 .nav-contact {
-    li:nth-child(5) a {
+    li:nth-child(4) a {
     	background: $color-black;
     	color: $color-white;
     }

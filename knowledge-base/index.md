@@ -9,14 +9,15 @@ layout: article-overview
 This is the SeMI knowledge base; it contains all information about our products, how we work and more. In case you have any questions, feel free to reach out to us on [hello@semi.network](mailto:hello@semi.network).
 
 ## Filter articles
+<section class="help">
 Since our knowledge base is quite diverse, you can select your role and we will filter the information relevant to you.
+</section>
 
 <section>
-<label for="select-role">My role within my organisation is…</label>
+<label for="select-role">I would describe myself as a…</label>
 <select name="select-role" id="select-role">
-    <option value="">Business owner</option>
-    <option value="">Technology buyer</option>
-    <option value="">Techie</option>
+    <option value="">Business leader</option>
+    <option value="">Technical leader</option>
 </select>
 </section>
 

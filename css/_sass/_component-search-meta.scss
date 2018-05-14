@@ -1,8 +1,12 @@
 .search-meta {
     display: flex;
     [type='search'] {
+    	//border-radius: $border-radius-1;
+    	border-top-right-radius: 0;
         flex: 1;
+        padding-right: 2.5em;
     	~ [type='submit'] {
+        	margin-left: -2em;
         	&:hover, &:focus, &:active {
             	border-bottom-left-radius: 0;
             }

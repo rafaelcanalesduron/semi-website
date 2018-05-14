@@ -7,8 +7,8 @@ label {
 	margin-right: $scale-0;
 }
 
-form {
-	margin-top: 1em;
+article form {
+	margin: 1em 0;
 }
 
 fieldset {
@@ -33,9 +33,8 @@ fieldset {
 	}
 	&:focus, &:active {
     	@include transition-in;
-		border-color: $color-semi-accent;
 		border: 3px solid $color-semi-accent;
-		border-top-left-radius: 0;
+		border-radius: $scale-1;
 		outline: none;
 	}
 }
@@ -64,6 +63,7 @@ fieldset {
 
 textarea {
     min-height: 5em;
+    resize: vertical;
 }
 
 [type='email'] {
