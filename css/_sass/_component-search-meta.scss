@@ -1,0 +1,11 @@
+.search-meta {
+    display: flex;
+    [type='search'] {
+        flex: 1;
+    	~ [type='submit'] {
+        	&:hover, &:focus, &:active {
+            	border-bottom-left-radius: 0;
+            }
+    	}
+    }
+}

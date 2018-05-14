@@ -1,0 +1,73 @@
+.nav-main {
+	li {
+		display: inline-block;
+		a {
+			@include transition-out;
+			border-bottom: 0;
+			border-radius: $border-radius-3;
+        	font-size: 1.05em;
+        	font-variant-caps: small-caps;
+			padding: .5em .75em;
+			text-transform: lowercase;
+			&:hover, &:focus, &:active {
+				@include transition-in;
+				background: $color-semi;
+				border-radius: 0;
+				color: $color-white;
+				outline: none;
+			}
+			&:focus {
+				background: $color-semi-accent;
+				outline: none;
+			}
+		}
+	}
+	.selected {
+    	a {
+        	background: $color-black;
+        	color: $color-white;
+    	}
+	}
+}
+
+.nav-home {
+    li a:nth-child(1) {
+    	background: $color-black;
+    	color: $color-white;
+    }
+}
+
+.nav-products {
+    li:nth-child(1) a {
+    	background: $color-black;
+    	color: $color-white;
+    }
+}
+
+.nav-playground {
+    li:nth-child(2) a {
+    	background: $color-black;
+    	color: $color-white;
+    }
+}
+
+.nav-article {
+    li:nth-child(3) a {
+    	background: $color-black;
+    	color: $color-white;
+    }
+}
+
+.nav-team {
+    li:nth-child(4) a {
+    	background: $color-black;
+    	color: $color-white;
+    }
+}
+
+.nav-contact {
+    li:nth-child(5) a {
+    	background: $color-black;
+    	color: $color-white;
+    }
+}

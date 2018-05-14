@@ -1,35 +1,3 @@
-.list-nav {
-	li {
-		display: inline-block;
-		a {
-			@include transition-out;
-			border-bottom: 0;
-			border-radius: $border-radius-3;
-        	font-size: 1.05em;
-        	font-variant-caps: small-caps;
-			padding: .5em 1em;
-			text-transform: lowercase;
-			&:hover, &:focus, &:active {
-				@include transition-in;
-				background: $color-semi;
-				border-radius: 0;
-				color: $color-white;
-				outline: none;
-			}
-			&:focus {
-				background: $color-semi-accent;
-				outline: none;
-			}
-		}
-	}
-	.selected {
-    	a {
-        	background: $color-black;
-        	color: $color-white;
-    	}
-	}
-}
-
 .list-bullet {
 	li {
 		list-style: none;

@@ -8,27 +8,33 @@ label {
 }
 
 form {
-	margin-top: 3em;
+	margin-top: 1em;
+}
+
+fieldset {
+    border: 0;
+    margin-bottom: 2em;
 }
 
 [type='email'], [type='number'], [type='password'], [type='search'], [type='tel'], [type='text'], [type='url'], textarea {
 	@include transition-out;
 	background: $color-white;
-	border: 0;
-	border-bottom: 3px solid $color-semi;
+	border: 3px solid transparent;
+	border-bottom-color: $color-semi;
 	border-top-left-radius: $scale-1;
 	border-top-right-radius: $scale-1;
 	color: $color-black;
 	font-family: $typeface-body;
-	margin-bottom: 1em;
-	padding: $scale-0;
+	padding: .5em 1em;
 	width: 100%;
 	&:hover, &:focus, &:active {
 		@include transition-in;
 
 	}
 	&:focus, &:active {
+    	@include transition-in;
 		border-color: $color-semi-accent;
+		border: 3px solid $color-semi-accent;
 		border-top-left-radius: 0;
 		outline: none;
 	}
@@ -39,7 +45,7 @@ form {
 	background: $color-semi;
 	border: 0;
 	border-radius: $border-radius-1;
-	color: #fff;
+	color: $color-white;
 	font-family: $typeface-body;
 	padding: $scale-0 $scale-2;
 	&:hover, &:focus, &:active {
@@ -54,6 +60,10 @@ form {
 
 .button--small {
 	padding: .25em 1em;
+}
+
+textarea {
+    min-height: 5em;
 }
 
 [type='email'] {
@@ -82,29 +92,9 @@ form {
 			border-bottom: 3px solid $color-interactive;
 			border-bottom-left-radius: 0;
 			&:focus, &:active {
-			border-bottom: 3px solid $color-semi-accent;
+			    border-bottom: 3px solid $color-semi-accent;
 				outline: none;
 			}
-		}
-	}
-}
-
-@media screen and (min-width: 48em) {
-	form {
-		align-items: baseline;
-		flex-direction: row;
-		margin-top: 2em;
-	}
-	label {
-		white-space: nowrap;
-	}
-	[type='email'], [type='number'], [type='password'], [type='search'], [type='tel'], [type='text'], [type='url'], textarea {
-		border-top-right-radius: 0;
-		margin-bottom: 0;
-	}
-	[type='email'] {
-		~ [type='submit'] {		
-			margin-left: -$scale-1;
 		}
 	}
 }
