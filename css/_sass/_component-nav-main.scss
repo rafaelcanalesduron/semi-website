@@ -1,6 +1,7 @@
 .nav-main {
     ul {
         display: flex;
+        justify-content: space-between;
         list-style: none;
     }
     .search {
@@ -29,6 +30,14 @@
 			}
 		}
 	}
+}
+
+@media screen and (min-width: 42em) {
+    .nav-main {
+        ul {
+            justify-content: flex-start;
+        }
+    }
 }
 
 .nav-home {

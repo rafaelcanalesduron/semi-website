@@ -24,7 +24,7 @@ gem "jekyll", "~> 3.7.3"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
 	gem 'jekyll-autoprefixer'
-	gem 'octopress-minify-html'
+#	gem 'octopress-minify-html'
 	gem 'jekyll-sitemap'
 end
 
