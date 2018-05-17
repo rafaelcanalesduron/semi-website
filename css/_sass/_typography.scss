@@ -44,7 +44,7 @@ h6 {
 
 p, li {
 	font-size: 1.15rem;
-	margin: 0 0 $scale-0;
+	margin: 0 0 1em;
 	max-width: 38em;
 }
 p.intro {
@@ -60,13 +60,13 @@ hr {
 
 @media screen and (min-width: 48em) {
 	h1 {
-		font-size: 2.6rem;
+		font-size: 2.815rem;
 	}
 	h2 {
-		font-size: 2.1rem;
+		font-size: 2.185rem;
 	}
 	h3 {
-		font-size: 1.6rem;
+		font-size: 1.875rem;
 	}
 	h4 {
 		font-size: 1.5rem;
@@ -75,7 +75,7 @@ hr {
 		font-size: 1.35rem;
 	}
 	p, li {
-		font-size: 1.35rem;
+		font-size: 1.5rem;
 	}
 	p.intro {
 		font-size: 1.4rem;

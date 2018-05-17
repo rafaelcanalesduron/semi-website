@@ -1,6 +1,8 @@
 header {
     align-items: center;
 	background: $color-gray-7;
+	//background: $color-white;
+	//border-top: 3px solid $color-semi;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	margin-bottom: 1em;
