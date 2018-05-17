@@ -10,4 +10,7 @@ a {
     &[href$=".zip"]:after {
         
     }
+    &[href^="mailto:"]:before {
+        
+    }
 }
