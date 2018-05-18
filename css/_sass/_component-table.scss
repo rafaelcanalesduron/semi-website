@@ -3,6 +3,10 @@ table {
     table-layout: auto;
 }
 
+th, td {
+    white-space: pre-wrap;
+}
+
 th {
     font-weight: 500;
     text-align: left;

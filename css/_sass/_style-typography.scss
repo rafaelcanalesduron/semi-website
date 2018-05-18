@@ -113,6 +113,22 @@ a {
 	}
 }
 
+/*
+p, li, table {
+    a { 
+    	border-bottom: 2px solid $color-support;
+    	color: $color-interactive;
+        outline: none;
+        &:hover, &:focus, &:active {            
+    		background: $color-semi;
+    		border-bottom: $color-semi;
+    		color: $color-white;
+    		outline: 3px solid $color-semi;
+        }
+    }
+}
+*/
+
 small {
     font-size: 1em;
 }
