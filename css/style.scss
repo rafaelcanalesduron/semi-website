@@ -16,10 +16,11 @@
 @import 'normalize';
 
 // Layout
-@import 'layout';
+@import 'style-layout';
 
 // Atoms
-@import 'typography';
+@import 'style-iconography';
+@import 'style-typography';
 @import 'forms';
 
 // Molecules

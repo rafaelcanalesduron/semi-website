@@ -5,6 +5,17 @@
         justify-content: space-between;
         list-style: none;
     }
+}
+
+.pilar {
+    @include transition-out;
+    background: $color-gray-7;
+    border: 1px solid $color-semi-tint-4;
+	border-radius: $border-radius-3;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-right: 1em;
     h2, h3 {
         color: $color-black;
         font-family: $typeface-body;
@@ -13,23 +24,15 @@
         text-align: center;
     }
     h2 {
+        @include transition-out;
         background: $color-semi-tint-4;
-        border-top-left-radius: 1em;
+        border-top-left-radius: .75em;
         color: $color-white;
     }
     h3 {
         font-size: 1.5rem;
         font-style: italic;
     }
-}
-
-.pilar {
-    background: $color-gray-7;
-	border-radius: $border-radius-3;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    margin-right: 1em;
     section {
         display: flex;
         flex-direction: column;
@@ -40,8 +43,19 @@
         padding: 1em;
     }
     .button--cta {
-        background: $color-semi-accent;
-        color: $color-black;
         margin: auto 1em 1em;
+    }
+    &:hover {  
+        @include transition-in;  
+        background: $color-white;
+        border-color: $color-semi;
+        h2 {
+            @include transition-in;
+            background: $color-semi;
+        }
+        .button--cta {
+            background: $color-black;
+            color: $color-white;
+        }
     }
 }
