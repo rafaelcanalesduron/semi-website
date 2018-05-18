@@ -40,44 +40,43 @@
     }
 }
 
+@mixin nav--selected {
+	background: $color-black;
+	color: $color-white;
+}
+
 .nav-home {
     li a:nth-child(1) {
-    	background: $color-black;
-    	color: $color-white;
+    	@include nav--selected;
     }
 }
 
 .nav-products {
     li:nth-child(1) a {
-    	background: $color-black;
-    	color: $color-white;
+    	@include nav--selected;
     }
 }
 
 .nav-playground {
     li:nth-child(2) a {
-    	background: $color-black;
-    	color: $color-white;
+    	@include nav--selected;
     }
 }
 
 .nav-article {
     li:nth-child(2) a {
-    	background: $color-black;
-    	color: $color-white;
+    	@include nav--selected;
     }
 }
 
 .nav-team {
     li:nth-child(3) a {
-    	background: $color-black;
-    	color: $color-white;
+    	@include nav--selected;
     }
 }
 
 .nav-contact {
     li:nth-child(4) a {
-    	background: $color-black;
-    	color: $color-white;
+    	@include nav--selected;
     }
 }

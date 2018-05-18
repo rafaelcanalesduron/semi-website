@@ -14,7 +14,7 @@ Learn more on how to get started with SeMI technologies such as Weaviate. In cas
         {% for subpage in site.pages %}
             {% if subpage.topic == page.show-topic %}
                 <ol>
-                    <li><h3><a href="{{ subpage.url }}">{{ subpage.date | date: '%B %d, %Y' }} {{ subpage.title }}</a></h3>
+                    <li><h4><a href="{{ subpage.url }}">{{ subpage.date | date: '%B %d, %Y' }} {{ subpage.title }}</a></h4>
                         <p>
                             {{ subpage.description }}
                         </p>

@@ -1,12 +1,12 @@
 ---
-layout: article-overview
+layout: knowledge-base
 ---
 
 <!-- THIS PAGE CONTAINS THE COMPLETE INDEX -->
 
 # Knowledge base
 
-This is the SeMI knowledge base; it contains all information about our products, how we work and more. In case you have any questions, feel free to reach out to us on [hello@semi.network](mailto:hello@semi.network).
+This our knowledge base; it contains information about our products, the way we work, and more. If you have any questions, feel free to reach out to us on [hello@semi.network](mailto:hello@semi.network).
 
 ## Filter articles
 <section class="help">

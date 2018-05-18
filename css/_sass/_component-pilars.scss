@@ -1,15 +1,47 @@
 .pilars {
+    margin-top: 4em;
     ol {
         display: flex;
+        justify-content: space-between;
         list-style: none;
     }
-    li {
-        width: calc(100%/3);
-        > section {
-            background: $color-gray-6;
-			border-radius: $border-radius-3;
-            margin: 1em;
-            padding: 1em;
-        }
+    h2, h3 {
+        color: $color-black;
+        font-family: $typeface-body;
+        font-size: 1.875rem;
+        padding: 1em;
+        text-align: center;
+    }
+    h2 {
+        background: $color-semi-tint-4;
+        border-top-left-radius: 1em;
+        color: $color-white;
+    }
+    h3 {
+        font-size: 1.5rem;
+        font-style: italic;
+    }
+}
+
+.pilar {
+    background: $color-gray-7;
+	border-radius: $border-radius-3;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-right: 1em;
+    section {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2em;
+    }
+    ul {
+        list-style: none;
+        padding: 1em;
+    }
+    .button--cta {
+        background: $color-semi-accent;
+        color: $color-black;
+        margin: auto 1em 1em;
     }
 }

@@ -48,6 +48,12 @@ main {
 	}
 }
 
+.page--products {
+    main article {
+        padding-top: 3.5em;
+    }
+}
+
 @media screen and (min-width: 34em) {
     .logo {
 		background: url(../img/semi-logo-h.svg) no-repeat;

@@ -1,6 +1,6 @@
 {% include head.html %}
 
-<body>
+<body class="page--article">
 
 <header class="nav-article">
 {% include header.html %}
@@ -11,7 +11,11 @@
 
 			<!-- Breadcrumbs for sub overview-->
 			<div class="breadcrumb">
-				<a href="/knowledge-base">Knowledge base</a> / <a href="./">{{ page.topic }}</a> / {{ page.title }}
+    			<ol>
+    				<li><a href="/knowledge-base">Knowledge base</a></li>
+    				<li><a href="./">{{ page.topic }}</a></li>
+    				<li>{{ page.title }}</li>
+                </ol>
 			</div>
 
 			<h1>{{ page.title }}</h1>

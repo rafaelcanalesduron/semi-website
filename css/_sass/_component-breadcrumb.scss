@@ -1,6 +1,12 @@
 .breadcrumb {
+    //height: 2em;
     margin-bottom: 2em;
 	li {
 		display: inline;
+        font-size: 1rem;
+		&:not(:last-child):after {
+    		content: '/';
+    		margin: 0 .25rem;
+		}
 	}
 }
