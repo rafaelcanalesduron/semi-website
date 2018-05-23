@@ -1,8 +1,8 @@
 ---
 layout: article-tech
-title: Weaviate - Running Weaviate
+title: Running Weaviate
 description: Technical documentation for running Weaviate.
-topic: Technology
+topic: Weaviate
 author: BVL
 relating-articles: []
 previous-article: null

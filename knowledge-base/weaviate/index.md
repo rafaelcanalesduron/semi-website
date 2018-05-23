@@ -1,13 +1,19 @@
 ---
 layout: article-overview
-show-topic: Technology
+show-topic: Weaviate
 ---
 
 <!-- THIS PAGE CONTAINS THE INDEX FOR THIS FOLDER -->
 
 # {{ page.show-topic }}
 
-Learn more on how to get started with SeMI technologies such as Weaviate. In case you have any questions, feel free to reach out to us on hello@semi.network.
+Learn more on how to get started with SeMI's main technologies, Weaviate.
+
+More detailed information;<br>
+- Overall architecture: [Github](https://github.com/creativesoftwarefdn/weaviate)
+- General questions: [Stackoverflow.com](https://stackoverflow.com/questions/tagged/weaviate).
+- Issues: [Github Issues](https://github.com/creativesoftwarefdn/weaviate/issues).
+- Commercial use: [hello@semi.network](mailto:hello@semi.network).
 
 <ul class="article-overview">
     <li>

@@ -1,8 +1,8 @@
 ---
 layout: article-tech
-title: Weaviate - Using Weaviate
+title: Using Weaviate
 description: Technical documentation for using Weaviate.
-topic: Technology
+topic: Weaviate
 author: BVL
 relating-articles: []
 previous-article: null
