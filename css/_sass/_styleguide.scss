@@ -6,6 +6,11 @@
 		margin-top: $scale-1;
 		padding-bottom: $scale--1;
 	}
+	> section {
+    	border-bottom: 6px solid $color-black;
+    	margin-bottom: 3em;
+    	padding-bottom: 3em;
+	}
 }
 
 .body--styleguide::before {
