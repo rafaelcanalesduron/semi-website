@@ -73,7 +73,7 @@ $ docker-compose up
 ## Configure Weaviate
 
 <section class="help">
-You can download an example file <a href="https://github.com/creativesoftwarefdn/weaviate/blob/master/weaviate.conf.json)">here</a>.
+You can download an example file <a href="https://github.com/creativesoftwarefdn/weaviate/blob/master/weaviate.conf.json">here</a>.
 </section>
 
 Weaviate settings can be created in a <abbr>JSON</abbr> config file in an array of `environments` this means that you can have multiple settings in one configuration file.
