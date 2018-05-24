@@ -1,0 +1,13 @@
+.cookies {
+    background: $color-info-bg;
+    border-bottom: 3px solid $color-semi-tint-2;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    text-align: center;
+    p {
+        font-size: 1em;
+        margin-bottom: 0;
+        max-width: 100%;
+    }
+}
