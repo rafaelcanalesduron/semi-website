@@ -35,11 +35,9 @@
             </dl>
 
 			{% if page.related_to != null %}
-
 				{% for rels in page.related_to %}
 					<a href="#">{{ rels }}</a>
 				{% endfor %}
-
 			{% endif %}
             
             <section class="article-author">
@@ -47,8 +45,7 @@
             </section>
 
             <section class="article">
-			
-			{{ content }}
+			    {{ content }}
             </section>
 
 	</article>

@@ -2,6 +2,7 @@
     display: inline-grid;
     grid-auto-rows: 1fr;
     grid-gap: 2em;
+    grid-template-columns: repeat(2, 1fr);
     font-size: 75%;
     list-style: none;
     width: 100%;

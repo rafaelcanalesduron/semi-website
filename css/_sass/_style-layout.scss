@@ -100,18 +100,18 @@ main {
 @media screen and (min-width: 80em) {
     header {
         div {
-			grid-column: 9/11;
+			grid-column: 8/10;
         }
 		nav {		
-        	grid-column: 3/11;
+        	grid-column: 4/10;
 		}
     }
     .logo {
-        grid-column: 3/5;
+        grid-column: 4/6;
     }
 	main {
 		article {
-			grid-column: 3/11;
+			grid-column: 4/10;
 		}
 	}
 	.semi-newsletter {
