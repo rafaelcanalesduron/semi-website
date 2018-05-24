@@ -1,6 +1,5 @@
 .article-author {
     margin-bottom: 2em;
-    max-width: 8em;
 	h2 {
 		font-family: $typeface-body;
 		font-size: 1em;
@@ -8,6 +7,7 @@
 	}
 	img {
 		border-radius: $border-radius-1;
+        max-width: 8em;
 	}
 }
 
