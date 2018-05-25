@@ -14,7 +14,7 @@ To learn how to onboard SeMI, these pages will help you get a better understandi
         {% for subpage in site.pages %}
             {% if subpage.topic == page.show-topic %}
                 <ol>
-                    <li><h4><a href="{{ subpage.url }}">{{ subpage.date | date: '%B %d, %Y' }} {{ subpage.title }}</a></h4>
+                    <li><h3><a href="{{ subpage.url }}">{{ subpage.date | date: '%B %d, %Y' }} {{ subpage.title }}</a></h3>
                         <p>
                             {{ subpage.description }}
                         </p>

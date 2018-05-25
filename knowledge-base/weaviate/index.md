@@ -9,18 +9,20 @@ show-topic: Weaviate
 
 Learn more on how to get started with SeMI's main technologies, Weaviate.
 
-More detailed information;<br>
-- Overall architecture: [Github](https://github.com/creativesoftwarefdn/weaviate)
-- General questions: [Stackoverflow.com](https://stackoverflow.com/questions/tagged/weaviate).
-- Issues: [Github Issues](https://github.com/creativesoftwarefdn/weaviate/issues).
-- Commercial use: [hello@semi.network](mailto:hello@semi.network).
+## More detailed information
+<ul class="list-bullet">
+    <li>Overall architecture: <a href="https://github.com/creativesoftwarefdn/weaviate">Github</a>.</li>
+    <li>General questions: <a href="https://stackoverflow.com/questions/tagged/weaviate">Stackoverflow.com</a>.</li>
+    <li>Issues: <a href="https://github.com/creativesoftwarefdn/weaviate/issues">Github Issues</a>.</li>
+    <li>Commercial use: <a href="mailto:hello@semi.network?subject=Commercial use of Weaviate">hello@semi.network</a>.</li>
+</ul>
 
 <ul class="article-overview">
     <li>
         {% for subpage in site.pages %}
             {% if subpage.topic == page.show-topic %}
                 <ol>
-                    <li><h4><a href="{{ subpage.url }}">{{ subpage.date | date: '%B %d, %Y' }} {{ subpage.title }}</a></h4>
+                    <li><h3><a href="{{ subpage.url }}">{{ subpage.date | date: '%B %d, %Y' }} {{ subpage.title }}</a></h3>
                         <p>
                             {{ subpage.description }}
                         </p>

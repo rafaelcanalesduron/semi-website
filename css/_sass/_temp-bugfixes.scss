@@ -1,0 +1,4 @@
+// 20180525-01 On article overview page, Jekyll creates an empty overview list item
+.page--knowledge-base .article-overview > li:first-of-type {
+    display: none;
+}

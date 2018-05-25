@@ -1,3 +1,7 @@
+.page--article-overview .list-bullet {
+    margin-bottom: 3em;
+}
+
 .article-overview {
 	list-style: none;
 	section {
@@ -5,7 +9,7 @@
 	}
 	h3 {
     	a {
-        	border-bottom: none;
+        	//border-bottom: none;
         	color: $color-black;
         	&:hover, &:focus, &:active {
             	color: $color-white;
@@ -18,7 +22,7 @@
 	ol {
     	list-style: none;
     	li {
-        	margin-bottom: 2em;
+        	margin-bottom: 1em;
     	}
     	p {
             font-size: 1.35rem;

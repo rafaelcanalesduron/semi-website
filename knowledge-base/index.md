@@ -8,31 +8,18 @@ layout: knowledge-base
 
 This our knowledge base; it contains information about our products, the way we work, and more. If you have any questions, feel free to reach out to us on [hello@semi.network](mailto:hello@semi.network).
 
-## Filter articles
-<section class="help">
-Since our knowledge base is quite diverse, you can select your role and we will filter the information relevant to you.
-</section>
-
-<section>
-<label for="select-role">I would describe myself as a…</label>
-<select name="select-role" id="select-role">
-    <option value="">Business leader</option>
-    <option value="">Technical leader</option>
-</select>
-</section>
-
-
 {% assign items_grouped = site.pages | group_by: 'topic' | sort: 'topic' %}
 <ul class="article-overview">
     {% for group in items_grouped %}
         <li>
             <section>
-            <h3><a href="{{ group.name }}">{{ group.name }}</a></h3>
+            <h2>{{ group.name }}</h2>
+            <p><em>Recent articles in <a href="{{ group.name }}">{{ group.name }}</a>:</em></p>
                 <ol>
     	            {% for page in site.pages %}
     	                {% if page.topic == group.name %}
     	                    <li>
-                                <h4><a href="{{ page.url }}">{{ page.date | date: '%B %d, %Y' }}{{ page.title }}</a></h4>
+                                <h3><a href="{{ page.url }}">{{ page.date | date: '%B %d, %Y' }}{{ page.title }}</a></h3>
     	                        <p>
     	                            {{ page.description }}
     	                        </p>
@@ -50,6 +37,7 @@ Since our knowledge base is quite diverse, you can select your role and we will 
     	                {% endif %}
     	            {% endfor %}
     	        </ol>
+    	        <p><a class="view-more" href="{{ group.name }}">Overview of all articles in {{ group.name }} <span class="arrow">→</span></a>.</p>
             </section>
         </li>
     {% endfor %}
