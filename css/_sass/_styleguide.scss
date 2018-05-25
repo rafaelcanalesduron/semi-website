@@ -215,4 +215,34 @@
     }
 }
 
+[contenteditable] {
+    @include transition-out;
+    cursor: hand;
+    position: relative;
+    &:after {
+        @include transition-out;
+        background: $color-semi;
+        border-radius: $border-radius-2;
+        color: $color-white;
+        content: 'Edit me';
+        font-family: $typeface-body;
+        font-size: .85rem;
+        left: -1em;
+        opacity: 0;
+        padding: .25em .5em;
+        position: absolute;
+        top: -1em;
+    }
+    &:hover {
+        @include transition-in;
+        background: $color-gray-7;
+        cursor: hand;
+        &:after {
+            @include transition-in;
+            border-radius: $border-radius-1;
+            opacity: 1;
+        }
+    }
+}
+
 // End: Style guide
