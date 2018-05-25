@@ -43,6 +43,7 @@ h5, h6 {
 }
 h6 {
 	color: $color-black;
+	font-family: $typeface-body;
 }
 
 p, li {
@@ -111,8 +112,8 @@ a {
 		outline: 3px solid $color-semi-accent;
 	}
 	&[href$='.jpg'], &[href$='.png'] {
-    	background: none;
-    	border-bottom: none;
+    	//background: none;
+    	//border-bottom: none;
     	//outline: 0;
 	}
 }

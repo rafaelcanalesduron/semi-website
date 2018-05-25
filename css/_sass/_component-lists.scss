@@ -21,6 +21,22 @@
 	}
 }
 
+ol {
+	counter-reset: li;
+	list-style: none;
+	li {
+    	counter-increment: li;
+        &:before {
+            color: $color-semi;
+        	content: counter(li);
+            display: inline-block;
+            font-weight: 700;
+            margin-left: -1em;
+            width: 1em;
+        }
+    }
+}
+
 dl {
     display: flex;
 }

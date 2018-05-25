@@ -19,16 +19,32 @@
 .body--styleguide::before {
 	background: $color-helper-2;
 	color: $color-helper-1;
-	content: 'brkpnt 20em – 48em';
+	content: 'brkpnt 20em – 34em';
 	opacity: .6;
 	padding: .5em 1em;
 	right: 0;
 	position: fixed;
 	top: 0;
 }
+
+@media (min-width: 34em) {
+	.body--styleguide::before {
+		content: 'brkpnt 34em – 42em';
+	}
+}
+@media (min-width: 42em) {
+	.body--styleguide::before {
+		content: 'brkpnt 42em – 48em';
+	}
+}
 @media (min-width: 48em) {
 	.body--styleguide::before {
-		content: 'brkpnt 48em – 80em';
+		content: 'brkpnt 48em – 56em';
+	}
+}
+@media (min-width: 56em) {
+	.body--styleguide::before {
+		content: 'brkpnt 56em – 80em';
 	}
 }
 @media (min-width: 80em) {
@@ -93,15 +109,15 @@
 .semi-sg-swatch {
 	list-style: none;
 	margin-bottom: 2em;
-	width: 12em;
+	width: 6em;
 	li {
+		font-size: .75em;
 		padding: 0;
 		&:not(:first-of-type) {	
 			color: $color-gray-3;
 		}
 	}
 	i {
-		font-size: 1.25em;
 		&:before {
 			background: $color-semi;
 			content: '';
@@ -188,6 +204,15 @@
 			margin-right: $scale-0;
 		}
 	}
+}
+
+.inverse {
+    @include transition-out;
+    background: $color-semi;
+    &:hover {
+        @include transition-in;
+        background: $color-black;
+    }
 }
 
 // End: Style guide
