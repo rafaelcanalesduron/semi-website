@@ -17,9 +17,9 @@
 }
 
 .close {
+    white-space: nowrap;
     &:before {
         content: '×';
-        font-size: 1.5rem;
         line-height: 0;
         margin-right: .25em;
     }

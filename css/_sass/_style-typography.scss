@@ -57,6 +57,10 @@ p.intro {
 	max-width: 32em;
 }
 
+em {
+    font-size: 105%; // Optically adjust type sizing for Italicised text
+}
+
 hr {
 	border-top: 1em solid $color-semi;
 }
