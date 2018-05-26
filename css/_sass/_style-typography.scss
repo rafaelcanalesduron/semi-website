@@ -103,7 +103,7 @@ a {
 	&:hover, &:focus, &:active {
 		@include transition-in;
 		background: $color-semi;
-		border-bottom: $color-semi;
+		border-bottom: 2px solid $color-semi;
 		color: $color-white;
 		outline: 3px solid $color-semi;
 	}
