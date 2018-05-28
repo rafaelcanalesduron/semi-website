@@ -1,12 +1,9 @@
 header {
     align-items: center;
-	//background: $color-gray-7;
 	background: $color-white;
-	//border-top: 3px solid $color-semi;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	margin-bottom: 1em;
-	padding: 2em 1em 10em;
+	padding: 2em 1em 0;
 	div {
 		grid-column: 6/13;
         justify-self: flex-end;
@@ -38,7 +35,6 @@ main {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	margin-bottom: -2em; // Allows for the Kanagawa wave border radius to be shown
-	margin-top: -10em;
 	article {
 		background: $color-white;
 		border-top-left-radius: 1em;
@@ -46,12 +42,6 @@ main {
 		min-height: 50vh;
 		padding: 1em 2em 1em;
 	}
-}
-
-.page--products, .page--knowledge-base, .page--team, .page--contact, .page--search {
-    main article {
-        padding-top: 3.5em;
-    }
 }
 
 @media screen and (min-width: 34em) {
@@ -68,7 +58,7 @@ main {
 
 @media screen and (min-width: 48em) {
 	header {
-		padding: 2em 0 13em;
+		padding: 2em 0 0;
 		div {
 			grid-column: 9/12;
 		}
@@ -89,7 +79,7 @@ main {
 		article {
 			grid-column: 2/12;
 			margin-bottom: -2em;
-			margin-top: -3em;
+			//margin-top: -3em;
 		}
 	}
 	.semi-newsletter {

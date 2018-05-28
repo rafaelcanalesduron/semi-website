@@ -19,6 +19,13 @@
 	}
 }
 
+.semi-sg-overview {
+    column-count: 2;
+    li:before {
+        margin-left: 0 !important;
+    }
+}
+
 .body--styleguide::before {
 	background: $color-helper-2;
 	color: $color-helper-1;

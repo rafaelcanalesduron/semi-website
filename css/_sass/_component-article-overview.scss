@@ -5,7 +5,10 @@
 .article-overview {
 	list-style: none;
 	section {
-    	margin-top:4em;
+    	margin: 2em 0 3em;
+    	&:last-of-type {
+        	margin-bottom: 0;
+    	}
 	}
 	h3 {
     	a {

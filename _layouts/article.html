@@ -39,13 +39,13 @@
 					<a href="#">{{ rels }}</a>
 				{% endfor %}
 			{% endif %}
-            
-            <section class="article-author">
-    			{% include author.md %}
-            </section>
 
             <section class="article">
 			    {{ content }}
+            </section>
+            
+            <section class="article-author">
+    			{% include author.md %}
             </section>
 
 	</article>
