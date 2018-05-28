@@ -14,6 +14,10 @@ article form {
 fieldset {
     border: 0;
     margin-bottom: 2em;
+    input {
+        display: block;
+        margin-bottom: 1em;
+    }
 }
 
 [type='email'], [type='number'], [type='password'], [type='search'], [type='tel'], [type='text'], [type='url'], textarea {
@@ -40,6 +44,17 @@ fieldset {
 	}
 }
 
+[type='number'] {
+    max-width: 5em;
+}
+
+[required] {
+    &:after {
+        content: '*';
+        display: block;
+    }
+}
+
 .button, .button--small, button, [type='reset'], [type='submit'] {
 	@include transition-out;
 	background: $color-semi;
@@ -59,9 +74,13 @@ fieldset {
 }
 
 .button--small {
-	padding: .25em 1em;
+    border-radius: $border-radius-1-sm;
+	padding: .5em 1em;
 	font-size: 1rem;
     white-space: nowrap;
+    &:hover, &:focus, &:active {
+        border-radius: $border-radius-2-sm;
+    }
 }
 
 .button--email {

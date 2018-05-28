@@ -1,0 +1,103 @@
+---
+layout: styleguide
+title: SeMI, The Style Guide
+---
+
+<article class="article semi-sg">
+    
+    <h2>Form elements</h2>
+    
+    <h3>User input</h3>
+    
+    <h4>Text input</h4>
+
+    <section>
+        <h5>Search field</h5>
+        <form>
+        	<fieldset>
+            	<label for="semi-sg-input-search">Label for input type="search"</label>
+                <input id="semi-sg-input-search" placeholder="Search the SeMI site" type="search" />
+            </fieldset>
+        </form>
+    </section>
+        
+    <section>
+        <h5>Regular text input</h5>
+        <section class="notify-warning notify--contextual" id="notify-warning--contextual">
+        	<div>
+            	<p><a href="https://github.com/octopress/minify-html/issues/21">A bug</a> in the current <abbr>HTML</abbr> minifier prevents a regular text input from being rendered correctly.</p>
+            </div>
+        	<p><a class="close" href="#notify-warning--contextual" onClick="hide('notify-warning--contextual')">Close</a></p>
+    	</section>
+    	<form>
+        	<fieldset>
+            	<label for="semi-sg-input-text">Label for input type="text"</label>
+                <input id="semi-sg-input-text" placeholder="Lorem ipsum dolor sit amet" type="text" />
+            </fieldset>
+        </form>
+    </section>
+        
+    <section>
+        <h5>Email address input</h5>
+        <form>
+        	<fieldset>
+            	<label for="semi-sg-input-email">Label for input type="email"</label>
+                <input id="semi-sg-input-email" placeholder="hello@semi.network" type="email" />
+                <input class="button--small" type="submit" value="Check address" />
+            </fieldset>
+        </form>
+    </section>
+        
+    <section>
+        <h5>Number input</h5>
+        <form>
+        	<fieldset>
+            	<label for="semi-sg-input-number">Label for input type="number"</label>
+                <input id="semi-sg-input-number" type="number" />
+            </fieldset>
+        </form>
+    </section>
+    
+    <section>
+        <h5>Password field</h5>
+        <form>
+        	<fieldset>
+            	<label for="semi-sg-input-password">Label for input type="password"</label>
+                <input id="semi-sg-input-password" type="password" />
+            </fieldset>
+        </form>
+    </section>
+    
+    <section>
+        <h5>Telephone number input</h5>
+        <form>
+        	<fieldset>
+            	<label for="semi-sg-input-tel">Label for input type="tel"</label>
+                <input id="semi-sg-input-tel" type="tel" />
+                <input class="button--small" type="submit" value="Check phone number" />
+            </fieldset>
+        </form>
+    </section>
+        
+    <section>
+        <h5>Required input</h5>
+    	<form>
+        	<fieldset>
+        	    <label for="semi-sg-input-req">Label for required input</label>
+                <input id="semi-sg-input-req" required="required" type="email" />
+                <input class="button--small" type="submit" value="Check input" />
+            </fieldset>
+        </form>
+    </section>
+    
+    <section>
+        <h4>Text area</h4>
+        <fieldset>
+        	<label for="semi-sg-textarea">Label for text area</label>
+            <textarea id="semi-sg-textarea">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequatur suscipit numquam earum vel debitis, quas mollitia obcaecati doloribus fugit veritatis sit culpa cumque similique. Cumque illum dolorem quo eos.
+            </textarea>
+        </fieldset>
+    </section>
+    
+</article>
