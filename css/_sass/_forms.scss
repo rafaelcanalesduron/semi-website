@@ -73,6 +73,15 @@ fieldset {
 	}
 }
 
+.button--cta {
+    background: $color-semi-accent;
+    color: $color-black;
+	&:focus, &:active {
+		background: $color-black;
+		color: $color-white
+	}
+}
+
 .button--small {
     border-radius: $border-radius-1-sm;
 	padding: .5em 1em;

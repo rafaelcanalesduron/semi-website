@@ -7,12 +7,10 @@ title: SeMI, The Style Guide
     
     <h2>Form elements</h2>
     
-    <h3>User input</h3>
-    
-    <h4>Text input</h4>
+    <h3>Text input</h3>
 
     <section>
-        <h5>Search field</h5>
+        <h4>Search field</h4>
         <form>
         	<fieldset>
             	<label for="semi-sg-input-search">Label for input type="search"</label>
@@ -22,7 +20,7 @@ title: SeMI, The Style Guide
     </section>
         
     <section>
-        <h5>Regular text input</h5>
+        <h4>Regular text input</h4>
         <section class="notify-warning notify--contextual" id="notify-warning--contextual">
         	<div>
             	<p><a href="https://github.com/octopress/minify-html/issues/21">A bug</a> in the current <abbr>HTML</abbr> minifier prevents a regular text input from being rendered correctly.</p>
@@ -38,7 +36,7 @@ title: SeMI, The Style Guide
     </section>
         
     <section>
-        <h5>Email address input</h5>
+        <h4>Email address input</h4>
         <form>
         	<fieldset>
             	<label for="semi-sg-input-email">Label for input type="email"</label>
@@ -49,7 +47,7 @@ title: SeMI, The Style Guide
     </section>
         
     <section>
-        <h5>Number input</h5>
+        <h4>Number input</h4>
         <form>
         	<fieldset>
             	<label for="semi-sg-input-number">Label for input type="number"</label>
@@ -59,7 +57,7 @@ title: SeMI, The Style Guide
     </section>
     
     <section>
-        <h5>Password field</h5>
+        <h4>Password field</h4>
         <form>
         	<fieldset>
             	<label for="semi-sg-input-password">Label for input type="password"</label>
@@ -69,18 +67,29 @@ title: SeMI, The Style Guide
     </section>
     
     <section>
-        <h5>Telephone number input</h5>
+        <h4>Telephone number input</h4>
         <form>
         	<fieldset>
             	<label for="semi-sg-input-tel">Label for input type="tel"</label>
-                <input id="semi-sg-input-tel" type="tel" />
+                <input id="semi-sg-input-tel" pattern="[-][+][0-9]{10}" title="Only use numbers (0–9), a plus (+), and/or dashes (-)" type="tel" />
                 <input class="button--small" type="submit" value="Check phone number" />
+            </fieldset>
+        </form>
+    </section>
+    
+    <section>
+        <h4>Web address input</h4>
+        <form>
+        	<fieldset>
+            	<label for="semi-sg-input-url">Label for input type="url"</label>
+                <input id="semi-sg-input-url" type="url" />
+                <input class="button--small" type="submit" value="Check URL" />
             </fieldset>
         </form>
     </section>
         
     <section>
-        <h5>Required input</h5>
+        <h4>Required input</h4>
     	<form>
         	<fieldset>
         	    <label for="semi-sg-input-req">Label for required input</label>
@@ -91,13 +100,29 @@ title: SeMI, The Style Guide
     </section>
     
     <section>
-        <h4>Text area</h4>
+        <h3>Text area</h3>
         <fieldset>
         	<label for="semi-sg-textarea">Label for text area</label>
             <textarea id="semi-sg-textarea">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequatur suscipit numquam earum vel debitis, quas mollitia obcaecati doloribus fugit veritatis sit culpa cumque similique. Cumque illum dolorem quo eos.
             </textarea>
         </fieldset>
+    </section>
+    
+    <section>
+        <h3>Buttons</h3>
+        <section>
+            <button>Button</button>
+        </section>
+        <section>
+            <button class="button--small">Small button</button>
+        </section>
+        <section>
+            <input class="button--cta" type="submit" value="Call-to-action button" />
+        </section>
+        <section>
+            <a class="button" href="#">Link as button</a>
+        </section>
     </section>
     
 </article>
