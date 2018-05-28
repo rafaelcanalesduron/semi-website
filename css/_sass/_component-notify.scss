@@ -1,0 +1,34 @@
+.notify-info, .notify-warning, .notify-success {
+    background: $color-info-bg;
+    border-color: $color-info;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    display: flex;
+    padding: 1em;
+    p {
+        color: $color-black;
+        font-size: 1em;
+        max-width: 100%;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    .close {
+        margin-left: 2em;
+    }
+}
+
+.notify-warning {
+    background: $color-warning-bg;
+    border-color: $color-warning;
+}
+
+.notify-success {
+    background: $color-success-bg;
+    border-color: $color-success;
+}
+
+.notify--contextual {
+    border-radius: $border-radius-2;
+    border-width: 1px;
+}

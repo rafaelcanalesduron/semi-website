@@ -193,18 +193,20 @@
 
 .semi-sg-grid {
 	ul {
-		display: flex;
+		display: grid;
+		grid-gap: 1em;
+		grid-template-columns: repeat(12, 1fr);
 		list-style: none;
 	}
 	li {
 		background: $color-helper-2;
 		border: 1px dotted $color-helper-1;
-		flex: 1 1 16px;
-		font-size: $scale--1;
-		&:not(:last-child) {
-			margin-right: $scale-0;
-		}
+		height: 6em;
 	}
+}
+
+.semi-sg-logo {
+    padding: 3em;
 }
 
 .inverse {
@@ -213,6 +215,26 @@
     &:hover {
         @include transition-in;
         background: $color-black;
+    }
+}
+
+.semi-sg-tween {
+    @include transition-out;
+    align-items: center;
+    background: $color-semi;
+    border-radius: 5em;
+    color: $color-white;
+    display: flex;
+    height: 5em;
+    justify-content: center;
+    outline: 1em solid transparant;
+    width: 5em;
+    &:hover {
+        @include transition-in;
+        background: $color-support;
+        border-radius: 0;
+        color: $color-black;
+        outline: 1em solid $color-semi;
     }
 }
 

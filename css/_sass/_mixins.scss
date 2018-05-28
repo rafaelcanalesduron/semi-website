@@ -11,7 +11,7 @@ $transition-easing-out: ease-out;
 				color $transition-speed-in $transition-easing-in,
 				opacity $transition-speed-in $transition-easing-in,
 				outline $transition-speed-in $transition-easing-in,
-				transition $transition-speed-in $transition-easing-in;
+				transform $transition-speed-in $transition-easing-in;
 }
 @mixin transition-out {
 	transition: background $transition-speed-out $transition-easing-out,
@@ -20,7 +20,7 @@ $transition-easing-out: ease-out;
 				color $transition-speed-out $transition-easing-out,
 				opacity $transition-speed-out $transition-easing-out,
 				outline $transition-speed-out $transition-easing-out,
-				transition $transition-speed-out $transition-easing-out;
+				transform $transition-speed-out $transition-easing-out;
 }
 
 @mixin visually-hidden {

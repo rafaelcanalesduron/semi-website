@@ -167,6 +167,14 @@ abbr, .sm-caps {
 	}
 }
 
+dfn {
+    color: $color-interactive;
+    font-style: normal;
+    &[title] {
+		cursor: help;
+	}
+}
+
 blockquote {
 	margin-bottom: 3em;
 	position: relative;
