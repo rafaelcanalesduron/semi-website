@@ -16,7 +16,19 @@
 	img {
 		border-radius: $border-radius-1;
 	}
+	ul {
+    	display: flex;
+    	flex-direction: column;
+    	list-style: none;
+	}
+	li {
+    	font-size: 1.15rem;
+    	&:last-of-type {
+        	margin-top: 1em;
+    	}
+	}
 	h2 {
+        margin-bottom: 0;
     	i {
         	display: block;
         	font-size: 1.25rem;
