@@ -37,7 +37,7 @@ This our knowledge base; it contains information about our products, the way we 
     	                {% endif %}
     	            {% endfor %}
     	        </ol>
-    	        <p><a class="view-more" href="{{ group.name }}">Overview of all articles in {{ group.name }} <span class="arrow">→</span></a>.</p>
+    	        <p><a class="view-more" href="{{ group.name }}">Overview of all articles in {{ group.name }} <span class="arrow">→</span></a></p>
             </section>
         </li>
     {% endfor %}
