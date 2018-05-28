@@ -1,7 +1,9 @@
 .cookies {
     background: $color-info-bg;
     border-bottom: 1px solid $color-semi-tint-2;
+    display: flex;
     display: none;
+    flex-direction: column;
     padding: 1em;
     p {
         color: $color-black;
@@ -9,8 +11,6 @@
         max-width: 100%;
     }
     @media screen and (min-width: 42em) {
-        display: flex;
-        display: none;
         justify-content: space-around;
         text-align: center;
         p {
