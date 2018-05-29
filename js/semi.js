@@ -36,9 +36,11 @@ function handleCookie(i){
 }
 
 // show cookie bar if no cookie
-if(getCookie("cookieConsent") === false){
-    document.getElementById("cookie-notification").style.display = 'block';
-}
+(function() {
+    if(getCookie("cookieConsent") === false){
+        document.getElementById("cookie-notification").style.display = 'block';
+    }
+})();
 
 // Redirect to https
 var loc = window.location.href+'';
