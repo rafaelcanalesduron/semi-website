@@ -1,6 +1,10 @@
+'use strict';
+
+var MAINDOC = document;
+
 // hide the cookie info bar
 function hide(obj) {
-    var el = document.getElementById(obj);
+    var el = MAINDOC.getElementById(obj);
         el.style.display = 'none';
 }
 
@@ -9,13 +13,13 @@ function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     var expires = "expires="+ d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    MAINDOC.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
 // get cookie
 function getCookie(cname) {
     var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
+    var decodedCookie = decodeURIComponent(MAINDOC.cookie);
     var ca = decodedCookie.split(';');
     for(var i = 0; i <ca.length; i++) {
         var c = ca[i];
@@ -31,14 +35,14 @@ function getCookie(cname) {
 
 // handle the cookie bar
 function handleCookie(i){
-    document.getElementById(i).style.display = 'none';
+    MAINDOC.getElementById(i).style.display = 'none';
     setCookie("cookieConsent", true, 100);
 }
 
 // show cookie bar if no cookie
 (function() {
     if(getCookie("cookieConsent") === false){
-        document.getElementById("cookie-notification").style.display = 'block';
+        MAINDOC.getElementById("cookie-notification").style.display = 'block';
     }
 })();
 
