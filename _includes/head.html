@@ -7,24 +7,13 @@
 	<meta name="author" content="SeMI" />
 	<meta name="description" content="SeMI is a Knowledge Network of companies, who want enrich their market and customer insights by collaborating with each other." />
 	<title>{{ page.title }}</title>
-	<script>
-		// Redirect to https
-		var loc = window.location.href+'';
-		if (loc.indexOf('http://')==0 && location.hostname !== "127.0.0.1" && location.hostname.substring(0, 4) !== "dev."){
-		    window.location.href = loc.replace('http://','https://');
-		}
-	</script>
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,300i,400,400i,500,500i,700,700i|Alegreya:400,400i,500,500i|IBM+Plex+Mono:400,600" rel="stylesheet">
 	<link href="/css/style.css?build=125" rel="stylesheet" />
 	<link rel="shortcut icon" href="/favicon.ico" />
 	<link rel="apple-touch-icon" href="/favicon.png" />
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-K6DMN8N');</script>
+	<script type="text/javascript" src="/js/semi.js"></script>
 </head>
 <section class="cookies" id="cookie-notification">
     <p>Hi there, sorry to bother you! To offer you a better experience, and help us better getting to know our visitors we ask consent to offer you a cookie. You can <a href="privacy.html#privacy-policy-cookies">review our cookie policy here</a>.</p>
-    <p><a class="close" href="#" onClick="hide('cookie-notification')">Accept &amp; close</a></p>
+    <p><a class="close" href="#" onClick="handleCookie('cookie-notification')">Accept &amp; close</a></p>
 </section>
