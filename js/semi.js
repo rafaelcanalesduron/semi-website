@@ -40,7 +40,7 @@ function handleCookie(i){
 // show cookie bar if no cookie on load
 window.onload = function () {
     if(getCookie("cookieConsent") === false){
-        document.getElementById("cookie-notification").style.display = 'block';
+        document.getElementById("cookie-notification").style.display = 'flex';
     }
 }
 

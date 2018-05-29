@@ -37,9 +37,7 @@ main {
 	margin-bottom: -2em; // Allows for the Kanagawa wave border radius to be shown
 	article {
 		background: $color-white;
-		border-top-left-radius: 1em;
 		grid-column: 1/13;
-		min-height: 50vh;
 		padding: 1em 2em 1em;
 	}
 }
