@@ -31,7 +31,8 @@
         	content: counter(li);
             display: inline-block;
             font-weight: 700;
-            margin-left: -1em;
+            margin: 0 .5em 0 -1.5em;
+            text-align: right;
             width: 1em;
         }
     }
