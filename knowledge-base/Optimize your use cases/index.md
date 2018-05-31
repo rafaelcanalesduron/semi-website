@@ -21,7 +21,7 @@ section-intro-text: If you want to optimize or expand your use cases, read these
                             {{ subpage.description }}
                         </p>
                         <dl class="tags">
-                            <dt>Tags</dt>
+                            <dt><i>Tags</i></dt>
                             <dd>
                                 <ul class="tags">
                         			{% for tag in subpage.tags %}

@@ -37,20 +37,29 @@
     }
 }
 
-dl {
-    @media screen and (min-width: 42em) {
-        display: flex;  
-    }
-}
 dt {
     font-size: 1.25rem;
     font-weight: 500;
-    margin-right: .7em;
+    padding-right: .75em;
 }
 dd {
     font-size: 1.15rem;
     margin-top: .1em;
     p {
         font-size: 1.15rem;
+    }
+}
+
+@media screen and (min-width: 42em) {
+    .def-list {
+        align-items: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+        dt {
+            width: 40%;
+        }
+        dd {
+            width: 60%;
+        }
     }
 }

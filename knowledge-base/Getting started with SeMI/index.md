@@ -22,7 +22,7 @@ section-intro-text: If you are new to SeMI, read these articles first to underst
                                 {{ subpage.description }}
                             </p>
                             <dl class="tags">
-                                <dt>Tags</dt>
+                                <dt><i>Tags</i></dt>
                                 <dd>
                                     <ul class="tags">
                             			{% for tag in subpage.tags %}

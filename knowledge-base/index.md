@@ -34,7 +34,7 @@ This our knowledge base; it contains information about our products, the way we 
     	                            {{ page.description }}
     	                        </p>
     	                        <dl class="tags">
-                                    <dt>Tags</dt>
+                                    <dt><i>Tags</i></dt>
                                     <dd>
             	                        <ul class="tags">
                                             {% for tag in page.tags %}

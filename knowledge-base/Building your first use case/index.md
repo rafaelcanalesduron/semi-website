@@ -21,7 +21,7 @@ section-intro-text: If you are ready to build your first use case, read these ar
                             {{ subpage.description }}
                         </p>
                         <dl class="tags">
-                            <dt>Tags</dt>
+                            <dt><i>Tags</i></dt>
                             <dd>
                                 <ul class="tags">
                         			{% for tag in subpage.tags %}
