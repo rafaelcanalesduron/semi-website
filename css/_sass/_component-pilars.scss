@@ -36,11 +36,12 @@
     section {
         display: flex;
         flex-direction: column;
-        margin-bottom: 2em;
+        section {
+            padding: 0 1em 1em;
+        }
     }
     ul {
         list-style: none;
-        padding: 1em;
     }
     .button--cta {
         margin: auto 1em 1em;

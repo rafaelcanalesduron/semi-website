@@ -1,13 +1,15 @@
 ---
 layout: article-overview
 show-topic: Getting started with SeMI
+page-heading: I love to get started with SeMI, tell me more!
+section-intro-text: If you are new to SeMI, read these articles first to understand why SeMI is valuable for your organization.
 ---
 
 <!-- THIS PAGE CONTAINS THE INDEX FOR THIS FOLDER -->
 
-# {{ page.show-topic }}
+> # {{ page.page-heading }}
 
-To learn how to onboard SeMI, these pages will help you get a better understanding of how we work. In case you have any questions, feel free to reach out to us on [hello@semi.network](mailto:hello@semi.network).
+{{ page.section-intro-text }}
 
 <ul class="article-overview">
     <section>

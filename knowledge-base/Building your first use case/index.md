@@ -1,13 +1,15 @@
 ---
 layout: article-overview
-show-topic: Onboarding
+show-topic: Building your first use case
+page-heading: I am excited, I can’t wait to build my first use case
+section-intro-text: If you are ready to build your first use case, read these articles to get a flying start.
 ---
 
 <!-- THIS PAGE CONTAINS THE INDEX FOR THIS FOLDER -->
 
-# {{ page.show-topic }}
+> # {{ page.page-heading }}
 
-To learn how to onboard SeMI, these pages will help you get a better understanding of how we work. In case you have any questions, feel free to reach out to us on hello@semi.network.
+{{ page.section-intro-text }}
 
 <ul class="article-overview">
     <li>

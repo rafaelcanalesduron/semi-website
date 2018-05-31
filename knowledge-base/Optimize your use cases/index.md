@@ -1,13 +1,15 @@
 ---
 layout: article-overview
-show-topic: SeMI tool
+show-topic: Optimize your use cases
+page-heading: Loving it, I want to expand my use case portfolio
+section-intro-text: If you want to optimize or expand your use cases, read these articles to accelerate.
 ---
 
 <!-- THIS PAGE CONTAINS THE INDEX FOR THIS FOLDER -->
 
-# {{ page.show-topic }}
+> # {{ page.page-heading }}
 
-To learn how to onboard SeMI, these pages will help you get a better understanding of how we work. In case you have any questions, feel free to reach out to us on hello@semi.network.
+{{ page.section-intro-text }}
 
 <ul class="article-overview">
     <li>

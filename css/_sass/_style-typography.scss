@@ -48,7 +48,7 @@ h6 {
 
 p, li {
 	font-size: 1.15rem;
-	margin: 0 0 1em;
+	margin: 0 0 1rem;
 	max-width: 32em;
 }
 p.intro {
@@ -135,7 +135,7 @@ p, li, table {
 */
 
 small {
-    font-size: 1em;
+    font-size: 1.05rem;
 }
 
 strong {
@@ -176,16 +176,16 @@ dfn {
 }
 
 blockquote {
-	margin-bottom: 3em;
+    color: $color-gray-2;
 	position: relative;
 	&:before {
-		color: $color-white;
+		color: $color-semi;
 		content: '\201c';
 		font-family: 'Alegreya', serif;
-		font-size: 10em;
+		font-size: 5em;
 		left: -.5em;
 		position: absolute;
-		top: -.5em;
+		top: -.25em;
 	}
 	p {
 		font-size: 2em;

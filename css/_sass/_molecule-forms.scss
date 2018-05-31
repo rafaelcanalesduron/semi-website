@@ -3,7 +3,7 @@ label, button, [type='submit'] {
 }
 
 label {
-	margin-bottom: 1em;
+	margin-bottom: .5em;
 	&:hover, &:focus, &:active {
     	~ [type='email'], ~ [type='number'], ~ [type='password'], ~ [type='search'], ~ [type='tel'], ~ [type='text'], ~ [type='url'], ~ textarea {
         	@include transition-in;
@@ -120,6 +120,10 @@ textarea {
 		border-bottom: 3px solid $color-semi;
 		border-bottom-left-radius: 0;
 	}
+}
+
+.form-inline {
+    margin: 3em 0;
 }
 
 .section-support {

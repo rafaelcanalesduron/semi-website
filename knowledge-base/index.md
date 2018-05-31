@@ -8,10 +8,10 @@ layout: knowledge-base
 
 This our knowledge base; it contains information about our products, the way we work, and more. If you have any questions, feel free to reach out to us on [hello@semi.network](mailto:hello@semi.network).
 
-<section>
+<section class="form-inline">
     <form action="/search.html?query=" class="search">
-        <label for="search-knowledgebase">Search our knowledge base</label>
     	<section class="search-meta">
+        	<label for="search-knowledgebase">Search our knowledge base</label>
         	<input autosave="save-search-knowledgebase" id="search-knowledgebase" name="search" results="15" type="search" />
         	<input class="button" type="submit" value="Search" />
     	</section>
@@ -24,7 +24,7 @@ This our knowledge base; it contains information about our products, the way we 
         <li>
             <section>
             <h2>{{ group.name }}</h2>
-            <p><em>Recent articles in <a href="{{ group.name }}">{{ group.name }}</a>:</em></p>
+            <small>Recent articles in <em><a href="{{ group.name }}">{{ group.name }}</a></em>:</small>
                 <ol>
     	            {% for page in site.pages %}
     	                {% if page.topic == group.name %}
@@ -47,7 +47,7 @@ This our knowledge base; it contains information about our products, the way we 
     	                {% endif %}
     	            {% endfor %}
     	        </ol>
-    	        <p><a class="view-more" href="{{ group.name }}">Overview of all articles in {{ group.name }} <span class="arrow">→</span></a></p>
+    	        <p><a class="view-more" href="{{ group.name }}">All articles in <em>{{ group.name }}</em> <span class="arrow">→</span></a></p>
             </section>
         </li>
     {% endfor %}
