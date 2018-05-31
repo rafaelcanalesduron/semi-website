@@ -53,7 +53,7 @@
     ol {
     	counter-reset: li;
     	list-style: none;
-    	li {
+    	> li {
         	counter-increment: li;
         	list-style-image: none !important;
             &:before {
