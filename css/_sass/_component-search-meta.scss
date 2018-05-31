@@ -1,7 +1,10 @@
 .search-meta {
     display: flex;
+    flex-wrap: wrap;
+    label {
+        flex: 100%;
+    }
     [type='search'] {
-    	//border-radius: $border-radius-1;
     	border-top-right-radius: 0;
         flex: 1;
         padding-right: 2.5em;

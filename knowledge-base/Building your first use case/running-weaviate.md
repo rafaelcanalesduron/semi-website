@@ -2,11 +2,13 @@
 layout: article-tech
 title: Running Weaviate
 description: Technical documentation for running Weaviate.
-topic: Weaviate
+topic: Building your first use case
 author: BVL
 relating-articles: []
 previous-article: null
 tags: ['Technology', 'Weaviate']
+video-link: 
+video-caption: 
 ---
 
 ## Download Binary

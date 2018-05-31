@@ -2,11 +2,13 @@
 layout: article
 title: How to enrich data?
 description: Sometimes data tells a lot more than the information you have at hand. In this article you will learn how to best enrich your data with meta-data.
-topic: Onboarding
+topic: Optimize your use cases
 author: null
 relating-articles: []
 previous-article: onboarding/how-to-create-an-ontology
 tags: ['technology', 'onboarding']
+video-link: 
+video-caption: 
 ---
 
 An ontology schema describes all classes and properties of meta information of your own dataset. The schema (e.g. fields, names, keywords, columns etc) of your dataset are not the only indicators for your schema components. Data values of the original dataset can contain valuable (meta) information about the instance, which could be assigned to classes or property value of classes.

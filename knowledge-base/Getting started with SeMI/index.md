@@ -1,6 +1,6 @@
 ---
 layout: article-overview
-show-topic: Primers
+show-topic: Getting started with SeMI
 ---
 
 <!-- THIS PAGE CONTAINS THE INDEX FOR THIS FOLDER -->

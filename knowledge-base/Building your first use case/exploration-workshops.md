@@ -3,11 +3,13 @@ layout: article
 title: Use Case Exploration
 description: foobar
 description: This document is to give you an overview of the SeMI Use Case Exploration Workshop.
-topic: Primers
+topic: Building your first use case
 author: MM
 relating-articles: []
 previous-article: null
 tags: ['business', 'workshops']
+video-link: 
+video-caption: 
 ---
 
 ## Purpose

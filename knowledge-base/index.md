@@ -8,6 +8,16 @@ layout: knowledge-base
 
 This our knowledge base; it contains information about our products, the way we work, and more. If you have any questions, feel free to reach out to us on [hello@semi.network](mailto:hello@semi.network).
 
+<section>
+    <form action="/search.html?query=" class="search">
+        <label for="search-knowledgebase">Search our knowledge base</label>
+    	<section class="search-meta">
+        	<input autosave="save-search-knowledgebase" id="search-knowledgebase" name="search" results="15" type="search" />
+        	<input class="button" type="submit" value="Search" />
+    	</section>
+    </form>
+</section>
+
 {% assign items_grouped = site.pages | group_by: 'topic' | sort: 'topic' %}
 <ul class="article-overview">
     {% for group in items_grouped %}

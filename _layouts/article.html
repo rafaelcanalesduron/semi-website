@@ -41,6 +41,16 @@
 			{% endif %}
 
             <section class="article">
+    			{% for video in page.video-link %}
+					<figure class="video-container">
+					    <div>{{ video }}</div>
+					    {% for caption in page.video-caption %}
+					        <figcaption>
+					            {{ caption }}
+                            </figcaption>
+                        {% endfor %}
+                    </figure>
+				{% endfor %}
 			    {{ content }}
             </section>
             

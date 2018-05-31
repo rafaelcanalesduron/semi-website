@@ -4,7 +4,12 @@ label, button, [type='submit'] {
 
 label {
 	margin-bottom: 1em;
-	//margin-right: $scale-0;
+	&:hover, &:focus, &:active {
+    	~ [type='email'], ~ [type='number'], ~ [type='password'], ~ [type='search'], ~ [type='tel'], ~ [type='text'], ~ [type='url'], ~ textarea {
+        	@include transition-in;
+        	border-bottom: 3px solid $color-semi-accent;
+    	}
+	}
 }
 
 article form {

@@ -2,11 +2,13 @@
 layout: article-tech
 title: Using Weaviate
 description: Technical documentation for using Weaviate.
-topic: Weaviate
+topic: Building your first use case
 author: BVL
 relating-articles: []
 previous-article: null
 tags: ['Technology', 'Weaviate']
+video-link: 
+video-caption: 
 ---
 
 ## Access Tokens
