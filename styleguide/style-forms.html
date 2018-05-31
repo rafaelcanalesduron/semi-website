@@ -61,7 +61,7 @@ title: SeMI, The Style Guide
         <form>
         	<fieldset>
             	<label for="semi-sg-input-password">Label for input type="password"</label>
-                <input id="semi-sg-input-password" type="password" />
+                <input id="semi-sg-input-password" placeholder="••••••••••••" type="password" />
             </fieldset>
         </form>
     </section>
@@ -71,7 +71,7 @@ title: SeMI, The Style Guide
         <form>
         	<fieldset>
             	<label for="semi-sg-input-tel">Label for input type="tel"</label>
-                <input id="semi-sg-input-tel" pattern="[-][+][0-9]{10}" title="Only use numbers (0–9), a plus (+), and/or dashes (-)" type="tel" />
+                <input id="semi-sg-input-tel" pattern="[0-9\-\(\) +]{0,20}" placeholder="×××–××× ×× ××" title="Only use numbers (0–9), a plus (+), and/or dashes (-)" type="tel" />
                 <input class="button--small" type="submit" value="Check phone number" />
             </fieldset>
         </form>
@@ -82,7 +82,7 @@ title: SeMI, The Style Guide
         <form>
         	<fieldset>
             	<label for="semi-sg-input-url">Label for input type="url"</label>
-                <input id="semi-sg-input-url" type="url" />
+                <input id="semi-sg-input-url" placeholder="https://domain.com/" type="url" />
                 <input class="button--small" type="submit" value="Check URL" />
             </fieldset>
         </form>
@@ -126,6 +126,57 @@ title: SeMI, The Style Guide
     </section>
     
     <section>
+        <h3>Select menu</h3>
+        <label for="semi-sg-select">Label for select menu</label>
+        <section>
+            <select id="semi-sg-select">
+                <option>Option one</option>
+                <option>Option two</option>
+                <option>Option three</option>
+                <option>Option four</option>
+                <option>Option five</option>
+            </select>
+        </section>
+    </section>
+    
+    <section>
+        <h3>Select menu with grouping</h3>
+        <label for="semi-sg-select-group">Label for select menu</label>
+        <section>
+            <select id="semi-sg-select-group">
+                <optgroup label="Option group one">
+                    <option>Option group one, option one</option>
+                    <option>Option group one, option  two</option>
+                    <option>Option group one, option  three</option>
+                    <option>Option group one, option  four</option>
+                    <option>Option group one, option  five</option>
+                </optgroup>
+                <optgroup label="Option group two">
+                    <option>Option group two, option one</option>
+                    <option>Option group two, option  two</option>
+                    <option>Option group two, option  three</option>
+                    <option>Option group two, option  four</option>
+                    <option>Option group two, option  five</option>
+                </optgroup>
+            </select>
+        </section>
+    </section>
+    
+    <section>
+        <h3>Select menu with multiple selections</h3>
+        <label for="semi-sg-select-multiple">Label for select menu</label>
+        <section>
+            <select id="semi-sg-select-multiple" multiple="multiple">
+                <option>Option one</option>
+                <option>Option two</option>
+                <option>Option three</option>
+                <option>Option four</option>
+                <option>Option five</option>
+            </select>
+        </section>
+    </section>
+    
+    <section>
         <h3>Search form</h3>
         <form action="/search.html?query=" class="search">
         	<section class="search-meta">
@@ -134,6 +185,19 @@ title: SeMI, The Style Guide
             	<input class="button" type="submit" value="Search" />
         	</section>
         </form>
+    </section>
+    
+    <section>
+        <h3>Inline form</h3>
+        <section class="form-inline">
+            <form action="/search.html?query=" class="search">
+            	<section class="search-meta">
+                    <label for="search-knowledgebase">Search our knowledge base</label>
+                	<input autosave="save-search-knowledgebase" id="search-knowledgebase" name="search" results="15" type="search" />
+                	<input class="button" type="submit" value="Search" />
+            	</section>
+            </form>
+        </section>
     </section>
     
 </article>
