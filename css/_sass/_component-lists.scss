@@ -25,7 +25,7 @@
 }
 
 .article {
-    ul, ol {
+    > ul, > ol {
         margin-bottom: 2em;
     }
     li {
