@@ -9,7 +9,6 @@ header {
     	-ms-grid-column: 6;
     	//-ms-grid-column-span: 7;
 		grid-column: 6/13;
-		-ms-grid-row-align: center;
         justify-self: flex-end;
 	}
 	nav {
@@ -25,6 +24,18 @@ header {
         display: block;
         height: 100px;
         width: 200px;
+    }
+    header {
+        div {
+            position: relative;
+            a {
+                position: absolute;
+                right: 1em;
+            }
+        }
+        nav {
+            padding-top: 4em;
+        }
     }
 }
 
@@ -77,8 +88,7 @@ main {
 	header {
 		padding: 2em 0 0;
 		div {
-    		-ms-grid-column: 9;
-    		-ms-grid-column-span: 3;
+    		-ms-grid-column: 12;
 			grid-column: 9/12;
 		}
 		nav {
