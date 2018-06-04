@@ -19,19 +19,6 @@ header {
 	}
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { // Target IE10 and 11
-    .logo {
-        display: block;
-        height: 100px;
-        width: 200px;
-    }
-    header {
-        nav {
-            padding-top: 4em;
-        }
-    }
-}
-
 .logo {
 	background: url(../img/semi-logo.svg) no-repeat;
 	background-size: contain;
@@ -142,4 +129,28 @@ main {
     	-ms-grid-column-span: 7;
 		grid-column: 4/11;
 	}
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { // Target IE10 and 11
+    .logo {
+        display: block;
+        height: 100px;
+        margin-left: 1em;
+        width: 200px;
+    }
+    header {
+        div a {
+            position: absolute;
+            right: 1em;
+            top: 1em;
+        }
+        nav {
+            padding-top: 4em;
+        }
+    }
+    main {
+        article {
+            margin-left: 10%;
+        }
+    }
 }
