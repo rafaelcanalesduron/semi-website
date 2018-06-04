@@ -9,7 +9,7 @@ header {
     	-ms-grid-column: 6;
     	//-ms-grid-column-span: 7;
 		grid-column: 6/13;
-		-ms-grid-row-align: end;
+		-ms-grid-column-align: end;
         justify-self: flex-end;
 	}
 	nav {
@@ -108,8 +108,8 @@ main {
 @media screen and (min-width: 80em) {
     header {
         div {
-            -ms-grid-column: 8;
-            -ms-grid-column-span: 2;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
 			grid-column: 8/10;
         }
 		nav {
