@@ -20,6 +20,14 @@ header {
 	}
 }
 
+@supports (display: -ms-grid) {
+    .logo {
+        display: block;
+        height: 100px;
+        width: 200px;
+    }
+}
+
 .logo {
 	background: url(../img/semi-logo.svg) no-repeat;
 	background-size: contain;
