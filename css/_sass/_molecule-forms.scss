@@ -68,16 +68,18 @@ fieldset {
 }
 
 ::-webkit-input-placeholder {
-  color: $color-gray-4;
+    color: $color-gray-4;
 }
 ::-moz-placeholder {
-  color: $color-gray-4;
+    color: $color-gray-4;
+    opacity: 1;
 }
 :-ms-input-placeholder {
-  color: $color-gray-4;
+    color: $color-gray-4;
 }
 :-moz-placeholder {
-  color: $color-gray-4;
+    color: $color-gray-4;
+    opacity: 1;
 }
 
 .button, .button--small, button, [type='reset'], [type='submit'] {
