@@ -9,7 +9,7 @@ header {
     	-ms-grid-column: 6;
     	//-ms-grid-column-span: 7;
 		grid-column: 6/13;
-		-ms-grid-column-align: end;
+		-ms-grid-row-align: center;
         justify-self: flex-end;
 	}
 	nav {
@@ -20,7 +20,7 @@ header {
 	}
 }
 
-@supports (display: -ms-grid) {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { // Target IE10 and 11
     .logo {
         display: block;
         height: 100px;
