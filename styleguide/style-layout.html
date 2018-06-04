@@ -8,8 +8,8 @@ title: SeMI, The Style Guide
     <h2>Layout</h2>
     
     <section class="semi-sg-grid">
-        <h3 id="semi-sg-grid">Grid</h3>
-        <p>SeMI’s overall grid is a 12-column grid with another 12-column subgrid for the main content area.</p>
+        <h3 id="semi-sg-grid">Flexible grid</h3>
+        <p>SeMI’s overall grid is a 12-column grid with a nested 12-column subgrid for the main content area. The grid’s gutter is set at 1em.</p>
         <ul class="list-ui">
             <li></li>
             <li></li>
@@ -40,11 +40,13 @@ title: SeMI, The Style Guide
     
     <section>
         <h3>Negative space</h3>
-        <p>Negative, or white, space.</p>
+        <p>Negative, or white, space is used to provide way-finding throughout the SeMI site and its content.</p>
     </section>
     
     <section id="semi-sg-vert-rhythm">
-        <h3>Vertical rhythm</h3>
+        <h3>Modular scaling</h3>
+        <p>Vertical rhythm is established by a <strong>modular scale</strong>. A modular scale defines meaningful ratios of related proportions between page elements in order to create a unified visual rhythm and consistency. The <code>$scale-base</code> variable is the base scale measurement. The modular scale is derived from the variable <code>$scale-interval</code>. This can provide an infinite number of measurements that adhere to a consistent rhythm. Editing the base variable measurement results in a proportional change throughout all variables.</p>
+        <p>The modular scale is used for dimensions (margins, padding, width, height, etc.), typographic scale, etc. The same rhythm is also used for animation speed, opacity, and such.</p>
     </section>
     
     <section>

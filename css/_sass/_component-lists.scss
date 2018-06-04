@@ -50,7 +50,7 @@
     li li {
         margin-left: 1em;
     }
-    ol {
+    ol, .list-ordered {
     	counter-reset: li;
     	list-style: none;
     	> li {
