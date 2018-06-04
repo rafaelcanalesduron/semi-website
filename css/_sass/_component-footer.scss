@@ -3,6 +3,7 @@ footer {
 	border-top-left-radius: $scale-1;
 	color: $color-white;
 	display: grid;
+	-ms-grid-columns: (auto)[12];
 	grid-template-columns: repeat(12, 1fr);
 	padding: 2em;
 }

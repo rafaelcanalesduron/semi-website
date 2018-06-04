@@ -2,6 +2,7 @@ header {
     align-items: center;
 	background: $color-white;
 	display: grid;
+	-ms-grid-columns: (auto)[12];
 	grid-template-columns: repeat(12, 1fr);
 	padding: 2em 1em 0;
 	div {
@@ -33,6 +34,7 @@ header {
 main {
 	background: $color-white;
 	display: grid;
+	-ms-grid-columns: (auto)[12];
 	grid-template-columns: repeat(12, 1fr);
 	margin-bottom: -2em; // Allows for the Kanagawa wave border radius to be shown
 	article {
@@ -105,10 +107,4 @@ main {
 	.semi-newsletter {
 		grid-column: 4/11;
 	}
-}
-
-@supports (display:grid) {
-    main {
-        background: red !important;
-    }
 }
