@@ -106,3 +106,9 @@ main {
 		grid-column: 4/11;
 	}
 }
+
+@supports (display:grid) {
+    main {
+        background: red !important;
+    }
+}
