@@ -108,12 +108,12 @@ main {
 @media screen and (min-width: 80em) {
     header {
         div {
-            -ms-grid-column: 1;
-            -ms-grid-column-span: 1;
+            //-ms-grid-column: 8;
+            //-ms-grid-column-span: 2;
 			grid-column: 8/10;
         }
 		nav {
-    		-ms-grid-column: 4;	
+    		//-ms-grid-column: 4;
     		-ms-grid-column-span: 6;
         	grid-column: 4/10;
 		}
