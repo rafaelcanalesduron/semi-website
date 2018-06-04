@@ -7,13 +7,14 @@ header {
 	padding: 2em 1em 0;
 	div {
     	-ms-grid-column: 6;
-    	-ms-grid-column-span: 7;
+    	//-ms-grid-column-span: 7;
 		grid-column: 6/13;
+		-ms-grid-row-align;
         justify-self: flex-end;
 	}
 	nav {
     	-ms-grid-column: 1;
-    	-ms-grid-column-span: 12;
+    	//-ms-grid-column-span: 12;
     	grid-column: 1/13;
     	padding: 2em 0 0;
 	}
