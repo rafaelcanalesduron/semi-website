@@ -12,7 +12,7 @@ header {
         justify-self: flex-end;
 	}
 	nav {
-    	-ms-grid-column: 1;
+    	//-ms-grid-column: 1;
     	//-ms-grid-column-span: 12;
     	grid-column: 1/13;
     	padding: 2em 0 0;
@@ -72,8 +72,8 @@ main {
 			grid-column: 9/12;
 		}
 		nav {
-    		-ms-grid-column: 2;
-    		-ms-grid-column-span: 10;
+    		//-ms-grid-column: 2;
+    		//-ms-grid-column-span: 10;
         	grid-column: 2/12;
 		}
 	}
@@ -145,6 +145,7 @@ main {
             top: 1em;
         }
         nav {
+            margin-left: 1em;
             padding-top: 4em;
         }
     }
@@ -157,7 +158,6 @@ main {
         position: relative;
     }
     .footer-copyright {
-        bottom: 1em;
         right: 1em;
         position: absolute;
     }
