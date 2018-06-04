@@ -5,7 +5,7 @@ kramdown:
     parse_block_html: false
 rdiscount extensions: [smart]
 sass:
-    style: compressed # opposed to "expanded"
+    style: expanded # compressed # opposed to "expanded"
     sass_dir: css/_sass
 exclude:
     - "*.json"
