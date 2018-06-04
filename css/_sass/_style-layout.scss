@@ -161,4 +161,10 @@ main {
         right: 1em;
         position: absolute;
     }
+    .cards li {
+        float: left;
+    }
+    .card-author ul li:first-of-type {
+        height: 6em;
+    }
 }
