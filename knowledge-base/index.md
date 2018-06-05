@@ -8,6 +8,7 @@ layout: knowledge-base
 
 This our knowledge base; it contains information about our products, the way we work, and more. If you have any questions, feel free to reach out to us on [hello@semi.network](mailto:hello@semi.network).
 
+
 <section class="form-inline">
     <form action="/search.html?query=" class="search">
     	<section class="search-meta">
