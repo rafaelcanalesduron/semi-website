@@ -36,6 +36,11 @@ $transition-easing-out: ease-out;
 	outline: none;
 }
 
+@mixin background-opacity($color, $opacity: .5) {
+    background: $color; //  Fallback to solid color
+    background: rgba($color, $opacity);
+}
+
 @function data-uri-color($color) {
     @return '%23' + str-slice('#{$color}', 2, -1)
 }

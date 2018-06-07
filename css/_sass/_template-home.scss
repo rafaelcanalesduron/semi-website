@@ -5,16 +5,33 @@
         margin: 1em 0 2em;
         text-align: center;
         em {
+            @include background-opacity($color-almostblack-tint--1, .05);
+            @include transition-out;
             color: $color-semi-tint-2;
+            margin: -.25em;
+            padding: .25em;
+            &:hover {
+                @include background-opacity($color-almostblack-tint--1, .075);
+                @include transition-in;
+            }
         }
     }
     section {
         margin-bottom: 3em;
     }
+    .button--cta {
+        font-size: 1.5rem;
+    }
 }
 
 .section-emphasized {
-    //background: $color-almostblack-tint--9;
+    @include background-opacity($color-almostblack-tint--1, .05);
+    @include transition-out;
+    padding: 1em .25em;
+    &:hover {
+        @include background-opacity($color-almostblack-tint--1, .075);
+        @include transition-in;
+    }
     h2 {
         padding: 0 1em;
     }

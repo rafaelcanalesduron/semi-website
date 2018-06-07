@@ -91,6 +91,7 @@ fieldset {
 	display: inline-block;
 	font-family: $typeface-body;
 	padding: $scale-0 $scale-2;
+	text-align: center;
 	&:hover, &:focus, &:active {
 		@include transition-in;
 		border-radius: $border-radius-2;
@@ -104,7 +105,7 @@ fieldset {
 .button--cta {
     background: $color-semi-accent;
     color: $color-black;
-	&:focus, &:active {
+	&:hover, &:focus, &:active {
 		background: $color-black;
 		color: $color-white
 	}

@@ -11,7 +11,8 @@
 }
 
 .card {
-    background-color: $color-support-tint--4;
+    @include background-opacity($color-support, .05);
+    @include transition-out;
     border: $border-1;
     border-color: $color-support;
     border-radius: $border-radius-1;
@@ -19,4 +20,8 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 1em;
+    &:hover {  
+        @include background-opacity($color-almostblack, .05);
+        @include transition-out;
+    }
 }
