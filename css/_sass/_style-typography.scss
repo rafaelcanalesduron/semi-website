@@ -8,8 +8,10 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: $color-gray-2;
+    color: $color-almostblack-tint--1;
 	font-family: $typeface-brand;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 	letter-spacing: .01em;
 	line-height: 1.3;
 	font-size: 2rem;

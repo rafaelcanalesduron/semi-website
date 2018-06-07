@@ -1,12 +1,14 @@
 .page--home {
     h1 {
-        color: $color-almostblack-tint--1;
+        color: $color-almostblack-tint--3;
         font-size: 3.75rem;
         margin: 1em 0 2em;
         text-align: center;
         em {
             @include background-opacity($color-almostblack-tint--1, .05);
             @include transition-out;
+            border-radius: $border-radius-1-sm;
+            box-decoration-break: clone;
             color: $color-semi-tint-2;
             margin: -.25em;
             padding: .25em;
