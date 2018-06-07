@@ -1,0 +1,41 @@
+.page--home {
+    h1 {
+        color: $color-semi-tint-2;
+        font-size: 3.75rem;
+        margin: 1em 0 2em;
+        text-align: center;
+        em {
+            color: $color-almostblack-tint--1;
+        }
+    }
+    section {
+        margin-bottom: 3em;
+    }
+}
+
+.section-emphasized {
+    //background: $color-almostblack-tint--9;
+    h2 {
+        padding: 0 1em;
+    }
+    div {
+        @media screen and (min-width: 48em) {  
+            display: flex;
+            align-items: center;
+        }
+        &:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+    }
+    p, i {
+        padding: .5em 1em;
+    }
+    i {
+        display: block;
+        flex-shrink: 0;
+        text-align: center;
+    }
+    em {
+        color: $color-semi-tint-3;
+    }
+}
