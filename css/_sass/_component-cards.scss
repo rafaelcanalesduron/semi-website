@@ -11,7 +11,9 @@
 }
 
 .card {
+    background-color: $color-support-tint--4;
     border: $border-1;
+    border-color: $color-support;
     border-radius: $border-radius-1;
     display: flex;
     flex-direction: column;
