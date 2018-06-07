@@ -1,4 +1,5 @@
 ---
+bodyclass: page--knowledge-base
 layout: article-tech
 title: Using Weaviate
 description: Technical documentation for using Weaviate.

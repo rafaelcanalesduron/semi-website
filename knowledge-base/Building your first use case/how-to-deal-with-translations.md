@@ -1,4 +1,5 @@
 ---
+bodyclass: page--knowledge-base
 layout: article
 title: How to deal with translations?
 description: SeMI is language based, and currently English works best. In this article, you will learn how to best deal with translations in your datasets.

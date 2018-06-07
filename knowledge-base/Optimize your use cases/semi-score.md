@@ -1,4 +1,5 @@
 ---
+bodyclass: page--knowledge-base
 layout: article
 title: SeMI Score
 description: A brief overview of the SeMI Score

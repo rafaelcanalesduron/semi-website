@@ -1,4 +1,5 @@
 ---
+bodyclass: page--knowledge-base
 layout: article-overview
 show-topic: Building your first use case
 page-heading: I am excited, I can’t wait to build my first use case

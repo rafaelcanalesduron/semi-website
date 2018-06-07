@@ -1,18 +1,12 @@
 .nav-main {
+    margin-bottom: 1em;
     ul {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
         list-style: none;
-        @media screen and (min-width: 42em) {
-            justify-content: space-between;
-        }
-    }
-    .search {
-        margin-left: auto;
     }
 	li {
-        margin-bottom: 1em;
+        margin-left: .5em;
 		a {
 			@include transition-out;
 			border-bottom: 0;
@@ -37,52 +31,10 @@
 	}
 }
 
-@media screen and (min-width: 42em) {
-    .nav-main {
-        ul {
-            justify-content: flex-start;
-        }
-    }
-}
-
-@mixin nav--selected {
-	background: $color-black;
-	color: $color-white;
-}
-
-.nav-home {
-    li a:nth-child(1) {
-    	@include nav--selected;
-    }
-}
-
-.nav-products {
-    li:nth-child(1) a {
-    	@include nav--selected;
-    }
-}
-
-.nav-playground {
-    li:nth-child(2) a {
-    	@include nav--selected;
-    }
-}
-
-.nav-article {
-    li:nth-child(2) a {
-    	@include nav--selected;
-    }
-}
-
-.nav-team {
-    li:nth-child(3) a {
-    	@include nav--selected;
-    }
-}
-
-.nav-contact {
-    li:nth-child(4) a {
-    	@include nav--selected;
+.page--home .nav-main--home, .page--products .nav-main--products, .page--knowledge-base .nav-main--knowledge-base, .page--team .nav-main--team, .page--contact .nav-main--contact {
+    a {
+        background: $color-black;
+        color: $color-white;
     }
 }
 

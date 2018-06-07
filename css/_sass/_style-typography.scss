@@ -15,17 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 2rem;
 	font-weight: 400;
     margin-bottom: .25em;
-	max-width: 38em;
-	//&:first-letter {
-	//	text-transform: capitalize;
-	//}
-	a {
-    	//border-bottom-color: currentcolor;
-    	//border-bottom-width: 1px;
-	}
-	+ ul {
-		//margin-top: 1em;
-	}
+	max-width: $component-primary-max-width;
 }
 h1 {
 }
@@ -111,28 +101,15 @@ a {
 		background: $color-semi-accent;
 		outline: 3px solid $color-semi-accent;
 	}
-	&[href$='.jpg'], &[href$='.png'] {
-    	//background: none;
-    	//border-bottom: none;
-    	//outline: 0;
-	}
 }
-
-/*
-p, li, table {
-    a { 
-    	border-bottom: 2px solid $color-support;
-    	color: $color-interactive;
+.image-link {
+    border-bottom-width: 0;
+    &:hover, &:focus, &:active {
+        background: none;
+        border-bottom-width: 0;
         outline: none;
-        &:hover, &:focus, &:active {            
-    		background: $color-semi;
-    		border-bottom: $color-semi;
-    		color: $color-white;
-    		outline: 3px solid $color-semi;
-        }
     }
 }
-*/
 
 small {
     font-size: 1.05rem;
@@ -140,6 +117,10 @@ small {
 
 strong {
 	font-weight: 500;
+	em {
+    	color: $color-semi-tint-1;
+    	font-style: normal;
+	}
 }
 
 sub, sup {
@@ -156,15 +137,17 @@ sup {
 abbr, .sm-caps {
 	font-size: 1.05em;
 	font-variant-caps: small-caps;
-	//font-weight: 300;
 	line-height: 1;
-	//letter-spacing: .03em;
 	margin: auto .025em;
 	text-decoration: none !important;
 	text-transform: lowercase;
 	&[title] {
 		cursor: help;
 	}
+}
+
+del {
+    color: $color-gray-3;
 }
 
 dfn {
@@ -200,22 +183,20 @@ blockquote {
 	}
 }
 
-footer, .semi-workshop, .semi-newsletter {
+.text--secondary {
+    color: $color-almostblack-tint--6;
+}
+
+.paragraph--centered {
+    text-align: center;
+}
+
+footer {
 	font-family: $typeface-body;
 	h2 {
 		color: $color-black;	
 	}
 	h4, a {
 		color: $color-white;
-	}
-}
-.semi-workshop {
-	a {
-		&:hover, &:focus, &:active {
-			background: $color-black;
-			border-bottom: $color-black;
-			color: $color-white;
-			outline: 6px solid $color-black;
-		}
 	}
 }

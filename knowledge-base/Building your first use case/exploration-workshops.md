@@ -1,4 +1,5 @@
 ---
+bodyclass: page--knowledge-base
 layout: article
 title: Use Case Exploration
 description: foobar

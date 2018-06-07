@@ -1,4 +1,5 @@
 ---
+bodyclass: page--knowledge-base
 layout: article-overview
 show-topic: Optimize your use cases
 page-heading: Loving it, I want to expand my use case portfolio

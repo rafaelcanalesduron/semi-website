@@ -1,4 +1,5 @@
 ---
+bodyclass: page--knowledge-base
 layout: article
 title: How to create an ontology?
 description: Your ontology to describe your data is the most important part of onboarding data. In this article, you will learn all best practices to achieve this.

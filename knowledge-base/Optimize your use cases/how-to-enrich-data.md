@@ -1,4 +1,5 @@
 ---
+bodyclass: page--knowledge-base
 layout: article
 title: How to enrich data?
 description: Sometimes data tells a lot more than the information you have at hand. In this article you will learn how to best enrich your data with meta-data.

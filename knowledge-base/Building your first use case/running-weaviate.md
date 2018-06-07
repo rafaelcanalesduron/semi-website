@@ -1,4 +1,5 @@
 ---
+bodyclass: page--knowledge-base
 layout: article-tech
 title: Running Weaviate
 description: Technical documentation for running Weaviate.

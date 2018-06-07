@@ -8,6 +8,9 @@
 		}
 	}
 }
+li.list-bullet--disabled {
+    list-style-image: url(/img/bullet--disabled.svg);
+}
 
 .list-ui {
 	li {

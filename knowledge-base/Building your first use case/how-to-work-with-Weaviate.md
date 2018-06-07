@@ -1,4 +1,5 @@
 ---
+bodyclass: page--knowledge-base
 layout: article
 title: How to work with weaviate?
 description: Weaviate is the node on the SeMI network. In this article you will learn the basics to get started working with Weaviate.
