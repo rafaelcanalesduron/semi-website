@@ -1,8 +1,18 @@
+@mixin pattern-semi {
+    background: url('/img/pattern-semi-inv.svg');
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: contain;
+    margin-left: calc(-100vw / 2 + 39em / 2);
+    margin-right: calc(-100vw / 2 + 39em / 2);
+}
+
 .page--home {
     h1 {
+        @include background-opacity($color-white, .8);
         color: $color-almostblack-tint--3;
         font-size: 3.75rem;
-        margin: 1em 0 2em;
+        padding: 1em 0 1em;
         text-align: center;
         em {
             color: $color-semi-tint-2;
@@ -16,18 +26,27 @@
     }
 }
 
+.section-heading--primary { 
+    @include pattern-semi;   
+    div {
+        margin: 0 auto;
+        max-width: $component-primary-max-width;
+    }
+}
+
 .section-emphasized {
-    @include background-opacity($color-almostblack-tint--1, .05);
-    @include transition-out;
-    padding: 1em .25em;
-    &:hover {
-        @include background-opacity($color-almostblack-tint--1, .075);
-        @include transition-in;
+    @include pattern-semi;
+    > div {
+        @include background-opacity($color-almostblack-tint--9, .8);
+        border-radius: $border-radius-1;
+        margin: 0 auto;
+        max-width: $component-primary-max-width;
+        padding: 1em .25em;
     }
     h2 {
         padding: 0 1em;
     }
-    div {
+    .semi-usp {
         @media screen and (min-width: 48em) {  
             display: flex;
             align-items: center;
@@ -47,4 +66,8 @@
     em {
         color: $color-semi-tint-3;
     }
+}
+
+.pattern-semi-bg {
+    fill: red;
 }
