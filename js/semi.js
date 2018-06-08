@@ -68,10 +68,10 @@ function toMailchimp(t){
             type: "POST",
             url:        "https://us-central1-semi-186012.cloudfunctions.net/mailchimp",
             data:       data,
-            complete:    callback(),
             dataType:   "json",
             cache:      false
-          });
+          })
+          .done(callback())
       
     }
 
@@ -103,7 +103,11 @@ function toMailchimp(t){
     }
 
     sendData(formFields, function(){
-        window.location.href = "/thank-you.html";
+        // sad but true, timeout to guarantee a success
+        setTimeout(function(){
+            window.location.href = "/thank-you.html";
+        }, 1250);
+        
     })
 
 }
