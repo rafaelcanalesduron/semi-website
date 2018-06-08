@@ -2,7 +2,7 @@
     background: url('/img/pattern-semi-inv.svg');
     background-attachment: fixed;
     background-repeat: repeat;
-    background-size: contain;
+    background-size: 100%;
     margin-left: calc(-100vw / 2 + 39em / 2);
     margin-right: calc(-100vw / 2 + 39em / 2);
 }
@@ -26,8 +26,8 @@
     }
 }
 
-.section-heading--primary { 
-    @include pattern-semi;   
+.section-heading--primary {
+    @include pattern-semi;
     div {
         margin: 0 auto;
         max-width: $component-primary-max-width;
@@ -47,7 +47,7 @@
         padding: 0 1em;
     }
     .semi-usp {
-        @media screen and (min-width: 48em) {  
+        @media screen and (min-width: 48em) {
             display: flex;
             align-items: center;
         }
