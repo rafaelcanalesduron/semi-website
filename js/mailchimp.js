@@ -10,41 +10,17 @@ function toMailchimp(t){
         }
     }
 
-    // https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Sending_forms_through_JavaScript
+    // send the data through
     function sendData(data, callback) {
-        var XHR = new XMLHttpRequest();
-        var urlEncodedData = "";
-        var urlEncodedDataPairs = [];
-        var name;
+
+        $.ajax({
+            type: "POST",
+            url:        "https://us-central1-semi-186012.cloudfunctions.net/mailchimp",
+            data:       data,
+            success:    callback(),
+            dataType:   "json"
+          });
       
-        // Turn the data object into an array of URL-encoded key/value pairs.
-        for(name in data) {
-          urlEncodedDataPairs.push(encodeURIComponent(name) + '=' + encodeURIComponent(data[name]));
-        }
-      
-        // Combine the pairs into a single string and replace all %-encoded spaces to 
-        // the '+' character; matches the behaviour of browser form submissions.
-        urlEncodedData = urlEncodedDataPairs.join('&').replace(/%20/g, '+');
-      
-        // Define what happens on successful data submission
-        XHR.addEventListener('load', function(event) {
-            console.log(event);
-            callback(true);
-        });
-      
-        // Define what happens in case of error
-        XHR.addEventListener('error', function(event) {
-            callback(false);
-        });
-      
-        // Set up our request
-        XHR.open('POST', 'https://us-central1-semi-186012.cloudfunctions.net/mailchimp');
-      
-        // Add the required HTTP header for form data POST requests
-        XHR.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-      
-        // Finally, send our data.
-        XHR.send(urlEncodedData);
     }
 
     // get the value of ...
@@ -74,8 +50,8 @@ function toMailchimp(t){
         "RETURN"    : returnTo
     }
 
-    sendData(formFields, function(result){
-        console.log(result)
+    sendData(formFields, function(){
+        window.location.href = "/thank-you.html";
     })
 
 }
