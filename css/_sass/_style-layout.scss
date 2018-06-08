@@ -1,12 +1,11 @@
-html {
-    height: 100%;
-}
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     justify-content: space-between;
     min-height: 100vh;
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { // IE10+ bugfixes
+        display: block;
+    }
 }
 
 main {
