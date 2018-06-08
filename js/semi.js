@@ -68,7 +68,7 @@ function toMailchimp(t){
             type: "POST",
             url:        "https://us-central1-semi-186012.cloudfunctions.net/mailchimp",
             data:       data,
-            success:    callback(),
+            complete:    callback(),
             dataType:   "json",
             cache:      false
           });
