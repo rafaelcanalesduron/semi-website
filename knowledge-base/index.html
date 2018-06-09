@@ -11,7 +11,6 @@ title: SeMI, the knowledge base
     
     <p>This our knowledge base; it contains information about our products, the way we work, and more. If you have any questions, feel free to reach out to us on <a href="mailto:hello@semi.network">hello@semi.network</a>.</p>
     
-<!--
     <section class="form-inline">
         <form action="/search.html?query=" class="search">
         	<section class="search-meta">
@@ -21,38 +20,15 @@ title: SeMI, the knowledge base
         	</section>
         </form>
     </section>
--->
+    
+    
     
     {% assign items_grouped = site.pages | group_by: 'topic' | sort: 'topic' %}
     <ul class="article-overview">
         {% for group in items_grouped %}
             <li>
                 <section>
-                <h2>{{ group.name }}</h2>
-                <small>Recent articles in <em><a href="{{ group.name }}">{{ group.name }}</a></em>:</small>
-                    <ol>
-        	            {% for page in site.pages %}
-        	                {% if page.topic == group.name %}
-        	                    <li>
-                                    <h3><a href="{{ page.url }}">{{ page.date | date: '%B %d, %Y' }}{{ page.title }}</a></h3>
-        	                        <p>
-        	                            {{ page.description }}
-        	                        </p>
-        	                        <dl class="tags">
-                                        <dt><i>Tags</i></dt>
-                                        <dd>
-                	                        <ul class="tags">
-                                                {% for tag in page.tags %}
-                	                                <li>{{ tag }}</li>
-                                                {% endfor %}
-                	                        </ul>
-                                        </dd>
-                                    </dl>
-        	                    </li>
-        	                {% endif %}
-        	            {% endfor %}
-        	        </ol>
-        	        <p><a class="view-more" href="{{ group.name }}">All articles in <em>{{ group.name }}</em> <span class="arrow">→</span></a></p>
+                    <a href="{{ group.name }}">{{ group.name }}</a></h2>
                 </section>
             </li>
         {% endfor %}

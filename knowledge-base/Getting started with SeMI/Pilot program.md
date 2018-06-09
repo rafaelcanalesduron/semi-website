@@ -2,7 +2,7 @@
 layout: article
 title: SeMI pilot program
 description: In this brief we describes our pilot program. 
-topic: Primers
+topic: Getting started with SeMI
 author: MV
 relating-articles: []
 previous-article: null

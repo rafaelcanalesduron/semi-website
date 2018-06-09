@@ -3,7 +3,7 @@ bodyclass: page--knowledge-base
 layout: article
 title: Onboarding brief
 description: How do we help you on-board into the SeMI network. 
-topic: Primers
+topic: Getting started with SeMI
 author: MV
 relating-articles: []
 previous-article: null
