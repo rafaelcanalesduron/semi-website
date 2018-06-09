@@ -1,5 +1,7 @@
 .article-toc {
+    flex-shrink: 0;
     margin-right: 3em;
+    width: 8em;
     dt {
         font-weight: 400;
         margin: 1rem 0 .5rem;
