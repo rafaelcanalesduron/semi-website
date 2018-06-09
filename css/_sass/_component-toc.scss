@@ -1,4 +1,5 @@
 .article-toc {
+    margin-right: 3em;
     dt {
         font-weight: 400;
         margin: 1rem 0 .5rem;
@@ -11,15 +12,28 @@
         border-bottom: 0;
     }
     .list-ordered {
-        li:before {
-            @include transition-out;
-            border: 1px solid $color-semi;
-            border-radius: 100%;
-            font-feature-settings: 'tnum'; // Unfortunately not available in Alegrya
-            font-size: .85rem;
-            height: 1.5em;
-            text-align: center;
-            width: 1.5em;
+    	counter-reset: li;
+        list-style: none;
+        li {
+        	counter-increment: li;
+        	display: flex;
+            list-style-image: none !important;
+            &:before {
+                @include transition-out;
+                border: 1px solid $color-semi;
+                border-radius: 100%;
+                color: #fa0171;
+                content: counter(li);
+                display: inline-block;
+                flex-shrink: 0;
+                font-feature-settings: 'tnum'; // Not available in Alegrya
+                font-size: .85rem;
+                font-weight: 700;
+                height: 1.5em;
+                margin: 0 .5em 0 -1.5em;
+                text-align: center;
+                width: 1.5em;
+            }
         }
         li:hover:before {
             @include transition-in;

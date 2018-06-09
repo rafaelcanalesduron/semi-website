@@ -15,57 +15,91 @@
 				<li>{{ page.title }}</li>
             </ol>
 		</div>
+		
+		<div class="article-container">
+    		<dl class="article-toc">
+                <dt>Building your first use case</dt>
+                <dd>
+                    <ol class="list-ordered">
+                        <li class="list-step--done"><a href="#">Use case exploration</a></li>
+                        <li class="list-step--done"><a href="#">How to collect data?</a></li>
+                        <li class="list-step--done"><a href="#">How to create an ontology?</a></li>
+                        <li><a href="#">How to deal with translations?</a></li>
+                        <li><a href="#">How to pick your data sources?</a></li>
+                        <li><a href="#">How to work with weaviate?</a></li>
+                        <li><a href="#">Running Weaviate</a></li>
+                        <li><a href="#">Using Weaviate</a></li>
+                    </ol>
+                </dd>
+                <dt>Optimize your use cases</dt>
+                <dd>
+                    <ol class="list-ordered">
+                        <li><a href="#">How to enrich data?</a></li>
+                        <li><a href="#">SeMI Score</a></li>
+                        <li><a href="#">How to use the SeMI Tool?</a></li>
+                    </ol>
+                </dd>
+                <dt>Getting started with SeMI</dt>
+                <dd>
+                    <ol class="list-ordered">
+                        <li><a href="#">Management brief</a></li>
+                        <li><a href="#">Partner brief</a></li>
+                    </ol>
+                </dd>
+            </dl>
 
-		<h1>{{ page.title }}</h1>
-		{% if page.description != null %}
-			<p class="intro">{{ page.description }}</p>
-		{% endif %}
+            <section>
+        		<h1>{{ page.title }}</h1>
+        		{% if page.description != null %}
+        			<p class="intro">{{ page.description }}</p>
+        		{% endif %}
+                
+                <dl class="tags">
+                    <dt><i>Tags</i></dt>
+                    <dd>
+            			<ul class="tags">
+                			{% for tag in page.tags %}
+            					<li>{{ tag }}</li>
+            				{% endfor %}
+            			</ul>
+                    </dd>
+                </dl>
         
-        <dl class="tags">
-            <dt><i>Tags</i></dt>
-            <dd>
-    			<ul class="tags">
-        			{% for tag in page.tags %}
-    					<li>{{ tag }}</li>
-    				{% endfor %}
-    			</ul>
-            </dd>
-        </dl>
-
-		{% if page.related_to != null %}
-			{% for rels in page.related_to %}
-				<a href="#">{{ rels }}</a>
-			{% endfor %}
-		{% endif %}
-
-        <section class="article">
-			{% for video in page.video-link %}
-				<figure class="video-container">
-				    <div>{{ video }}</div>
-				    {% for caption in page.video-caption %}
-				        <figcaption>
-				            {{ caption }}
-                        </figcaption>
-                    {% endfor %}
-                </figure>
-			{% endfor %}
-		    {{ content }}
-        </section>
+        		{% if page.related_to != null %}
+        			{% for rels in page.related_to %}
+        				<a href="#">{{ rels }}</a>
+        			{% endfor %}
+        		{% endif %}
         
-        <section class="article-author">
-			{% include author.md %}
-        </section>
-        
-<!--
-        <section class="form-inline">
-            <p>Was this article useful?</p>
-            <ul>
-                <li><a href="#">Yes</a></li>
-                <li><a href="#">No</a></li>
-            </ul>
-        </section>
--->
-        
+                <section class="article">
+        			{% for video in page.video-link %}
+        				<figure class="video-container">
+        				    <div>{{ video }}</div>
+        				    {% for caption in page.video-caption %}
+        				        <figcaption>
+        				            {{ caption }}
+                                </figcaption>
+                            {% endfor %}
+                        </figure>
+        			{% endfor %}
+        		    {{ content }}
+                </section>
+                
+                <section class="article-author">
+        			{% include author.md %}
+                </section>
+                
+        <!--
+                <section class="form-inline">
+                    <p>Was this article useful?</p>
+                    <ul>
+                        <li><a href="#">Yes</a></li>
+                        <li><a href="#">No</a></li>
+                    </ul>
+                </section>
+        -->
+            </section>            
+		</div>        
 	</article>
 </main>
 

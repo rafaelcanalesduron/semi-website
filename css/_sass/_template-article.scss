@@ -1,4 +1,12 @@
-.article-container {
-    margin: 0 auto;
-    max-width: $component-primary-max-width;
+.article-toc {
+    display: none;
+}
+
+@media screen and (min-width: 48em) {
+    .article-toc {
+        display: block;
+    }
+    .article-container {
+        display: flex;
+    }
 }

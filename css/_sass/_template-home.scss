@@ -5,8 +5,8 @@
     background-size: 100%;
     background-size: cover;
     @media screen and (min-width: 48em) {
-        margin-left: calc(-100vw / 2 + 39em / 2);
-        margin-right: calc(-100vw / 2 + 39em / 2);
+        margin-left: calc(-100vw / 2 + calc(#{$component-primary-max-width} + 1em) / 2);
+        margin-right: calc(-100vw / 2 + calc(#{$component-primary-max-width} + 1em) / 2);
     }
 }
 
@@ -44,7 +44,7 @@
         border-radius: $border-radius-1;
         margin: 0 auto;
         max-width: $component-primary-max-width;
-        padding: 1em .25em;
+        padding: 2em;
     }
     h2 {
         padding: 0 1em;
