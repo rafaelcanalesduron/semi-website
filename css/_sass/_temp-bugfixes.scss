@@ -2,3 +2,7 @@
 .page--knowledge-base .article-overview > li:first-of-type {
     display: none;
 }
+
+.article-toc [data-group]:first-of-type, .article-toc dd:first-of-type {
+    display: none;
+}

@@ -20,7 +20,7 @@
     		{% assign items_grouped = site.pages | group_by: 'topic' | sort: 'topic' %}
             <dl class="article-toc">
                 {% for group in items_grouped %}
-                    <dt>{{ group.name }}</dt>
+                    <dt data-group="{{ group.name }}">{{ group.name }}</a></dt>
                     <dd>
                         <ol class="list-ordered">
                             {% for page in site.pages %}

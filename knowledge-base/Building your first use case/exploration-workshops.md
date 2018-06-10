@@ -1,8 +1,7 @@
 ---
-bodyclass: page--knowledge-base
+bodyclass: page--knowledge-base page--knowledge-base--build
 layout: article
 title: Use Case Exploration
-description: foobar
 description: This document is to give you an overview of the SeMI Use Case Exploration Workshop.
 topic: Building your first use case
 tagline: If you are ready to build your first use case, read these articles to get a flying start.
