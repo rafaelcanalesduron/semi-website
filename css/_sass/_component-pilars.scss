@@ -14,7 +14,7 @@
 .pilar {
     @include transition-out;
     background: $color-gray-7;
-    border: 1px solid $color-semi-tint-4;
+    //border: 1px solid $color-semi-tint-4;
 	border-radius: $border-radius-3;
     display: flex;
     flex: 1;

@@ -16,16 +16,19 @@
     text-align: center;
 }
 
-/*
 .product-semi--local {
-    background: url('/img/icon-semi-network.svg');
-    background-position: -1em -1em;
-    background-repeat: no-repeat;
+    @include transition-out;
+    background: $color-olive-analogous-tint--9;
+    &:hover {
+        @include transition-in;
+        background: $color-olive-analogous-tint--8;
+    }
 }
 
 .product-semi--world {
-    background: url('/img/icon-semi-network-of-networks.svg');
-    background-position: -1em -1em;
-    background-repeat: no-repeat;
+    @include transition-out;
+    background: $color-olive-triadic-tint--9;&:hover {
+        @include transition-in;
+        background: $color-olive-triadic-tint--8;
+    }
 }
-*/
