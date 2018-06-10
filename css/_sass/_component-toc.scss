@@ -24,7 +24,7 @@
                 @include transition-out;
                 border: 1px solid $color-semi;
                 border-radius: 100%;
-                color: #fa0171;
+                color: $color-semi;
                 content: counter(li);
                 display: inline-block;
                 flex-shrink: 0;

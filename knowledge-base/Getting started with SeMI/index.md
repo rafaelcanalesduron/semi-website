@@ -1,5 +1,5 @@
 ---
-bodyclass: page--knowledge-base
+bodyclass: page--knowledge-base knowledge-flow-start
 layout: article-overview
 show-topic: Getting started with SeMI
 page-heading: I love to get started with SeMI, tell me more!

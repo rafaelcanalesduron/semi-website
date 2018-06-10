@@ -39,6 +39,11 @@
     @media screen and (min-width: 48em) {
         display: flex;
         justify-content: space-between;
+        li {            
+            &:not(:last-child) {
+                margin-right: 1em;
+            }
+        }
     }
     div {
         padding: 2em;
@@ -51,15 +56,13 @@
         &:hover, &:focus, &:active {
             border-radius: $border-radius-2;
         }
-        &:not(:last-child) {
-            margin-right: 1em;
-        }
     }
 }
 
 .semi-knowledge-flow-start, .semi-knowledge-flow-build, .semi-knowledge-flow-optimize {
     @include transition-out;
     background: $color-almostblack-tint--5;
+    color: $color-white;
     &:hover, &:focus, &:active {
         @include transition-in;
         background: $color-almostblack-tint--3;
@@ -79,5 +82,23 @@
 .semi-knowledge-flow-optimize {
     background: $color-almostblack-triadic-tint--5;&:hover, &:focus, &:active {
         background: $color-almostblack-triadic-tint--3;
+    }
+}
+
+.knowledge-flow-start {
+    blockquote:before {
+        color: $color-almostblack-tint--5;
+    }
+}
+
+.knowledge-flow-build {
+    blockquote:before {
+        color: $color-almostblack-analogous-tint--5;
+    }
+}
+
+.knowledge-flow-optimize {
+    blockquote:before {
+        color: $color-almostblack-triadic-tint--5;
     }
 }
