@@ -21,4 +21,7 @@
             height: auto;
         }
     }
+    select::-ms-expand {
+        display: none;
+    }
 }
