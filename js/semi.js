@@ -1,5 +1,9 @@
 'use strict';
 
+/*
+ * COOKIE HANDLING
+ */
+
 // hide the cookie info bar
 function hide(obj) {
     var el = document.getElementById(obj);
@@ -37,19 +41,18 @@ function handleCookie(i){
     setCookie("cookieConsent", true, 100);
 }
 
-// show cookie bar if no cookie on load
-window.onload = function () {
-    if(getCookie("cookieConsent") === false){
-        document.getElementById("cookie-notification").style.display = 'flex';
-    }
-}
-
+/*
+ * HTTPS HANDLING
+ */
 // Redirect to https
 var loc = window.location.href+'';
 if (loc.indexOf('http://')==0 && location.hostname !== "127.0.0.1" && location.hostname.substring(0, 4) !== "dev."){
     window.location.href = loc.replace('http://','https://');
 }
 
+/*
+ * MAILCHIMP HANDLING
+ */
 // send request to mailchimp
 function toMailchimp(t){
 
@@ -112,6 +115,92 @@ function toMailchimp(t){
 
 }
 
+/*
+ * SEARCH HANDLING
+ */
+// Set global search variables
+var searchBox 			= document.getElementsByClassName("searchBox")[0],
+	articleSectionName 	= "article",
+	GoogleApiKey 		= "AIzaSyCV4SC6uTz7bzYu1TmM_3iq2smlvbJOVLg",
+	GoogleSearchId 		= "008702682383656025817:4lkjxykfngo";
+
+// get the query param by name
+function getParameterByName(name) {
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
+    var results = regex.exec(window.location.href);
+    if (!results){
+		return null;
+	}
+    if (!results[2]){
+		return "";
+	}
+    return decodeURIComponent(results[2].replace("/\+/g", " "));
+}
+
+// Load the results via Google API
+function loadResults(i) {
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() {
+		// if status = 4 or 200 exec.
+		if (this.readyState == 4 && this.status == 200) {
+			// declare newbox and the result
+			var newBox;
+			// load JSON
+			JSON
+				// parse JSON
+				.parse(this.responseText)
+				// find items
+				.items
+				// loop over items
+				.forEach(function(element) {
+					// clone the searchbox;
+					newBox = searchBox.cloneNode(true);
+					// remove display = none
+					newBox.style.display = "block";
+					// Set the title with URL
+					newBox
+						.getElementsByClassName("title")[0]
+						.innerHTML = "<a href=\"" + element.link + "\" target=\"_self\">" + element.htmlTitle + "</a>";
+					// set the inner HTML snippet
+					newBox.getElementsByClassName("resultHTML")[0]
+						.innerHTML = element.htmlSnippet;
+					// append the box to the article
+					document.getElementsByTagName(articleSectionName)[0].appendChild(newBox);
+				});
+
+		}
+	};
+	// open the URL
+	xhttp
+		.open("GET", "https://www.googleapis.com/customsearch/v1?key=" + GoogleApiKey + "&cx= " + GoogleSearchId + "&q=" + i, true);
+	// send the request
+	xhttp
+		.send();
+}
+
+/*
+ * ONLOAD HANDLING
+ */
+
+// search
+document
+	.addEventListener('DOMContentLoaded', function(){ 
+        // cookie
+        if(getCookie("cookieConsent") === false){
+            document.getElementById("cookie-notification").style.display = 'flex';
+        }
+        // search
+		var queryString = getParameterByName("search");
+		if(queryString != null && queryString != ""){
+            // query is available in querystring so load the results
+            loadResults(queryString);			
+		}
+	}, false);
+
+/*
+ * GOOGLE TAG MANAGER HANDLING
+ */
 // include Google Tagmanager
 (function(w, d, s, l, i) {
     w[l] = w[l] || [];
