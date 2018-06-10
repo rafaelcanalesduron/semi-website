@@ -5,6 +5,7 @@ title: Use Case Exploration
 description: foobar
 description: This document is to give you an overview of the SeMI Use Case Exploration Workshop.
 topic: Building your first use case
+tagline: If you are ready to build your first use case, read these articles to get a flying start.
 author: MM
 relating-articles: []
 previous-article: null
