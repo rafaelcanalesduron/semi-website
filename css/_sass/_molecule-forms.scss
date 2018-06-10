@@ -148,7 +148,15 @@ textarea {
 
 select {
     appearance: none;
+    background: url('/img/icon-arrow-down.svg') no-repeat right 1em center;
+    background-size: 1em;
     display: block;
+    padding-right: 3em;
+    width: auto;
+    &:focus, &:active {   
+        background: url('/img/icon-arrow-down--active.svg') no-repeat right 1em center;
+        background-size: 1em;
+    }
 }
 
 select[multiple] {
