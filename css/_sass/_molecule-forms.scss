@@ -124,7 +124,7 @@ fieldset {
 
 .button--email {
     &:before {
-        background: url(/img/icon-email.svg);
+        background: url('/img/icon-email.svg');
         content: '';
         display: inline-block;
         height: .75em;
