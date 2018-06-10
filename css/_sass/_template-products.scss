@@ -17,18 +17,20 @@
 }
 
 .product-semi--local {
-    @include transition-out;
-    background: $color-olive-analogous-tint--9;
-    &:hover {
-        @include transition-in;
-        background: $color-olive-analogous-tint--8;
-    }
+    background: $color-white;
+    //@include transition-out;
+    //background: $color-olive-analogous-tint--9;
+    //&:hover {
+    //    @include transition-in;
+    //    background: $color-olive-analogous-tint--8;
+    //}
 }
 
 .product-semi--world {
-    @include transition-out;
-    background: $color-olive-triadic-tint--9;&:hover {
-        @include transition-in;
-        background: $color-olive-triadic-tint--8;
-    }
+    background: $color-white;
+    //@include transition-out;
+    //background: $color-olive-triadic-tint--9;&:hover {
+    //    @include transition-in;
+    //    background: $color-olive-triadic-tint--8;
+    //}
 }
