@@ -26,7 +26,7 @@ $color-semi-accent-tint-3: #00aa00;
 $color-semi-accent-tint-4: #009c00;
 
 
-$color-interactive: #0171e7; // Indigo
+$color-interactive: #0070e6; // Indigo
 $color-interactive: #304a6c;
 $color-interactive-tint--5: #eff7ff;
 $color-interactive-tint--4: #d5eaff;
@@ -49,7 +49,29 @@ $color-support-tint-2: #a97d00;
 $color-support-tint-3: #a76a00;
 $color-support-tint-4: #aa5300;
 
-$color-almostblack: $color-black;
+$color-olive-analogous: #b04802; // Olive analogous
+$color-olive-analogous-tint--9: #f9eae6;
+$color-olive-analogous-tint--8: #faceba;
+$color-olive-analogous-tint--7: #f7b08e;
+$color-olive-analogous-tint--6: #f39260;
+$color-olive-analogous-tint--5: #f17c3b;
+$color-olive-analogous-tint--4: #ee6912;
+$color-olive-analogous-tint--3: #e4630e;
+$color-olive-analogous-tint--2: #d65b09;
+$color-olive-analogous-tint--1: #c95406;
+
+$color-olive-triadic: #005744; // Olive triadic
+$color-olive-triadic-tint--9: #e0f4f2;
+$color-olive-triadic-tint--8: #b2e3dd;
+$color-olive-triadic-tint--7: #7ed2c7;
+$color-olive-triadic-tint--6: #45bfb0;
+$color-olive-triadic-tint--5: #02b09f;
+$color-olive-triadic-tint--4: #00a18d;
+$color-olive-triadic-tint--3: #009480;
+$color-olive-triadic-tint--2: #00836f;
+$color-olive-triadic-tint--1: #007360;
+
+$color-almostblack: $color-black; // Almost Black
 $color-almostblack-tint--9: #e2e9ff;
 $color-almostblack-tint--8: #bacbe5;
 $color-almostblack-tint--7: #96a7c5;
@@ -59,6 +81,28 @@ $color-almostblack-tint--4: #3d577c;
 $color-almostblack-tint--3: #304a6c;
 $color-almostblack-tint--2: #213957;
 $color-almostblack-tint--1: #122742;
+
+$color-almostblack-analogous: #002a2b; // Almost Black analogous
+$color-almostblack-analogous-tint--9: #d7f2f3;
+$color-almostblack-analogous-tint--8: #b7d8d6;
+$color-almostblack-analogous-tint--7: #93bbba;
+$color-almostblack-analogous-tint--6: #6e9e9e;
+$color-almostblack-analogous-tint--5: #538989;
+$color-almostblack-analogous-tint--4: #367475;
+$color-almostblack-analogous-tint--3: #2c6665;
+$color-almostblack-analogous-tint--2: #1e5252;
+$color-almostblack-analogous-tint--1: #103f40;
+
+$color-almostblack-triadic: #2b0015; // Almost Black triadic
+$color-almostblack-triadic-tint--9: #ffdfe0;
+$color-almostblack-triadic-tint--8: #dfb8be;
+$color-almostblack-triadic-tint--7: #ba8e97;
+$color-almostblack-triadic-tint--6: #97646e;
+$color-almostblack-triadic-tint--5: #7e4653;
+$color-almostblack-triadic-tint--4: #662839;
+$color-almostblack-triadic-tint--3: #5a2132;
+$color-almostblack-triadic-tint--2: #4b1728;
+$color-almostblack-triadic-tint--1: #3b0d1f;
 
 $color-gray-1: #2b2b2b; // Almost Black desaturated
 $color-gray-2: #5e5e5e;

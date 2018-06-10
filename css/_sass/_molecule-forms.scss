@@ -103,8 +103,8 @@ fieldset {
 }
 
 .button--cta {
-    background: $color-semi-accent;
-    color: $color-black;
+    background: $color-support;
+    //color: $color-black;
 	&:hover, &:focus, &:active {
 		background: $color-black;
 		color: $color-white

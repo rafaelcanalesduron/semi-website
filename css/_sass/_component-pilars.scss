@@ -28,11 +28,6 @@
         padding: 1em;
         text-align: center;
     }
-    h2 {
-        //@include transition-out;
-        //background: $color-semi-tint-4;
-        //color: $color-white;
-    }
     h3 {
         font-style: italic;
     }
@@ -54,9 +49,5 @@
         @include transition-in;  
         background: $color-white;
         border-color: $color-semi;
-        h2 {
-            //@include transition-in;
-            //background: $color-semi;
-        }
     }
 }

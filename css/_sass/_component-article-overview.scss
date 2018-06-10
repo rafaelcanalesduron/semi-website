@@ -36,8 +36,48 @@
 }
 
 .article-index {
-    display: flex;
+    @media screen and (min-width: 48em) {
+        display: flex;
+        justify-content: space-between;
+    }
+    div {
+        padding: 2em;
+    }
     li {
-        width: 33%;
+        border-radius: $border-radius-1;
+        flex: 1;
+        list-style: none;
+        max-width: 100%;
+        &:hover, &:focus, &:active {
+            border-radius: $border-radius-2;
+        }
+        &:not(:last-child) {
+            margin-right: 1em;
+        }
+    }
+}
+
+.semi-knowledge-flow-start, .semi-knowledge-flow-build, .semi-knowledge-flow-optimize {
+    @include transition-out;
+    background: $color-almostblack-tint--5;
+    &:hover, &:focus, &:active {
+        @include transition-in;
+        background: $color-almostblack-tint--3;
+    }
+    h2, p {
+        color: $color-white;
+    }
+}
+
+.semi-knowledge-flow-build {
+    background: $color-almostblack-analogous-tint--5;
+    &:hover, &:focus, &:active {
+        background: $color-almostblack-analogous-tint--3;
+    }
+}
+
+.semi-knowledge-flow-optimize {
+    background: $color-almostblack-triadic-tint--5;&:hover, &:focus, &:active {
+        background: $color-almostblack-triadic-tint--3;
     }
 }

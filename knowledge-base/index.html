@@ -23,6 +23,7 @@ title: SeMI, the knowledge base
     
     
     
+<!--
     {% assign items_grouped = site.pages | group_by: 'topic' | sort: 'topic' %}
     <ul class="article-index">
         {% for group in items_grouped %}
@@ -33,19 +34,32 @@ title: SeMI, the knowledge base
             </li>
         {% endfor %}
     </ul>
+-->
     
-<!--
     <ul class="article-index">
-        <li>
-            <h2><a href="/Getting started with SeMI/">Getting started with SeMI</a></h2>
-            <p>If you are new to SeMI, read these articles first to understand why SeMI is valuable for your organization.</p>
+        <li class="semi-knowledge-flow-start">
+            <a href="Getting started with SeMI/">
+                <div>
+                    <h2>Getting started with SeMI</h2>
+                    <p>If you are new to SeMI, read these articles first to understand why SeMI is valuable for your organization.</p>
+                </div>
+            </a>
         </li>
-        <li>
-            <p>If you are ready to build your first use case, read these articles to get a flying start.</p>
+        <li class="semi-knowledge-flow-build">
+            <a href="Building your first use case/">
+                <div>
+                    <h2>Building your first use case</h2>
+                    <p>If you are ready to build your first use case, read these articles to get a flying start.</p>
+                </div>
+            </a>
         </li>
-        <li>
-            <p>If you want to optimize your use cases, read these articles.</p>
+        <li class="semi-knowledge-flow-optimize">
+            <a href="Optimize your use cases/">
+                <div>
+                    <h2>Optimize your use cases</h2>
+                    <p>If you want to optimize your use cases, read these articles.</p>
+                </div>
+            </a>
         </li>
     </ul>
--->
 </article>

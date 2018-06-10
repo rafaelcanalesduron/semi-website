@@ -109,12 +109,16 @@
 	flex-wrap: wrap;
 	justify-content: space-around;
 	list-style: none;
+	h3 {
+    	font-size: 1.15rem;
+    	margin-top: 3em;
+	}
 }
 
 .semi-sg-swatch {
 	list-style: none;
 	margin-bottom: 2em;
-	width: 7em;
+	width: 8em;
 	li {
 		font-size: .75em;
 		padding: 0;
@@ -177,6 +181,28 @@
 .semi-sg-swatch--color-olive-3 i:before {background: $color-support-tint-3;}
 .semi-sg-swatch--color-olive-4 i:before {background: $color-support-tint-4;}
 
+.semi-sg-swatch--color-olive-analogous--9 i:before {background: $color-olive-analogous-tint--9;}
+.semi-sg-swatch--color-olive-analogous--8 i:before {background: $color-olive-analogous-tint--8;}
+.semi-sg-swatch--color-olive-analogous--7 i:before {background: $color-olive-analogous-tint--7;}
+.semi-sg-swatch--color-olive-analogous--6 i:before {background: $color-olive-analogous-tint--6;}
+.semi-sg-swatch--color-olive-analogous--5 i:before {background: $color-olive-analogous-tint--5;}
+.semi-sg-swatch--color-olive-analogous--4 i:before {background: $color-olive-analogous-tint--4;}
+.semi-sg-swatch--color-olive-analogous--3 i:before {background: $color-olive-analogous-tint--3;}
+.semi-sg-swatch--color-olive-analogous--2 i:before {background: $color-olive-analogous-tint--2;}
+.semi-sg-swatch--color-olive-analogous--1 i:before {background: $color-olive-analogous-tint--1;}
+.semi-sg-swatch--color-olive-analogous i:before {background: $color-olive-analogous;}
+
+.semi-sg-swatch--color-olive-triadic--9 i:before {background: $color-olive-triadic-tint--9;}
+.semi-sg-swatch--color-olive-triadic--8 i:before {background: $color-olive-triadic-tint--8;}
+.semi-sg-swatch--color-olive-triadic--7 i:before {background: $color-olive-triadic-tint--7;}
+.semi-sg-swatch--color-olive-triadic--6 i:before {background: $color-olive-triadic-tint--6;}
+.semi-sg-swatch--color-olive-triadic--5 i:before {background: $color-olive-triadic-tint--5;}
+.semi-sg-swatch--color-olive-triadic--4 i:before {background: $color-olive-triadic-tint--4;}
+.semi-sg-swatch--color-olive-triadic--3 i:before {background: $color-olive-triadic-tint--3;}
+.semi-sg-swatch--color-olive-triadic--2 i:before {background: $color-olive-triadic-tint--2;}
+.semi-sg-swatch--color-olive-triadic--1 i:before {background: $color-olive-triadic-tint--1;}
+.semi-sg-swatch--color-olive-triadic i:before {background: $color-olive-triadic;}
+
 .semi-sg-swatch--color-almost-black--9 i:before {background: $color-almostblack-tint--9;}
 .semi-sg-swatch--color-almost-black--8 i:before {background: $color-almostblack-tint--8;}
 .semi-sg-swatch--color-almost-black--7 i:before {background: $color-almostblack-tint--7;}
@@ -187,6 +213,28 @@
 .semi-sg-swatch--color-almost-black--2 i:before {background: $color-almostblack-tint--2;}
 .semi-sg-swatch--color-almost-black--1 i:before {background: $color-almostblack-tint--1;}
 .semi-sg-swatch--color-black i:before {background: $color-almostblack;}
+
+.semi-sg-swatch--color-almost-black-analogous--9 i:before {background: $color-almostblack-analogous-tint--9;}
+.semi-sg-swatch--color-almost-black-analogous--8 i:before {background: $color-almostblack-analogous-tint--8;}
+.semi-sg-swatch--color-almost-black-analogous--7 i:before {background: $color-almostblack-analogous-tint--7;}
+.semi-sg-swatch--color-almost-black-analogous--6 i:before {background: $color-almostblack-analogous-tint--6;}
+.semi-sg-swatch--color-almost-black-analogous--5 i:before {background: $color-almostblack-analogous-tint--5;}
+.semi-sg-swatch--color-almost-black-analogous--4 i:before {background: $color-almostblack-analogous-tint--4;}
+.semi-sg-swatch--color-almost-black-analogous--3 i:before {background: $color-almostblack-analogous-tint--3;}
+.semi-sg-swatch--color-almost-black-analogous--2 i:before {background: $color-almostblack-analogous-tint--2;}
+.semi-sg-swatch--color-almost-black-analogous--1 i:before {background: $color-almostblack-analogous-tint--1;}
+.semi-sg-swatch--color-almost-black-analogous i:before {background: $color-almostblack-analogous;}
+
+.semi-sg-swatch--color-almost-black-triadic--9 i:before {background: $color-almostblack-triadic-tint--9;}
+.semi-sg-swatch--color-almost-black-triadic--8 i:before {background: $color-almostblack-triadic-tint--8;}
+.semi-sg-swatch--color-almost-black-triadic--7 i:before {background: $color-almostblack-triadic-tint--7;}
+.semi-sg-swatch--color-almost-black-triadic--6 i:before {background: $color-almostblack-triadic-tint--6;}
+.semi-sg-swatch--color-almost-black-triadic--5 i:before {background: $color-almostblack-triadic-tint--5;}
+.semi-sg-swatch--color-almost-black-triadic--4 i:before {background: $color-almostblack-triadic-tint--4;}
+.semi-sg-swatch--color-almost-black-triadic--3 i:before {background: $color-almostblack-triadic-tint--3;}
+.semi-sg-swatch--color-almost-black-triadic--2 i:before {background: $color-almostblack-triadic-tint--2;}
+.semi-sg-swatch--color-almost-black-triadic--1 i:before {background: $color-almostblack-triadic-tint--1;}
+.semi-sg-swatch--color-almost-black-triadic i:before {background: $color-almostblack-triadic;}
 
 .semi-sg-swatch--color-gray-1 i:before {background: $color-gray-1;}
 .semi-sg-swatch--color-gray-2 i:before {background: $color-gray-2;}
