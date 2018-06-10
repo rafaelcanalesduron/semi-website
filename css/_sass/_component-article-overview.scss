@@ -64,8 +64,8 @@
     background: $color-almostblack-tint--5;
     color: $color-white;
     &:hover, &:focus, &:active {
-        @include transition-in;
-        background: $color-almostblack-tint--3;
+        //@include transition-in;
+        //background: $color-almostblack-tint--3;
     }
     h2 {
         margin-bottom: 1em;
@@ -78,13 +78,14 @@
 .semi-knowledge-flow-build {
     background: $color-almostblack-analogous-tint--5;
     &:hover, &:focus, &:active {
-        background: $color-almostblack-analogous-tint--3;
+        //background: $color-almostblack-analogous-tint--3;
     }
 }
 
 .semi-knowledge-flow-optimize {
-    background: $color-almostblack-triadic-tint--5;&:hover, &:focus, &:active {
-        background: $color-almostblack-triadic-tint--3;
+    background: $color-almostblack-triadic-tint--5;
+    &:hover, &:focus, &:active {
+        //background: $color-almostblack-triadic-tint--3;
     }
 }
 
@@ -107,18 +108,25 @@
 }
 
 .article-toc {
-    [data-group] {
-        border-radius: $border-radius-3;
-        color: $color-white;
-        margin-bottom: 1em;
-        padding: .5em 1em;
-        text-align: center;
-        ~ dd {
-            margin-bottom: 2em;
-        }
+    @include transition-out;
+    opacity: .5;
+    &:hover {
+        @include transition-in;
+        opacity: 1;
+    }
+    dt {
+        //border-radius: $border-radius-3;
+        //color: $color-white;
+        //margin-bottom: 1em;
+        //margin-top: 0;
+        //padding: .5em 1em;
+        //text-align: center;
+        //~ dd {
+        //   margin-bottom: 1em;
+        //}
     }
     [data-group~='Getting'] {
-        background: $color-almostblack-tint--5;
+        //background: $color-almostblack-tint--5;
         ~ dd {
             li {
                 &:before {
@@ -136,7 +144,7 @@
         }
     }
     [data-group~='Building'] {
-        background: $color-almostblack-analogous-tint--5;
+        //background: $color-almostblack-analogous-tint--5;
         ~ dd {
             li {
                 &:before {
@@ -154,7 +162,7 @@
         }
     }
     [data-group~='Optimize'] {
-        background: $color-almostblack-triadic-tint--5;
+        //background: $color-almostblack-triadic-tint--5;
         ~ dd {
             li {
                 &:before {

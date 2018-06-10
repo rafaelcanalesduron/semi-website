@@ -1,12 +1,14 @@
 .product  {
     h2 {
-        color: $color-semi-tint-1;
-        font-size: 2.815rem;
         padding: .5em 0;
         img {
             height: 2em;
-            margin-bottom: -.6em;
-//            vertical-align: text-bottom;
+            margin-bottom: -.5em;
+        }
+    }
+    h3 {
+        strong {
+            display: block;
         }
     }
 }
