@@ -67,6 +67,9 @@
         @include transition-in;
         background: $color-almostblack-tint--3;
     }
+    h2 {
+        margin-bottom: 1em;
+    }
     h2, p {
         color: $color-white;
     }
