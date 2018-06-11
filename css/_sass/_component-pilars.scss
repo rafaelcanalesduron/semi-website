@@ -11,9 +11,9 @@
     }
 }
 
-.pilar {
-    @include transition-out;
-    background: $color-gray-7;
+.pilar { // RtP specs
+    //@include transition-out;
+    //background: $color-gray-7;
     //border: 1px solid $color-semi-tint-4;
 	border-radius: $border-radius-3;
     display: flex;
@@ -42,15 +42,15 @@
         list-style: none;
         margin: 0 1em;
     }
-    p { // RtP specs
+    p {
         font-family: $typeface-brand;
     }
     .button--cta {
         margin: auto 1em 1em;
     }
     &:hover {  
-        @include transition-in;  
-        background: $color-white;
-        border-color: $color-semi;
+        //@include transition-in;  
+        //background: $color-white;
+        //border-color: $color-semi;
     }
 }
