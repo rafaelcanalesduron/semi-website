@@ -1,12 +1,41 @@
-.article-toc {
+.article-container {
+    position: relative;
+}
+
+.article-toc-container {
+    background: #fff;
+    display: none;
+}
+.rtp-category {
     display: none;
 }
 
+.show-toc {
+    margin-bottom: 1em;
+    padding: .5rem .5rem 0;
+    img {
+        width: 16px;
+    }
+    &:focus {
+        ~ .article-toc-container {
+            display: block;
+            position: absolute;
+            width: 100%;
+        }
+    }
+}
+
 @media screen and (min-width: 48em) {
-    .article-toc {
+    .show-toc {
+        display: none;
+    }
+    .article-toc-container {
         display: block;
     }
     .article-container {
         display: flex;
+    }
+    .rtp-category {
+        display: block;
     }
 }

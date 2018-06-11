@@ -1,14 +1,3 @@
-@mixin pattern-semi {
-    background: url('/img/pattern-semi.svg');
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-size: cover;
-    @media screen and (min-width: 48em) {
-        margin-left: calc(-100vw / 2 + calc(#{$component-primary-max-width} + 1em) / 2);
-        margin-right: calc(-100vw / 2 + calc(#{$component-primary-max-width} + 1em) / 2);
-    }
-}
-
 .page--home { // RtP specs
     .header-container {
         background: $color-almostblack;
@@ -30,7 +19,9 @@
     main {
         background: $color-semi;
         background: url('/img/pattern-semi.svg');
-        background-size: cover;  
+        @media screen and (min-width: 56em) {
+            background-size: cover;
+        }
     }
     h1 {
         color: $color-almostblack-tint--3;

@@ -115,30 +115,7 @@
 }
 
 .article-toc { // RtP specs
-    //@include transition-out;
-    //opacity: .5;
-    //&:hover {
-    //    @include transition-in;
-    //    opacity: 1;
-    //}
     border: 2px solid $color-semi-accent;
     border-radius: $border-radius-3;
     padding: 1em;
-    dt {
-        //border-radius: $border-radius-3;
-        //color: $color-white;
-        //margin-bottom: 1em;
-        //margin-top: 0;
-        //padding: .5em 1em;
-        //text-align: center;
-        //~ dd {
-        //   margin-bottom: 1em;
-        //}
-    }
-}
-
-.knowledge-base--optimize {
-    [data-group~='Optimize'] {
-        background: $color-almostblack-triadic-tint--5;
-    }
 }

@@ -9,7 +9,7 @@
 		
 		<div class="article-container">
     		{% assign items_grouped = site.pages | group_by: 'topic' | sort: 'topic' %}
-            <div>
+            <div class="article-container">
                 <dl class="article-toc">
                     {% for group in items_grouped %}
                         <dt data-group="{{ group.name }}">{{ group.name }}</dt>
