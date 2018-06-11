@@ -4,9 +4,9 @@
         display: flex;
         flex-wrap: wrap;
         list-style: none;
+        margin-left: .5em;
     }
 	li {
-        margin-left: .5em;
 		a {
 			@include transition-out;
 			border-bottom: 0;
