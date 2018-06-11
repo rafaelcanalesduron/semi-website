@@ -135,6 +135,10 @@ fieldset {
     }
 }
 
+.button--link {
+    appearance: hyperlink;
+}
+
 textarea {
     min-height: 5em;
     resize: vertical;

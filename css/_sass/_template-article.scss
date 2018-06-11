@@ -1,5 +1,8 @@
 .article-container {
     position: relative;
+    > section {
+        margin-top: 2em;
+    }
 }
 
 .article-toc-container {
@@ -11,17 +14,26 @@
 }
 
 .show-toc {
-    margin-bottom: 1em;
-    padding: .5rem .5rem 0;
+    //display: block;
+    margin-bottom: 2em;
+    position: relative;
     img {
         width: 16px;
     }
     &:focus {
         ~ .article-toc-container {
             display: block;
+            pointer-events: all;
             position: absolute;
+            top: 2em;
             width: 100%;
+            z-index: 2;
         }
+    }
+    &.close {
+        position: absolute;
+        right: .5em;
+        top: .5em;
     }
 }
 
@@ -34,6 +46,10 @@
     }
     .article-container {
         display: flex;
+        > section {
+            margin-top: 0;
+        }
+
     }
     .rtp-category {
         display: block;
