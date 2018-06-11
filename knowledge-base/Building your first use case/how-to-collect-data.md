@@ -1,5 +1,5 @@
 ---
-bodyclass: page--knowledge-base
+bodyclass: page--knowledge-base knowledge-base--build
 layout: article
 title: How to collect data?
 description: Before onboarding data, you will need to process it to fit into Weaviate. In this article, you will learn best practices to achieve this.

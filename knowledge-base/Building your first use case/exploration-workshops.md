@@ -1,5 +1,5 @@
 ---
-bodyclass: page--knowledge-base page--knowledge-base--build
+bodyclass: page--knowledge-base knowledge-base--build
 layout: article
 title: Use Case Exploration
 description: This document is to give you an overview of the SeMI Use Case Exploration Workshop.

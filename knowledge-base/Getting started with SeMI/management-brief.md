@@ -1,5 +1,5 @@
 ---
-bodyclass: page--knowledge-base
+bodyclass: page--knowledge-base knowledge-base--start
 layout: article
 title: Management brief
 description: Why is SeMI a great tool to enrich your current business offerings? In this primer you will learn why SeMI is so valuable for your business.

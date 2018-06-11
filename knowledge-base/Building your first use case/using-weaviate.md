@@ -1,5 +1,5 @@
 ---
-bodyclass: page--knowledge-base
+bodyclass: page--knowledge-base knowledge-base--build
 layout: article-tech
 title: Using Weaviate
 description: Technical documentation for using Weaviate.

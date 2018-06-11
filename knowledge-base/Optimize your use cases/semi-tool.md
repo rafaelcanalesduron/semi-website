@@ -1,5 +1,5 @@
 ---
-bodyclass: page--knowledge-base
+bodyclass: page--knowledge-base knowledge-base--optimize
 layout: article
 title: How to use the SeMI Tool?
 description: The SeMI tool helps you to onboard your data as easily as possible to the Weaviate instances.

@@ -1,5 +1,5 @@
 ---
-bodyclass: page--knowledge-base
+bodyclass: page--knowledge-base knowledge-base--start
 layout: article
 title: Product Page
 description: What are the different SeMI products offerings? In this brief you will discover which product fits your organisation best. 

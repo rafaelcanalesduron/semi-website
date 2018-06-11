@@ -180,3 +180,9 @@
         }
     }
 }
+
+.knowledge-base--optimize {
+    [data-group~='Optimize'] {
+        background: $color-almostblack-triadic-tint--5;
+    }
+}
