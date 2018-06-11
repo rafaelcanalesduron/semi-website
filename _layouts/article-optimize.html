@@ -11,7 +11,7 @@
     		{% assign items_grouped = site.pages | group_by: 'topic' | sort: 'topic' %}
     		<div class="article-toc-container" id="toc">
                 <dl class="article-toc">
-                    <button class="show-toc close button--small" href="#" onclick="toggle_visibility('toc');">Close</button>
+                    <a class="show-toc close" href="#" onclick="toggle_visibility('toc');">Close</a>
                     {% for group in items_grouped %}
                         <dt data-group="{{ group.name }}">{{ group.name }}</dt>
                         <dd>
