@@ -31,6 +31,9 @@
             color: $color-almostblack;
         }
     }
+    p, li {
+        font-family: $typeface-brand;
+    }
     section {
         margin-bottom: 3em;
     }

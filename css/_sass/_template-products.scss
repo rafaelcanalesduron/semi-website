@@ -14,7 +14,6 @@
 }
 
 .product-banner {
-    padding: 2em 0 0;
     text-align: center;
 }
 
@@ -33,5 +32,20 @@
     border-radius: $border-radius-3;
     .button--cta {
         background: #af9f22;
+    }
+}
+
+.page--products {
+    p, li { // RtP specs
+        font-family: $typeface-brand !important;
+    }
+    .pilar {
+        h2 {
+            font-size: 2.5rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
     }
 }

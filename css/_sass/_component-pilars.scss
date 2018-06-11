@@ -21,15 +21,15 @@
     flex-direction: column;
     overflow: hidden; // Cascade border radius
     margin: 0 .5em 1em;
-    h2, h3, h4 {
+    h2, h3, h4 { // RtP specs
         color: $color-black;
-        font-family: $typeface-body;
+        //font-family: $typeface-body;
         font-size: 1.875rem;
         padding: 1em;
         text-align: center;
     }
     h3 {
-        font-style: italic;
+        //font-style: italic;
     }
     section {
         display: flex;
@@ -41,6 +41,9 @@
     ul {
         list-style: none;
         margin: 0 1em;
+    }
+    p { // RtP specs
+        font-family: $typeface-brand;
     }
     .button--cta {
         margin: auto 1em 1em;
