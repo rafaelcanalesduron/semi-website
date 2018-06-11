@@ -34,6 +34,11 @@
             width: 100%;
         }
     }
+    .card-author {
+        li:firt-child {
+            height: 200px;
+        }
+    }
     select::-ms-expand {
         display: none;
     }
