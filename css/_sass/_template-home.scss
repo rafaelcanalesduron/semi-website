@@ -23,8 +23,7 @@
             background-size: cover;
         }
         @-moz-document url-prefix() {
-            background: none !important; // Mozilla dislikes huge SVG backgrounds
-            background-color: rgba(0, 0, 0, 0.5);
+            background: url('/img/pattern-semi.png');; // Mozilla dislikes huge SVG backgrounds
         }
     }
     h1 {
