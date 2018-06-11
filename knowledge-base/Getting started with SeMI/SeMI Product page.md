@@ -35,4 +35,4 @@ For more information about our onboarding process, see our [onboarding brief](ht
 If you have any additional questions please do not hesitate to get in touch:
 
 Micha Verhagen, Business Development Lead
-[micha@semi.network](mailto:micha@semi.network)
+[Contact me to learn more!](mailto:micha@semi.network)
