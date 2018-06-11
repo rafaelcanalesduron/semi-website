@@ -98,21 +98,31 @@
         padding: 2em;
     }
     h2 {
-       padding: 0 0 0 150px;
-       margin-left: 2rem;
+        
     }
     .semi-usp {
         @media screen and (min-width: 48em) {
             display: flex;
             align-items: center;
         }
-        //&:nth-child(odd) {
-        //    flex-direction: row-reverse;
-        //}
+        div {
+            flex-grow: 0;
+            flex-shrink: 0;
+            text-align: center;
+        }
     }
     p {
         color: #fff;
-        padding: .5rem 5rem .5rem 2rem;
+        padding: .5rem 5rem .5rem .5rem;
+    }
+    @media screen and (min-width: 48em) {
+        h2 {
+            margin-left: 2rem;
+            padding: 0 0 0 150px;
+        }
+        p {
+            padding-left: 2rem;
+        }
     }
 }
 
