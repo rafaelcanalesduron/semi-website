@@ -42,6 +42,9 @@
     }
     p, li {
         //font-family: $typeface-brand;
+        a {
+            color: $color-almostblack;
+        }
     }
     .button--cta {
         //font-family: $typeface-brand;
