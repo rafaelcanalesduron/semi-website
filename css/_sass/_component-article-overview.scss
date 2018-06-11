@@ -66,7 +66,7 @@
     }
     div {
         align-items: center;
-        background: $color-semi-accent;
+        background: $color-almostblack-tint--5;
         border-radius: $border-radius-3;
         color: $color-white;
         display: flex;
@@ -87,15 +87,15 @@
     }
 }
 
-.semi-knowledge-flow-build { // RtP specs
+.semi-knowledge-flow-build {
     div {
-        background: $color-support;
+        background: $color-almostblack-analogous-tint--5;
     }
 }
 
 .semi-knowledge-flow-optimize { // RtP specs
     div {
-        background: $color-almostblack;
+        background: $color-almostblack-triadic-tint--5;
     }
 }
 
@@ -117,8 +117,36 @@
     }
 }
 
-.article-toc { // RtP specs
-    border: 2px solid $color-semi-accent;
-    border-radius: $border-radius-3;
-    padding: 1em;
+.article-toc {
+    [data-group] {
+        border-top-left-radius: 1em;
+        color: $color-white;
+        margin-bottom: 1em;
+        padding: .5em 1em;
+        text-align: center;
+        ~ dd {
+            border-bottom-right-radius: 1em;
+            margin-top: -1.5em;
+            margin-bottom: 1em;
+            padding: 1em 1em 1em 0;
+        }
+    }
+}
+[data-group~='Getting'] {
+    background: $color-almostblack-tint--5;
+    ~ dd {
+        border: 1px solid $color-almostblack-tint--5;
+    }
+}
+[data-group~='Building'] {
+    background: $color-almostblack-analogous-tint--5;
+    ~ dd {
+        border: 1px solid $color-almostblack-analogous-tint--5;
+    }
+}
+[data-group~='Optimize'] {
+    background: $color-almostblack-triadic-tint--5;
+    ~ dd {
+        border: 1px solid $color-almostblack-triadic-tint--5;
+    }
 }

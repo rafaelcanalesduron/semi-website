@@ -15,7 +15,7 @@
                     {% for group in items_grouped %}
                         <dt data-group="{{ group.name }}">{{ group.name }}</dt>
                         <dd>
-                            <ul class="list-bullet bullet-rtp-green">
+                            <ul class="list-ui">
                                 {% for page in site.pages %}
                                     {% if page.topic == group.name %}
                                         <li><a href="{{ page.url }}">{{ page.date | date: '%B %d, %Y' }}{{ page.title }}</a></li>
@@ -25,10 +25,6 @@
                         </dd>
                     {% endfor %}
                 </dl>
-                <div class="rtp-category rtp-category--start">
-                    <p>Getting started with SeMI</p>
-                    <img src="/img/rtp-city-icon-1.1.svg" alt="">
-                </div>
             </div>
 
             <section>
