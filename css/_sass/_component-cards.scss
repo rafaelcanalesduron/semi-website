@@ -1,4 +1,6 @@
 .cards {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     margin: 0 -1em;
     @media screen and (min-width: 42em) {
