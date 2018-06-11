@@ -1,13 +1,15 @@
 .cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     list-style: none;
     margin: 0 -1em;
+    @media screen and (min-width: 42em) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     > li {
         //flex: 1;
         margin: 0 1em 2em;
-        width: 25%;
+        //width: 25%;
     }
 }
 
