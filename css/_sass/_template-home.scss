@@ -10,6 +10,23 @@
 }
 
 .page--home { // RtP specs
+    .header-container {
+        background: $color-almostblack;
+    }
+    .nav-main {
+        li {
+            a {
+                color: $color-white;
+                font-size: 1em;
+                font-style: italic;
+                font-variant: normal;
+                text-transform: none;
+            }
+        }
+    }
+    .nav-main-contact {
+        display: none;
+    }
     main {
         background: $color-semi;
         background: url('/img/pattern-semi.svg');
@@ -39,6 +56,7 @@
         margin-bottom: 3em;
     }
     .button--cta {
+        font-family: $typeface-brand;
         margin-bottom: 2em;
     }
     .cards {
@@ -48,9 +66,11 @@
         background: #af9f22;
         border-radius: 0;
         color: $color-white;
+        padding: 2em;
         .button {
             background: $color-white;
             color: $color-almostblack;
+            margin-top: 1.5em;
         }
         &:last-child {
             background: $color-almostblack;
@@ -78,7 +98,8 @@
         padding: 2em;
     }
     h2 {
-        padding: 0 0 0 13.5rem;
+       padding: 0 0 0 150px;
+       margin-left: 2rem;
     }
     .semi-usp {
         @media screen and (min-width: 48em) {
@@ -89,9 +110,9 @@
         //    flex-direction: row-reverse;
         //}
     }
-    p, i {
+    p {
         color: #fff;
-        padding: .5em 1em;
+        padding: .5rem 5rem .5rem 2rem;
     }
 }
 
