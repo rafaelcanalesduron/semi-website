@@ -29,6 +29,11 @@
             height: auto;
         }
     }
+    .rtp-category {
+        img {
+            width: 100%;
+        }
+    }
     select::-ms-expand {
         display: none;
     }
