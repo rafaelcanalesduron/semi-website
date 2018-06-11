@@ -18,21 +18,20 @@
     text-align: center;
 }
 
-.product-semi--local {
+.product-semi--local { // RtP specs
     background: $color-white;
-    //@include transition-out;
-    //background: $color-olive-analogous-tint--9;
-    //&:hover {
-    //    @include transition-in;
-    //    background: $color-olive-analogous-tint--8;
-    //}
+    border: 2px solid #40d42c;
+    border-radius: $border-radius-3;
+    .button--cta {
+        background: #40d42c;
+    }
 }
 
-.product-semi--world {
+.product-semi--world { // RtP specs
     background: $color-white;
-    //@include transition-out;
-    //background: $color-olive-triadic-tint--9;&:hover {
-    //    @include transition-in;
-    //    background: $color-olive-triadic-tint--8;
-    //}
+    border: 2px solid #af9f22;
+    border-radius: $border-radius-3;
+    .button--cta {
+        background: #af9f22;
+    }
 }

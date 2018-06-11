@@ -5,7 +5,7 @@
 
     <img src="/img/authors/bob.jpg" alt="Portrait of Bob van Luijt" >
     <h2>Author: Bob van Luijt</h2>
-    <a class="button--small button--email" href="mailto:bob@semi.network">Email Bob</a>
+    <a class="button--small button--email" href="mailto:bob@semi.network">Contact me to learn more!</a>
 
 {% endif %}
 
@@ -14,7 +14,7 @@
 
     <img src="/img/authors/laura.jpg" alt="Portrait of Laura Ham">
     <h2>Author: Laura Ham</h2>
-    <a class="button--small button--email" href="mailto:laura@semi.network">Email Laura</a>
+    <a class="button--small button--email" href="mailto:laura@semi.network">Contact me to learn more!</a>
 
 {% endif %}
 
@@ -23,7 +23,7 @@
 
     <img src="/img/authors/marta.jpg" alt="Portrait of Marta Marszal">
     <h2>Author: Marta Marszal</h2>
-    <a class="button--small button--email" href="mailto:marta@semi.network">Email Marta</a>
+    <a class="button--small button--email" href="mailto:marta@semi.network">Contact me to learn more!</a>
 
 {% endif %}
 
@@ -32,6 +32,6 @@
 
     <img src="/img/authors/micha.jpg" alt="Portrait of Micha Verhagen">
     <h2>Author: Micha Verhagen</h2>
-    <a class="button--small button--email" href="mailto:micha@semi.network">Email Micha</a>
+    <a class="button--small button--email" href="mailto:micha@semi.network">Contact me to learn more!</a>
 
 {% endif %}

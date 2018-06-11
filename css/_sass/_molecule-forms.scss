@@ -90,6 +90,7 @@ fieldset {
 	color: $color-white;
 	display: inline-block;
 	font-family: $typeface-body;
+	font-size: 1rem;
 	padding: $scale-0 $scale-2;
 	text-align: center;
 	&:hover, &:focus, &:active {

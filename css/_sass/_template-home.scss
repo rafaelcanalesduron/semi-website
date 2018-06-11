@@ -10,65 +10,90 @@
     }
 }
 
-.page--home {
+.page--home { // RtP specs
+    main {
+        background: $color-semi;
+    }
     h1 {
-        @include background-opacity($color-white, .8);
         color: $color-almostblack-tint--3;
+        color: $color-white;
         font-size: 3.75rem;
+        font-style: italic;
         padding: 1em 0 1em;
-        text-align: center;
         em {
             color: $color-semi-tint-2;
+            color: $color-almostblack;
+        }
+    }
+    h2 {
+        color: #fff;
+        span {
+            color: $color-almostblack;
         }
     }
     section {
         margin-bottom: 3em;
     }
     .button--cta {
-        font-size: 1.75rem;
         margin-bottom: 2em;
+    }
+    .cards {
+        
+    }
+    .card {
+        background: #af9f22;
+        border-radius: 0;
+        color: $color-white;
+        .button {
+            background: $color-white;
+            color: $color-almostblack;
+        }
+        &:last-child {
+            background: $color-almostblack;
+        }
+        a {
+            border-bottom: 0 !important;
+            color: $color-white;
+        }
     }
 }
 
 .section-heading--primary {
-    @include pattern-semi;
     div {
         margin: 0 auto;
         max-width: $component-primary-max-width;
     }
 }
 
-.section-emphasized {
-    @include pattern-semi;
+.section-emphasized { // RtP specs
     > div {
-        @include background-opacity($color-almostblack-tint--9, .8);
-        border-radius: $border-radius-1;
+        @include background-opacity($color-almostblack, .5);
+        //border-radius: $border-radius-1;
         margin: 0 auto;
         max-width: $component-primary-max-width;
         padding: 2em;
     }
     h2 {
-        padding: 0 1em;
+        padding: 0 0 0 13.5rem;
     }
     .semi-usp {
         @media screen and (min-width: 48em) {
             display: flex;
             align-items: center;
         }
-        &:nth-child(odd) {
-            flex-direction: row-reverse;
-        }
+        //&:nth-child(odd) {
+        //    flex-direction: row-reverse;
+        //}
     }
     p, i {
+        color: #fff;
         padding: .5em 1em;
     }
     i {
         display: block;
         flex-shrink: 0;
         text-align: center;
-    }
-    em {
-        color: $color-semi-tint-3;
+        width: 12rem;
     }
 }
 
