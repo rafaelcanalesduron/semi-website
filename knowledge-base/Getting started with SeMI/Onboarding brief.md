@@ -1,6 +1,6 @@
 ---
 bodyclass: page--knowledge-base knowledge-base--start
-layout: article
+layout: article-start
 title: Onboarding brief
 description: How do we help you on-board into the SeMI network. 
 topic: Getting started with SeMI

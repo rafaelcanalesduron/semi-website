@@ -1,6 +1,6 @@
 ---
 bodyclass: page--knowledge-base knowledge-base--optimize
-layout: article
+layout: article-optimize
 title: How to use the SeMI Tool?
 description: The SeMI tool helps you to onboard your data as easily as possible to the Weaviate instances.
 topic: Optimize your use cases

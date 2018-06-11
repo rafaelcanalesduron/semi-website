@@ -1,6 +1,6 @@
 ---
 bodyclass: page--knowledge-base knowledge-base--start
-layout: article
+layout: article-start
 title: Partner brief
 description: Why is partnering with SeMI a great enhancement of your current business offerings? In this primer you will learn why SeMI is so valuable for your business.
 topic: Getting started with SeMI

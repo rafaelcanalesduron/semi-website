@@ -6,7 +6,6 @@
 
 <main>
 	<article>
-		
 		<div class="article-container">
     		{% assign items_grouped = site.pages | group_by: 'topic' | sort: 'topic' %}
             <div>
@@ -24,9 +23,9 @@
                         </dd>
                     {% endfor %}
                 </dl>
-                <div class="rtp-category rtp-category--build">
-                    <p>Building your first use case</p>
-                    <img src="/img/rtp-build.svg" alt="">
+                <div class="rtp-category rtp-category--start">
+                    <p>Getting started with SeMI</p>
+                    <img src="/img/rtp-start.svg" alt="">
                 </div>
             </div>
 
@@ -91,9 +90,5 @@
 		</div>        
 	</article>
 </main>
-
-<!-- code highlights -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
 
 {% include component-footer.html %}

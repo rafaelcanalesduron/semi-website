@@ -1,6 +1,6 @@
 ---
 bodyclass: page--knowledge-base knowledge-base--start
-layout: article
+layout: article-start
 title: SeMI pilot program
 description: In this brief we describes our pilot program. 
 topic: Getting started with SeMI
