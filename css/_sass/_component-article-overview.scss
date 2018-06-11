@@ -39,6 +39,7 @@
     @media screen and (min-width: 48em) {
         display: flex;
         justify-content: space-between;
+        margin-top: 2em;
         li {            
             &:not(:last-child) {
                 margin-right: 1em;
