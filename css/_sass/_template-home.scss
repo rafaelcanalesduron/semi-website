@@ -22,6 +22,9 @@
         @media screen and (min-width: 56em) {
             background-size: cover;
         }
+        @-moz-document url-prefix() {
+            background: none !important;
+        }
     }
     h1 {
         color: $color-almostblack-tint--3;
