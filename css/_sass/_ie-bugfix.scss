@@ -1,5 +1,9 @@
 // IE10+ bugfixes
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    img, svg {
+        border: 0 !important;
+        outline: 0 !important;
+    }
     html {
     	background: $color-white;
     }
