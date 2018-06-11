@@ -136,17 +136,35 @@
     background: $color-almostblack-tint--5;
     ~ dd {
         border: 1px solid $color-almostblack-tint--5;
+        a {
+            &:hover {
+                background: $color-almostblack-tint--5;
+                outline-color: $color-almostblack-tint--5;;
+            }
+        }
     }
 }
 [data-group~='Building'] {
     background: $color-almostblack-analogous-tint--5;
     ~ dd {
         border: 1px solid $color-almostblack-analogous-tint--5;
+        a {
+            &:hover {
+                background: $color-almostblack-analogous-tint--5;
+                outline-color: $color-almostblack-analogous-tint--5;;
+            }
+        }
     }
 }
 [data-group~='Optimize'] {
     background: $color-almostblack-triadic-tint--5;
     ~ dd {
         border: 1px solid $color-almostblack-triadic-tint--5;
+        a {
+            &:hover {
+                background: $color-almostblack-triadic-tint--5;
+                outline-color: $color-almostblack-triadic-tint--5;;
+            }
+        }
     }
 }
