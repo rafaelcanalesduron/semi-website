@@ -31,4 +31,3 @@ We are excited to get you off to a flying start, do not hesitate to [contact](ma
 If you have any additional questions please do not hesitate to get in touch:
 
 Micha Verhagen, Business Development Lead
-[Contact me to learn more!](mailto:micha@semi.network)

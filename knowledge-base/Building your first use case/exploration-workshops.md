@@ -46,4 +46,3 @@ If you decide to participate in the workshop we’ll ask you to sign a standard 
 If you have any additional questions please do not hesitate to get in touch:
 
 Marta Marszal, Experiment Lead
-[Contact me to learn more!](mailto:marta@semi.network)

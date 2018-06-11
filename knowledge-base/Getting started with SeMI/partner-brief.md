@@ -24,4 +24,3 @@ video-caption:
 If you have any additional questions please do not hesitate to get in touch:
 
 Micha Verhagen, Business Lead
-[Contact me to learn more!](mailto:micha@semi.network)
