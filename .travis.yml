@@ -26,7 +26,7 @@ before_install:
 script:
 - set -e
 - JEKYLL_ENV=production bundle exec jekyll build --config "_config.prod.yml"
-- html-minifier --input-dir ./_site --output-dir ./_site --html-5 --collapse-whitespace
+- html-minifier --input-dir ./_site --output-dir ./_site --collapse-whitespace
 - uglifyjs --compress --mangle -o _site/js/semi.js -- _site/js/semi.js
 - |
   if [ $TRAVIS_BRANCH = "master" ]; then
