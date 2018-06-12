@@ -1,9 +1,9 @@
 ---
 bodyclass: page--knowledge-base knowledge-base--start
 layout: article-start
-title: Onboarding brief
+title: Onboarding Brief
 description: How do we help you on-board into the SeMI network. 
-topic: Getting started with SeMI
+topic: Start
 author: MV
 relating-articles: []
 previous-article: null
@@ -31,8 +31,3 @@ The refined data is stored in *Weaviate*. Weaviate is the decentralised semantic
 
 ### Deploy your use case
 We support you in deploying your use case on your favourite system or cloud service. We understand the complexity of the systems and processes involved in deploying your use case. 
-
-## More information?
-If you have any additional questions please do not hesitate to get in touch:
-
-Micha Verhagen, Business Development Lead

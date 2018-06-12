@@ -1,9 +1,9 @@
 ---
 bodyclass: page--knowledge-base knowledge-base--build
 layout: article-build
-title: How to deal with translations?
-description: SeMI is language based, and currently English works best. In this article, you will learn how to best deal with translations in your datasets.
-topic: Building your first use case
+title: Collecting Data
+description: Before onboarding data, you will need to process it to fit into Weaviate. In this article, you will learn best practices to achieve this.
+topic: Start
 author: null
 relating-articles: []
 previous-article: null

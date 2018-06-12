@@ -3,7 +3,7 @@ bodyclass: page--knowledge-base knowledge-base--optimize
 layout: article-optimize
 title: How to enrich data?
 description: Sometimes data tells a lot more than the information you have at hand. In this article you will learn how to best enrich your data with meta-data.
-topic: Optimize your use cases
+topic: Implement
 author: null
 relating-articles: []
 previous-article: onboarding/how-to-create-an-ontology

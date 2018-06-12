@@ -195,7 +195,15 @@ document
 		if(queryString != null && queryString != ""){
             // query is available in querystring so load the results
             loadResults(queryString);			
-		}
+        }
+        // set current link cursive
+       // var menu = document.getElementsById("toc");
+        var links = document.getElementById("toc").getElementsByTagName("a");
+        for(var i=0; i<links.length; i++) {
+            if(links[i].href == window.location.href){
+                links[i].classList.add("current")
+            }
+        }
 	}, false);
 
 /*

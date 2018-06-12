@@ -1,9 +1,9 @@
 ---
 bodyclass: page--knowledge-base knowledge-base--start
 layout: article-start
-title: SeMI pilot program
+title: Pilot Program
 description: In this brief we describes our pilot program. 
-topic: Getting started with SeMI
+topic: Learn
 author: MV
 relating-articles: []
 previous-article: null
@@ -26,8 +26,3 @@ We do not charge a fee to our pilot program participants. We do ask an investmen
 - Time: spend time with us to help us discover, define and deploy your first SeMI use case.
 
 We are excited to get you off to a flying start, do not hesitate to [contact](mailto:micha@semi.network) us. 
-
-## More information?
-If you have any additional questions please do not hesitate to get in touch:
-
-Micha Verhagen, Business Development Lead

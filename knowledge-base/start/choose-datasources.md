@@ -1,9 +1,9 @@
 ---
 bodyclass: page--knowledge-base knowledge-base--build
 layout: article-build
-title: How to pick your data sources?
+title: Choose Datasources
 description: Strategically choosing the right sources to start working with is difficult, this article advises you on how to select the right datasets.
-topic: Building your first use case
+topic: Start
 author: BVL
 relating-articles: []
 previous-article: null

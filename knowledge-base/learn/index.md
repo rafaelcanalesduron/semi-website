@@ -1,7 +1,8 @@
 ---
 bodyclass: page--knowledge-base knowledge-flow-start
 layout: article-overview-new
-show-topic: Getting started with SeMI
+show-topic: Learn
+topic: Learn
 page-heading: I love to get started with SeMI, tell me more!
 section-intro-text: If you are new to SeMI, read these articles first to understand why SeMI is valuable for your organization.
 ---
@@ -10,20 +11,6 @@ section-intro-text: If you are new to SeMI, read these articles first to underst
 
 <div class="article-container">
     {% assign items_grouped = site.pages | group_by: 'topic' | sort: 'topic' %}
-    <dl class="article-toc">
-        {% for group in items_grouped %}
-            <dt data-group="{{ group.name }}">{{ group.name }}</dt>
-            <dd>
-                <ol class="list-ordered">
-                    {% for page in site.pages %}
-                        {% if page.topic == group.name %}
-                            <li><a href="{{ page.url }}">{{ page.date | date: '%B %d, %Y' }}{{ page.title }}</a></li>
-                        {% endif %}
-                    {% endfor %}
-                </ol>
-            </dd>
-        {% endfor %}
-    </dl>
     
     <section>
         <!-- Breadcrumbs for overview-->

@@ -19,6 +19,9 @@
     a {
         border-bottom: 0;
     }
+    a.current {
+        font-style: italic;
+    }
     .list-ordered {
     	counter-reset: li;
         list-style: none;

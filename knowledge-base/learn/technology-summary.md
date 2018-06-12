@@ -1,9 +1,9 @@
 ---
 bodyclass: page--knowledge-base knowledge-base--start
 layout: article-start
-title: Management brief
+title: Executive Summary
 description: Why is SeMI a great tool to enrich your current business offerings? In this primer you will learn why SeMI is so valuable for your business.
-topic: Getting started with SeMI
+topic: Learn
 author: MV
 relating-articles: []
 previous-article: null
@@ -13,6 +13,7 @@ video-caption:
 ---
 
 ## Problem
+
 Is your company spending a lot of money acquiring, processing and analysing large sets of data, yet is not able to generate insights needed to drive business decisions? You are not alone! According to a Bain & Company survey, 59% of companies struggle to generate meaningful business insights from their data. Annually, $ 18,9 billion is spent on unnecessarily aggregated market insights. 
 
 ## SeMI - Semantic Machine Insights

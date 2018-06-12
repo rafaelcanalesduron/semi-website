@@ -3,7 +3,7 @@ bodyclass: page--knowledge-base knowledge-base--build
 layout: article-build
 title: Use Case Exploration
 description: This document is to give you an overview of the SeMI Use Case Exploration Workshop.
-topic: Building your first use case
+topic: Start
 tagline: If you are ready to build your first use case, read these articles to get a flying start.
 author: MM
 relating-articles: []

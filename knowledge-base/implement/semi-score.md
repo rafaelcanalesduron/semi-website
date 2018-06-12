@@ -1,13 +1,13 @@
 ---
 bodyclass: page--knowledge-base knowledge-base--optimize
 layout: article-optimize
-title: How to use the SeMI Tool?
-description: The SeMI tool helps you to onboard your data as easily as possible to the Weaviate instances.
-topic: Optimize your use cases
-author: null
+title: SeMI Score
+description: A brief overview of the SeMI Score
+topic: Implement
+author: BVL
 relating-articles: []
 previous-article: null
-tags: ['Technology', 'SeMI-tool']
+tags: ['business']
 video-link: 
 video-caption: 
 ---

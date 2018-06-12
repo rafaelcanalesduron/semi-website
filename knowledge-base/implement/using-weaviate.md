@@ -3,7 +3,7 @@ bodyclass: page--knowledge-base knowledge-base--build
 layout: article-tech
 title: Using Weaviate
 description: Technical documentation for using Weaviate.
-topic: Building your first use case
+topic: Implement
 author: BVL
 relating-articles: []
 previous-article: null

@@ -1,13 +1,12 @@
 ---
-bodyclass: page--knowledge-base knowledge-flow-optimize
+bodyclass: page--knowledge-base knowledge-flow-build
 layout: article-overview-new
-show-topic: Optimize your use cases
-page-heading: Loving it, I want to expand my use case portfolio
-section-intro-text: If you want to optimize or expand your use cases, read these articles to accelerate.
+show-topic: Start
+page-heading: I am excited, I can’t wait to build my first use case
+section-intro-text: If you are ready to build your first use case, read these articles to get a flying start.
 ---
 
 <!-- THIS PAGE CONTAINS THE INDEX FOR THIS FOLDER -->
-
 
 <div class="article-container">
     {% assign items_grouped = site.pages | group_by: 'topic' | sort: 'topic' %}
