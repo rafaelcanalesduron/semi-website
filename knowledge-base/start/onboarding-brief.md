@@ -1,13 +1,11 @@
 ---
-bodyclass: page--knowledge-base knowledge-base--start
 layout: article-start
 title: Onboarding Brief
 description: How do we help you on-board into the SeMI network. 
 topic: Start
-author: MV
-relating-articles: []
-previous-article: null
 tags: ['business', 'why', 'product']
+video-link: 
+video-caption: 
 ---
 
 ## SeMI on-boarding

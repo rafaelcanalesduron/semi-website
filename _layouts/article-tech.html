@@ -7,26 +7,7 @@
 <main>
 	<article>
 		
-		<div class="article-container">
-    		<a class="show-toc" href="#" onclick="toggle_visibility('toc');">Table of contents</a>
-    		{% assign items_grouped = site.pages | group_by: 'topic' | sort: 'topic' %}
-    		<div class="article-toc-container" id="toc">
-                <dl class="article-toc">
-<!--                     <a class="show-toc close" href="#" onclick="toggle_visibility('toc');">Close</a> -->
-                    {% for group in items_grouped %}
-                        <dt data-group="{{ group.name }}">{{ group.name }}</dt>
-                        <dd>
-                            <ul class="list-ui">
-                                {% for page in site.pages %}
-                                    {% if page.topic == group.name %}
-                                        <li><a href="{{ page.url }}">{{ page.date | date: '%B %d, %Y' }}{{ page.title }}</a></li>
-                                    {% endif %}
-                                {% endfor %}
-                            </ul>
-                        </dd>
-                    {% endfor %}
-                </dl>
-            </div>
+			{% include article-menu.html %}
 
             <section>
 <!--

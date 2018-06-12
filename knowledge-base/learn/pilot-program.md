@@ -1,12 +1,8 @@
 ---
-bodyclass: page--knowledge-base knowledge-base--start
 layout: article-start
 title: Pilot Program
 description: In this brief we describes our pilot program. 
 topic: Learn
-author: MV
-relating-articles: []
-previous-article: null
 tags: ['business', 'pilot']
 ---
 

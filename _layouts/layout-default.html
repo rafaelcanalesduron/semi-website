@@ -1,6 +1,10 @@
 {% include head.html %}
 
-<body class="{{page.bodyclass}}">
+{% if bodyclass == blank %}
+	<body class="page--knowledge-base knowledge-base--{{ page.topic | downcase }}">
+{% else %}
+	<body class="{{page.bodyclass}}">
+{% endif %}
 
 {% include component-header.html %}
 

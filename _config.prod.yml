@@ -1,9 +1,14 @@
 weaviate_version: 0.8.6
+topic_order:
+    - _
+    - Learn
+    - Start
+    - Implement
 url: "https://www.semi.network"
 auto: true
 markdown: kramdown
 kramdown:  
-    parse_block_html: true
+    parse_block_html: false
 rdiscount extensions: [smart]
 sass:
     style: compressed # opposed to "expanded"
@@ -24,8 +29,3 @@ plugins:
 autoprefixer:
     browsers:
         - last 2 versions
-html_press:
-    unquoted_attributes: false
-    drop_empty_values: false
-    strip_crlf: false
-    js_minifier_options: false

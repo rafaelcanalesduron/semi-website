@@ -1,12 +1,11 @@
 ---
-layout: article
-title: Why is your data safe and compliant
+layout: article-start
+title: Data Compliancy
 description: In this brief we describe how you keep your data safe and compliant. 
-topic: Primers
-author: MV
-relating-articles: []
-previous-article: null
+topic: Start
 tags: ['business', 'why', 'product']
+video-link: 
+video-caption: 
 ---
 
 ## You are in control of your information
@@ -17,10 +16,4 @@ The raw data itself is never shared or made available.  The API returns only the
 
 We understand that your information sources may contain information about individuals, otherwise known as “personal data”. With the recent development of legislation it is important to manage the information that you share with other participants of the network. 
 
-We have several tools to help you. In our on-boarding workshops, for example, we help you define your ontology (see our [on-boarding primer](http://dev.semi.network/knowledge-base/INSERT_LINK.html)). This ontology is an important mechanism in refining your data into knowledge graphs using our SeMI tool and our knowledge base. This refining process makes it highly impractical to connect personal data to an identifiable person.
-
-## More information?
-If you have any additional questions please do not hesitate to get in touch:
-
-Micha Verhagen, Business Development Lead
-[micha@semi.network](mailto:micha@semi.network)
+We have several tools to help you. In our on-boarding workshops, for example, we help you define your ontology (see our [on-boarding primer](/knowledge-base/start/onboarding-brief.html)). This ontology is an important mechanism in refining your data into knowledge graphs using our SeMI tool and our knowledge base. This refining process makes it highly impractical to connect personal data to an identifiable person.

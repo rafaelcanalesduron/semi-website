@@ -1,12 +1,8 @@
 ---
-bodyclass: page--knowledge-base knowledge-base--start
 layout: article-start
-title: Executive Summary
+title: Technology Summary
 description: Why is SeMI a great tool to enrich your current business offerings? In this primer you will learn why SeMI is so valuable for your business.
 topic: Learn
-author: MV
-relating-articles: []
-previous-article: null
 tags: ['business', 'why']
 video-link: 
 video-caption: 

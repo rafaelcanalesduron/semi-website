@@ -1,20 +1,15 @@
 {% include head.html %}
 
-<body class="{{page.bodyclass}}">
+<body class="page--knowledge-base">
 
 {% include component-header.html %}
 
 <main>
 	<article>
 
-			<!-- Breadcrumbs for overview-->
-			<ol class="breadcrumb">
-				<li><a href="/knowledge-base">Knowledge base</a></li>
-				<li>{{ page.show-topic }}</li>
-			</ol>
+		{% include article-menu.html %}
 
-			{{ content }}
-
+		{{ content }}
 	</article>
 </main>
 
