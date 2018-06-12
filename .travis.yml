@@ -12,7 +12,6 @@ cache:
 before_install:
 - sudo apt-get install -y nodejs npm
 - npm install -g html-minifier
-- npm install -g cssnano
 - npm install -g uglify-js
 - openssl aes-256-cbc -K $encrypted_79b548fb7a17_key -iv $encrypted_79b548fb7a17_iv
   -in key.json.enc -out key.json -d
@@ -26,7 +25,7 @@ before_install:
 script:
 - set -e
 - JEKYLL_ENV=production bundle exec jekyll build --config "_config.prod.yml"
-- html-minifier --input-dir ./_site --output-dir ./_site --collapse-whitespace
+- html-minifier --input-dir ./_site --output-dir ./_site --collapse-whitespace --file-ext html
 - uglifyjs --compress --mangle -o _site/js/semi.js -- _site/js/semi.js
 - |
   if [ $TRAVIS_BRANCH = "master" ]; then
