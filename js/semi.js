@@ -197,11 +197,23 @@ document
             loadResults(queryString);			
         }
         // set current link cursive
-       // var menu = document.getElementsById("toc");
-        var links = document.getElementById("toc").getElementsByTagName("a");
-        for(var i=0; i<links.length; i++) {
-            if(links[i].href == window.location.href){
-                links[i].classList.add("current")
+        var links = document.getElementById("toc");
+        if(links != null){
+            var links = links.getElementsByTagName("a");
+            for(var i=0; i<links.length; i++) {
+                if(links[i].href == window.location.href){
+                    links[i].classList.add("current")
+                }
+            }
+        }
+        // set _blank for external links
+        var links = document.getElementsByTagName("a");
+        if(links != null){
+            for(var i=0; i<links.length; i++) {
+                // external set _blank
+                if(links[i].hostname != window.location.hostname){
+                    links[i].target = "_blank";
+                }
             }
         }
 	}, false);
