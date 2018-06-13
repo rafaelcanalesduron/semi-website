@@ -1,6 +1,6 @@
 ---
 layout: article-start
-title: Choose a Datasources
+title: Choose a Datasource
 description: Strategically choosing the right sources to start working with is difficult, this article advises you on how to select the right datasets.
 topic: Start
 tags: ['business', 'preparing']
