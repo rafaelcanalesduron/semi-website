@@ -28,8 +28,8 @@ Independent of the SeMI product, we support you fully in deploying SeMI and gett
 3. Refine your data from each source that you want to exploit in your network.
 4. Deploy your use case on your favourite system or cloud service.
 
-For more information about our onboarding process, see our [onboarding brief](../start/onboarding-brief.html).
+For more information about our onboarding process, see our [onboarding brief](/knowledge-base/start/onboarding-brief/).
 
 ## More information?
-If you have any additional questions please do not hesitate to [get in touch](/contact.html).
+If you have any additional questions please do not hesitate to [get in touch](/contact/).
 
