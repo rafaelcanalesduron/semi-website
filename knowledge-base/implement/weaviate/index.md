@@ -9,6 +9,11 @@ video-caption:
 menu-order: 3
 ---
 
+<section class="help">
+    This is the documentation page for Weaviate.<br>
+    In case you are looking for a technology summary, <a href="/knowledge-base/learn/technology-summary/">visit this page</a>.
+</section>
+
 ## Download Binary
 
 ### Directly Download and Install
