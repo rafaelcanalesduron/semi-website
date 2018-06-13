@@ -1,7 +1,7 @@
 ---
 layout: article-start
 title: Pilot Program
-description: In this brief we describes our pilot program. 
+description: SeMI wants to finally enable its customers to give meaning to their big data. We believe that our pilot program is the best way to align our products and services with their needs.
 topic: Learn
 tags: ['business', 'pilot']
 ---
@@ -21,4 +21,10 @@ We do not charge a fee to our pilot program participants. We do ask that you mak
 - Data sources: we ask you to identify and collect data sources that are relevant for your specific use cases.
 - Time: spend time with us to help us discover, define and deploy your first SeMI use case.
 
-We are excited to get you off to a flying start, do not hesitate to [contact](mailto:micha@semi.network) us. 
+We are excited to get you off to a flying start, do not hesitate to [contact](/contact.html) us. 
+
+## About SeMI as a startup
+
+SeMI wants to finally enable its customers to give meaning to their big data. We believe that our pilot program is the best way to align our products and services with their needs.
+
+In case you have any questions about SeMI as a startup, do not hesitate to [contact](/contact.html) us.

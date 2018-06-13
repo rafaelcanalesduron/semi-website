@@ -1,7 +1,7 @@
 ---
 layout: article-start
 title: Use Case Exploration
-description: This document is to give you an overview of the SeMI Use Case Exploration Workshop.
+description: To make sure our customers get the most value from SeMI, we have introduced the exploration workshop to tailor a SeMI network to your needs.
 topic: Start
 tags: ['business', 'workshops']
 video-link: 

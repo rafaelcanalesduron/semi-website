@@ -162,6 +162,7 @@ dfn {
 }
 
 blockquote {
+	margin-left: $scale-1; 
     color: $color-gray-2;
 	position: relative;
 	&:before {

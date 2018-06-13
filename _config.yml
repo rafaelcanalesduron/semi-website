@@ -15,7 +15,6 @@ sass:
 exclude:
     - "*.json"
     - "Gemfile*"
-    - "*.txt"
     - "*.enc"
     - vendor
     - README.md
