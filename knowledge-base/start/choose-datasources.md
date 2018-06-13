@@ -8,4 +8,6 @@ video-link:
 video-caption: 
 ---
 
-Write the article here in Markdown, header is not needed.
+# Choosing sources
+
+# Collecting data

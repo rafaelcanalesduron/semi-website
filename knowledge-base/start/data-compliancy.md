@@ -1,9 +1,9 @@
 ---
 layout: article-start
 title: Data Compliancy
-description: In this brief we describe how you keep your data safe and compliant. 
+description: What does it mean for your organization from a safety and compliance point of view when you use SeMI?
 topic: Start
-tags: ['business', 'why', 'product']
+tags: ['business', 'why', 'product', 'compliance']
 video-link: 
 video-caption: 
 ---

@@ -12,6 +12,8 @@ video-caption:
 
 The SeMI Use Case Exploration is a one day workshop, which SeMI offers to its aspiring members. The purpose is to introduce SeMI and develop your custom use cases. As a result the business value of SeMI will become tangible. This outcome will enable further steps like: Alignment of your internal stakeholders, definition of a <abbr title="Proof of concept">PoC</abbr>, input into business cases, the possibility to join our Pilot Project, etc. 
 
+> We work with you to discover, define and deploy your first SeMI use case.
+
 ## Methodology
 The format of this workshop follows the Design Thinking paradigm of “Divergent &amp; Convergent” thinking. In practice this mean the first half of the day we spend on thinking broad and identify as many opportunity areas as possible (divergent thinking). The second half of the day is focused on identifying the most potent ideas and making them more tangible (convergent thinking). 
 

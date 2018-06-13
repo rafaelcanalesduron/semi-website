@@ -1,6 +1,6 @@
 ---
 layout: article-tech
-title: Weaviate
+title: Weaviate Documentation
 description: Technical documentation for using Weaviate.
 topic: Implement
 tags: ['Technology', 'Weaviate']

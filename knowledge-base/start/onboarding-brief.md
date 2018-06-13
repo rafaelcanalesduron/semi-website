@@ -1,7 +1,7 @@
 ---
 layout: article-start
 title: Onboarding Brief
-description: How do we help you on-board into the SeMI network. 
+description: What it means to onboard to the SeMI Network.
 topic: Start
 tags: ['business', 'why', 'product']
 video-link: 

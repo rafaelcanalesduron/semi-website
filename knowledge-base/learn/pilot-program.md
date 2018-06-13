@@ -10,6 +10,8 @@ tags: ['business', 'pilot']
 
 In the SeMI *pilot program* we offer companies the opportunity to explore the possibilities offered by joining the SeMI network. We work with you to discover, define and deploy your first SeMI use case. We have several tools to help you get off to a flying start. 
 
+> We work with you to discover, define and deploy your first SeMI use case.
+
 We kick off, for example, by offering you an [exploration workshop](../start/exploration-workshops.html) to understand where your business challenges meet SeMI opportunities. In this one-day workshop we introduce SeMI and develop your custom use cases. The outcome of the workshop will enable further steps like: alignment of your internal stakeholders, definition of a Proof of Concept, input into business cases, the possibility to join our Pilot Project, etcetera. 
 
 You can find out more how we help companies deploy SeMI by reading our [on-boarding brief](../start/onboarding-brief.html).
