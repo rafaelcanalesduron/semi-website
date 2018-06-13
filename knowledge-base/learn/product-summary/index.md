@@ -29,3 +29,7 @@ Independent of the SeMI product, we support you fully in deploying SeMI and gett
 4. Deploy your use case on your favourite system or cloud service.
 
 For more information about our onboarding process, see our [onboarding brief](../start/onboarding-brief.html).
+
+## More information?
+If you have any additional questions please do not hesitate to [get in touch](/contact.html).
+
