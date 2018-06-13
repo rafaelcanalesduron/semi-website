@@ -22,7 +22,7 @@ SeMI focuses on hyper-organized information, also known as "Knowledge graphs". S
 
 ## Start with the business questions
 
-SeMI starts from the business perspective: which business decisions need data-driven insights? What are the key questions you want answers to? We help you discover and develop your key business questions in our [exploration workshop](/semi-website/knowledge-base/start/exploration-workshops.md). In this workshop we introduce you to SeMI and develop your custom use cases.
+SeMI starts from the business perspective: which business decisions need data-driven insights? What are the key questions you want answers to? We help you discover and develop your key business questions in our [exploration workshop](../start/exploration-workshops.html). In this workshop we introduce you to SeMI and develop your custom use cases.
 
 ## SeMI products
 
@@ -32,10 +32,10 @@ SeMI starts from the business perspective: which business decisions need data-dr
 - **SeMI World**: exponentially enrich your insights on the SeMI network. *SeMI World* enables you to exponentially enrich enrich your market and customer insights by connecting you to other members of the network. We connect you to (potentially multiple) SeMI netwerk(s) most suitable for your needs. 
 
 For more information about the SeMI products, please refer to our 
-[product page](product-summary.md)
+[product page](product-summary.html)
 
 ## Your data is safe
 
 You stay in complete control of your own information: raw data is never shared! SeMI focuses on the things that the raw data portrays and links that information together to create a graph of knowledge that can be consulted by consumers of the network.
 
-SeMI is decentralized, which means there is no central platform. SeMI runs on your own servers or in your own cloud. For more information on this topic, please refer to our [legal brief](semi-website/knowledge-base/start/data-compliancy.md).
+SeMI is decentralized, which means there is no central platform. SeMI runs on your own servers or in your own cloud. For more information on this topic, please refer to our [legal brief](../start/data-compliancy.html).
