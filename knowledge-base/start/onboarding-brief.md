@@ -6,6 +6,7 @@ topic: Start
 tags: ['business', 'why', 'product']
 video-link: 
 video-caption: 
+menu-order: 3
 ---
 
 ## SeMI on-boarding

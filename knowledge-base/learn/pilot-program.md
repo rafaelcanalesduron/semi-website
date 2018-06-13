@@ -4,6 +4,7 @@ title: Pilot Program
 description: SeMI wants to finally enable its customers to give meaning to their big data. We believe that our pilot program is the best way to align our products and services with their needs.
 topic: Learn
 tags: ['business', 'pilot']
+menu-order: 3
 ---
 
 ## Getting you off to a flying start

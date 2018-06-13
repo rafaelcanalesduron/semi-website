@@ -6,6 +6,7 @@ topic: Implement
 tags: ['technology', 'onboarding']
 video-link: 
 video-caption: 
+menu-order: 2
 ---
 
 An ontology schema describes all classes and properties of meta information of your own dataset. The schema (e.g. fields, names, keywords, columns etc) of your dataset are not the only indicators for your schema components. Data values of the original dataset can contain valuable (meta) information about the instance, which could be assigned to classes or property value of classes.

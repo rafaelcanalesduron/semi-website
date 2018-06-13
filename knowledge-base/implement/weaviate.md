@@ -6,6 +6,7 @@ topic: Implement
 tags: ['Technology', 'Weaviate']
 video-link: 
 video-caption: 
+menu-order: 3
 ---
 
 ## Download Binary

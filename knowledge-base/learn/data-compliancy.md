@@ -2,15 +2,16 @@
 layout: article-start
 title: Data Compliancy
 description: What does it mean for your organization from a safety and compliance point of view when you use SeMI?
-topic: Start
+topic: Learn
 tags: ['business', 'why', 'product', 'compliance']
 video-link: 
 video-caption: 
+menu-order: 5
 ---
 
 ## You are in control of your information
 
-SeMI is a decentralized knowledge network, which means that each member of the SeMI network deploys SeMI from their own systems:  there is no central SeMI central data storage.  Effectively each member has its own data vault on their own systems, which can only be accessed through an API. So you are in complete control of the safety of your data.
+SeMI is a [decentralized](/nomenclature.html#dn) [knowledge network](/nomenclature.html#kn), which means that each member of the SeMI network deploys SeMI from their own systems: there is no central SeMI central data storage. Effectively each member has its own data vault on their own systems, which can only be accessed through an [API](/nomenclature.html#api). So you are in complete control of the safety of your data.
 
 The raw data itself is never shared or made available.  The API returns only the "answer" to a question - not the data that makes up the answer. The data itself stays safe in the data vault, while the answer is exposed through the API. 
 
