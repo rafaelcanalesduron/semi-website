@@ -19,3 +19,6 @@ We help you to first identify the key data sources that likely contain informati
 # Collecting data
 
 Obtaining (internal) approval to use these data sources is a often a challenging step in the process. We will support you in getting (internal) approval to use these data sources.
+
+## More information?
+If you have any additional questions please do not hesitate to [get in touch](/contact.html).
