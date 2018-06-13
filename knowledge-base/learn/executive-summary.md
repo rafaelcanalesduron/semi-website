@@ -41,4 +41,4 @@ For more information about the SeMI products, please refer to our
 
 You stay in complete control of your own information: raw data is never shared! SeMI focuses on the things that the raw data portrays and links that information together to create a graph of knowledge that can be consulted by consumers of the network.
 
-SeMI is decentralized, which means there is no central platform. SeMI runs on your own servers or in your own cloud. For more information on this topic, please refer to our [legal brief](/knowledge-base/start/data-compliancy.html).
+SeMI is decentralized, which means there is no central platform. SeMI runs on your own servers or in your own cloud. For more information on this topic, please refer to our [legal brief](data-compliancy.html).
