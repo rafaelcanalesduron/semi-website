@@ -32,7 +32,7 @@ SeMI starts from the business perspective: which business decisions need data-dr
 - **SeMI World**: exponentially enrich your insights on the SeMI network. *SeMI World* enables you to exponentially enrich enrich your market and customer insights by connecting you to other members of the network. We connect you to (potentially multiple) SeMI netwerk(s) most suitable for your needs. 
 
 For more information about the SeMI products, please refer to our 
-[product page](/semi-website/knowledge-base/learn/product-summary.md)
+[product page](product-summary.md)
 
 ## Your data is safe
 
