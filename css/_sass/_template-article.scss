@@ -41,7 +41,7 @@
         overflow: auto;
         width: 16px;
     }
-    &:hover {
+    &:hover, &:focus, &:active {
         &:before {
             background-image: url('/img/icon-toc--active.svg');
             background-repeat: no-repeat;
