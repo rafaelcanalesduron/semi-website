@@ -42,15 +42,6 @@ function handleCookie(i){
 }
 
 /*
- * HTTPS HANDLING
- */
-// Redirect to https
-var loc = window.location.href+'';
-if (loc.indexOf('http://')==0 && location.hostname !== "127.0.0.1" && location.hostname.substring(0, 4) !== "dev."){
-    window.location.href = loc.replace('http://','https://');
-}
-
-/*
  * MAILCHIMP HANDLING
  */
 // send request to mailchimp
