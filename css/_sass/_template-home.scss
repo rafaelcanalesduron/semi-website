@@ -1,7 +1,14 @@
-.page--home { // RtP specs
+.page--home {
     
-    a { // quick temporary edit by Bob for the homepage ;-)
-        color: $color-white;
+    p a {
+        border-color: $color-support-tint-4;
+        color: $color-almostblack;
+        &:hover, &:focus, &:active {
+            background-color: $color-white;
+            border-color: transparent;
+            color: $color-almostblack;
+            outline-color: $color-white;
+        }
     }
     #cookie-notification a {
         color: $color-almostblack;
@@ -15,10 +22,6 @@
         li {
             a {
                 color: $color-white;
-                //font-size: 1em;
-                //font-style: italic;
-                //font-variant: normal;
-                //text-transform: none;
             }
         }
     }
