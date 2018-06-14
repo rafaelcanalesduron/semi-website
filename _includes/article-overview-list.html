@@ -12,7 +12,8 @@
 	<ul class="article-overview">
 		<section>
 			<li>
-				{% for subpage in site.pages %}
+				{% assign sorted_pages = site.pages | sort:"menu-order" %}
+				{% for subpage in sorted_pages %}
 					{% if subpage.topic == page.show-topic and subpage.url != page.url %}
 						<ol>
 							<li><h3><a href="{{ subpage.url }}">{{ subpage.date | date: '%B %d, %Y' }} {{ subpage.title }}</a></h3>
