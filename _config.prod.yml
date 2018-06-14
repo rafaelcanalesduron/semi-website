@@ -21,6 +21,7 @@ exclude:
     - "grid.html"
 #    - "styleguide.html"
     - "styletiles.html"
+    - "styleguide/*"
 plugins:
     - jekyll-autoprefixer
 autoprefixer:
