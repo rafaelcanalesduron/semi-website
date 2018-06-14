@@ -99,7 +99,7 @@ function toMailchimp(t){
     sendData(formFields, function(){
         // sad but true, timeout to guarantee a success
         setTimeout(function(){
-            window.location.href = "/thank-you.html";
+            window.location.href = "/thank-you/";
         }, 1250);
         
     })
