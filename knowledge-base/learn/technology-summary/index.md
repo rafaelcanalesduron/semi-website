@@ -11,9 +11,9 @@ menu-order: 2
 
 ## Problem
 
-Almost all of the data stored around us can be traced back to a certain thing or an action attached to this thing. For example; how many suitcases that are represented at an airport, how many friends one has on a social network or, a bank statement that represents that one ate Sushi with their best friend a few nights ago. They represent something that happened in the physical world and which are stored in a ledger of some kind. Most of the services we use and love are based on some kind of these ledgers.
+Almost all of the data stored around us can be traced back to a certain thing or an action attached to this thing. For example; how many suitcases that are present at an airport, how many friends one has on a social network, or a bank statement that represents that one ate Sushi with their best friend a few nights ago. They represent something that happened in the physical world and which is stored in a ledger of some kind. Most of the services we use and love are based on some kind of these ledgers.
 
-The problem with these kinds of ledgers, though, is that almost all context is lost. To translate the data into something meaningful, you -a human- is needed to add meaningful context to the information provided. So much data<sup><a href="https://www.forbes.com/sites/andrewcave/2017/04/13/what-will-we-do-when-the-worlds-data-hits-163-zettabytes-in-2025/#1c39cdc0349a" alt="What Will We Do When The World's Data Hits 163 Zettabytes In 2025?">(link)</a></sup>, but so less context. As described in our [Executive Summary](/knowledge-base/learn/executive-summary/), we are just scratching the service of what is possible with all the data we have.
+The problem with these kinds of ledgers, is that almost all context is lost. To translate the data into something meaningful, you -a human- is needed to add meaningful context to the information provided. So much data<sup><a href="https://www.forbes.com/sites/andrewcave/2017/04/13/what-will-we-do-when-the-worlds-data-hits-163-zettabytes-in-2025/#1c39cdc0349a" alt="What Will We Do When The World's Data Hits 163 Zettabytes In 2025?">(link)</a></sup>, but so little context. As described in our [Executive Summary](/knowledge-base/learn/executive-summary/), we are just scratching the service of what is possible with all the data we have.
 
 ## Solution
 
@@ -39,7 +39,7 @@ Below is a point by point overview;
 
 Every SeMI-node on a SeMI-network has its own ontology. An ontology describes classes (like "city", "product" or "seal") its properties (like "name", "locatedIn" or "location"). Although defining an ontology in a Weaviate instance is in line with traditional web semantics<sup><a href="https://en.wikipedia.org/wiki/Semantic_Web" alt="Semantic Web">(ref)</a></sup>, it always has been a challenge to find a single definition of one single ontology that everybody can agree with.
 
-In Weaviate this is solved by givering every instance a unique ontology that can be used to describe whatever things and actions it stores.
+In Weaviate this is solved by giving every instance a unique ontology that can be used to describe whatever things and actions it stores.
 
 To make sure that other nodes on the SeMI network can "understand" the context in which the requesting SeMI-node is communicating, the ontology is extended with keywords to give additional context to the classes and properties. This is best explained by example: The word "seal" might appear as a class. If the class will be used to express information about the fur-coated sea mammal (opposed to a stamp to close or authenticate a document), you can add words as; fur, mammal, and sea as keywords.
 
@@ -98,7 +98,9 @@ For example, if SeMI-I has a class: "Seal" and another the class "Dolphin", they
 
 ![SeMI centroid on the network](/img/SeMI-centroid-network.jpg)
 
-This allows to not only limit the knowledge graph to one single SeMI node but to create a network of knowledge graphs. Aka a Knowledge Network. When queried, one SeMI-node can ask another SeMI-node about some class or property that is similar to a class or property in the node. For example: _Which SeMI-node knows about the centroid of "Seal", "Mammal" and "Flippers"._
+This allows to not only limit the knowledge graph to one single SeMI node but to create a network of knowledge graphs. Aka a Knowledge Network. When queried, one SeMI-node can ask another SeMI-node about some class or property that is similar to a class or property in the node.
+
+For example: _Which SeMI-node knows about the centroid of "Seal", "Mammal" and "Flippers"._
 
 ![SeMI centroid on network, combined](/img/SeMI-centroid-network-combined.jpg)
 

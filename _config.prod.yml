@@ -18,9 +18,6 @@ exclude:
     - "*.enc"
     - vendor
     - README.md
-    - "grid.html"
-#    - "styleguide.html"
-    - "styletiles.html"
 plugins:
     - jekyll-autoprefixer
 autoprefixer:
