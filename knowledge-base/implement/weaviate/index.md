@@ -14,6 +14,39 @@ menu-order: 3
     In case you are looking for a technology summary, <a href="/knowledge-base/learn/technology-summary/">visit this page</a>.
 </section>
 
+Below you can find the documentation for Weaviate. Please note that Weaviate is not production ready yet, meaning that certain implementations might be due to change.
+
+## Index
+
+- [download binary](#download-binary)
+  - [manually download & install](#manually-download-and-install)
+  - [build status](#build-status)
+  - [run with docker](#run-with-docker)
+- [configure weaviate](#configure-weaviate)
+  - [example configuration](#xample-configuration)
+  - [for development](#for-development)
+  - [available databases](#available-databases)
+- [ontology schemas for things & actions](#ontology-schemas-for-things-and-actions)
+  - [defining a things ontology](#defining-a-things-ontology)
+  - [example of things ontology json](#example-of-things-ontology-json)
+- [run weaviate](#run-weaviate)
+  - [running a basic instance](#running-a-basic-instance)
+  - [getting help](#getting-help)
+  - [arguments](#arguments)
+  - [debugging](#debugging)
+- [access tokens](#access-tokens)
+- [meta information](#eta-information)
+- [creating things & actions](#creating-things--actions)
+  - [creating a thing](#creating-a-thing)
+  - [creating an action](#creating-an-action)
+- [listing- things & actions](#listing-things--actions)
+- [getting things & actions](#getting-things--actions)
+- [updating things & actions](#updating-things--actions)
+- [patching updating things & actions](#patching-updating-things--actions)
+- [remove things & actions](#remove-things-and-actions) (TBD)
+- [using graphql](#using-graphql) (TBD)
+- [complete api overview](#complete-api-overview) (TBD)
+
 ## Download Binary
 
 ### Directly Download and Install
@@ -371,7 +404,7 @@ And information from a specific child key can be requested like this:
 $ curl -X GET -H "X-API-KEY: [[apiKey]]" -H "X-API-TOKEN: [[apiKey]]" "https://weaviate-host/weaviate/v1/keys/{keyId}"
 ```
 
-## Meta Informatiom
+## Meta Information
 
 All Weaviate instances have a meta end-point that can be used to learn more about the instance. The meta endpoint contains the ontology and general information from the ontology files.
 
@@ -586,9 +619,13 @@ $ curl -X PATCH -H "X-API-KEY: [[apiKey]]" -H "X-API-TOKEN: [[apiKey]]" -H "Cont
 
 ## Remove Things and Actions
 
-...
+_Soon online_
 
 ## Using GraphQL
+
+<section class="help">
+    GraphQL is currently being restructured and comprehensive documentation will be published asap.
+</section>
 
 To easily query Weaviate, it is the most easy to use GraphQL. You can learn more about what GraphQL is [here](http://graphql.org/).
 
@@ -611,15 +648,14 @@ listThings(first: X, offset: Y, class: Z) {
 }
 ```
 
-
 ### Actions
 
-...
+_Soon online_
 
 ### Keys
 
-...
+_Soon online_
 
 ## Complete <abbr>API</abbr> overview.
 
-...
+_Soon online_
