@@ -195,10 +195,10 @@ You can add custom development settings.
 ## Available Databases
 
 <section class="help">
-Learn more about the database architecture <a href="/weaviate/concept-in-a-nutshell/#database-agnostic">here</a>.
+Learn more about the database architecture <a href="https://github.com/creativesoftwarefdn/weaviate#database-connector--graph-interface">here</a>.
 </section>
 
-Weaviate is connected to a database through a connector. You can also [create other connectors](/weaviate/create-a-database-connector/).
+Weaviate is connected to a database through a connector. You can also [create other connectors](https://github.com/creativesoftwarefdn/weaviate/blob/develop/connectors/foobar/connector.go).
 
 ### Cassandra
 
