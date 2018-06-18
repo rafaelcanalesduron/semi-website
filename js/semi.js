@@ -56,17 +56,21 @@ function toMailchimp(t){
     }
 
     // send the data through
-    function sendData(data, callback) {
+    function sendData(postData, callback) {
 
         $.ajax({
-            type: "POST",
+            type:       "POST",
             url:        "https://us-central1-semi-186012.cloudfunctions.net/mailchimp",
-            data:       data,
+            data:       postData,
             dataType:   "json",
-            cache:      false
+            cache:      false,
+            success:    function(response) {
+                console.log(response)
+            }
           })
-          .done(callback())
-      
+          .done(function(){
+            callback()
+          })
     }
 
     // get the value of ...
