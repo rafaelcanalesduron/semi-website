@@ -1,5 +1,9 @@
 sudo: required
 language: ruby
+# OLD TRUSTY VERSION
+group: deprecated-2017Q2
+filter_secrets: false
+# END OLD TRUSTY VERSION
 rvm:
 - 2.2
 branches:
