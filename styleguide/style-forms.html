@@ -335,7 +335,9 @@ title: SeMI, our style; getting input from our users through form elements
     <section>
         <h3>Range slider</h3>
         <label for="semi-sg-input-range">Label for range slider</label>
-        <input id="semi-sg-input-range" type="range" />
+        <div>
+            <input id="semi-sg-input-range" type="range" />
+        </div>
         <section class="semi-sg-codesnippet">
             <p><abbr>HTML</abbr> code snippet</p>
             <xmp><label for="input-range">Label text</label>
@@ -343,4 +345,19 @@ title: SeMI, our style; getting input from our users through form elements
         </section>
     </section>
     
+    <section>
+        <h3>Multi-handle slider</h3>
+        <label for="semi-sg-input-multirange">Label for multi-range slider</label>
+        <div>
+            <input id="semi-sg-input-multirange" type="range" multiple value="25,75" />
+        </div>
+        <section class="semi-sg-codesnippet">
+            <p><abbr>HTML</abbr> code snippet</p>
+            <xmp><label for="semi-sg-input-multirange">Label for multi-range slider</label>
+            <input id="semi-sg-input-multirange" type="range" multiple value="25,75" /></xmp>
+        </section>
+    </section>
+    
 </article>
+
+<script type="text/javascript" src="/js/multirange.js"></script>
