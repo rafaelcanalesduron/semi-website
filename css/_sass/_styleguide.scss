@@ -11,6 +11,9 @@
         	margin-bottom: 1em;
     	}
 	}
+	code {
+    	max-width: 100%;
+	}
 }
 
 .semi-sg-overview {
@@ -30,6 +33,18 @@
 	right: 0;
 	position: fixed;
 	top: 0;
+}
+
+.semi-sg-codesnippet {
+    border: 1px solid $color-gray-7;
+    p {
+        padding: .25em 1em 0;
+    }
+    xmp {
+        background: $color-gray-7;
+        max-width: 100%;
+        padding: 1em;
+    }
 }
 
 @media (min-width: 34em) {

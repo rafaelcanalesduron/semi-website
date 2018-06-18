@@ -253,6 +253,7 @@ select {
 }
 
 select[multiple] {
+    background: none;
     padding: .5em;
     width: 100%;
 }

@@ -1,10 +1,10 @@
-code {
+code, xmp {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 1.1rem;
     max-width: $component-primary-max-width;
 }
 
-pre code {
+pre code, xmp {
     font-size: .85rem;
 }
 
