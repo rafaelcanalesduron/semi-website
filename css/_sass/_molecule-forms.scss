@@ -66,7 +66,7 @@ fieldset {
 [type='range'] {
     -webkit-appearance: none;
     background: transparent;
-    width: 100%;
+    //width: 100%;
     &:focus {
         outline: none;
     }
@@ -145,6 +145,43 @@ fieldset {
 }
 [type=range]:focus::-ms-fill-upper { // IE/Edge
     background: $color-semi-accent;
+}
+
+// Lea Verou's Multirange (https://leaverou.github.io/multirange/)
+@supports (--css: variables) {
+	[type=range].multirange {
+		display: inline-block;
+		margin: .5em 0 0;
+		padding: .25em;
+		vertical-align: top;
+		width: auto;
+	}
+	[type=range].multirange.original {
+		position: absolute;
+	}
+	[type=range].multirange.original::-webkit-slider-thumb {
+		position: relative;
+		z-index: 2;
+	}
+	[type=range].multirange.original::-moz-range-thumb {
+		transform: scale(1); /* FF doesn't apply position it seems */
+		z-index: 1;
+	}
+	[type=range].multirange::-moz-range-track {
+		border-color: transparent; /* needed to switch FF to "styleable" control */
+	}
+	[type=range].multirange.ghost {
+		position: relative;
+		background: var(--track-background);
+		--track-background: linear-gradient(to right, transparent var(--low), var(--range-color) 0, var(--range-color) var(--high), transparent 0) no-repeat 0 45% / 100% 40%;
+		--range-color: #ff5fa0;
+	}
+	[type=range].multirange.ghost::-webkit-slider-runnable-track {
+		background: var(--track-background);
+	}
+	[type=range].multirange.ghost::-moz-range-track {
+		background: var(--track-background);
+	}
 }
 
 

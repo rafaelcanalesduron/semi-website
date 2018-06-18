@@ -20,6 +20,9 @@ a {
 }
 
 .link-muted {
-    border-bottom: 0;
-    color: $color-gray-4;
+    margin-bottom: 2em;
+    a {
+        border-bottom: 0;
+        color: $color-gray-4;
+    }
 }

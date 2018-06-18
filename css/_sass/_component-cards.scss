@@ -15,11 +15,14 @@
 
 .card {
     @include background-opacity($color-almostblack, .05);
-    @include transition-out;
+    //@include transition-out;
     border-radius: $border-radius-1;
     display: flex;
     flex: 1;
     flex-direction: column;
-    justify-content: space-between;
+    //justify-content: space-between;
     padding: 1em;
+    figure {
+        margin-bottom: 0;
+    }
 }
