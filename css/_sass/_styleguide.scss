@@ -37,7 +37,7 @@
 
 .semi-sg-codesnippet {
     @include transition-out;
-    border: 1px solid $color-gray-3;
+    border: 1px solid $color-semi-tint--2;
     border-radius: $border-radius-3;
     margin: 1em 0 2em;
     opacity: .5;
@@ -47,6 +47,7 @@
     xmp {
         background: $color-gray-7;
         border-radius: $border-radius-1;
+        color: $color-almostblack-analogous-tint--5;
         max-width: 100%;
         padding: 1em;
         white-space: pre-line;
