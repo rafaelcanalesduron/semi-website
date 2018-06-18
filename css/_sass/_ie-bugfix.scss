@@ -21,6 +21,9 @@
             background: none !important;
         }
     }
+    .section-emphasized > div {
+        background: $color-semi-tint-4;
+    }
     .header-main picture img {
         height: 3em;
         margin: 1em 0;
