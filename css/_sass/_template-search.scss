@@ -1,10 +1,11 @@
 .page--search {
     .title {
+        display: inline-block;
         font-family: $typeface-body;
         font-size: 1.35rem;
     }
     .searchBox {
-        margin: 1em 0 2em;
+        margin: 0 0 2em;
     }
     .resultHTML {
         color: $color-almostblack-tint--3;
