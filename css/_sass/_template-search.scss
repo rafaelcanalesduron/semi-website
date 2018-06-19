@@ -1,7 +1,12 @@
 .page--search {
+    .title {
+        font-family: $typeface-body;
+        font-size: 1.35rem;
+    }
     .resultHTML {
+        color: $color-almostblack-tint--3;
         b {
-            color: $color-semi-tint-2;
+            @extend strong;
         }
     }
 }
