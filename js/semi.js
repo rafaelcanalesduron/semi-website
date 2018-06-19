@@ -115,7 +115,7 @@ function toMailchimp(t){
  */
 // Set global search variables
 var searchBox 			= document.getElementsByClassName("searchBox")[0],
-	articleSectionName 	= "article",
+	articleSectionName 	= "ol",
 	GoogleApiKey 		= "AIzaSyCV4SC6uTz7bzYu1TmM_3iq2smlvbJOVLg",
 	GoogleSearchId 		= "008702682383656025817:4lkjxykfngo";
 
@@ -161,7 +161,7 @@ function loadResults(i) {
 					newBox.getElementsByClassName("resultHTML")[0]
 						.innerHTML = element.htmlSnippet;
 					// append the box to the article
-					document.getElementsByTagName(ol)[0].appendChild(newBox);
+					document.getElementsByTagName(articleSectionName)[0].appendChild(newBox);
 				});
 
 		}
