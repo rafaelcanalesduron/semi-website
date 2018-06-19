@@ -5,10 +5,10 @@
         font-size: 1.35rem;
     }
     .searchBox {
-        margin: 0 0 2em;
+        margin: 0 0 1.5em;
     }
     .resultHTML {
-        color: $color-almostblack-tint--3;
+        color: $color-gray-2;
         b {
             @extend strong;
         }
