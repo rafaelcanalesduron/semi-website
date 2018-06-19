@@ -4,16 +4,30 @@ layout: layout-default
 title: SeMI, Collaborative Knowledge Network
 ---
 
-<article>
+<article class="article">
+
+	<!-- SEARCH BOX -->
+	<section class="form-inline">
+		<form action="/search/" class="search" method="GET">
+			<section class="search-meta">
+				<label for="search-knowledgebase">Search our knowledge base</label>
+				<input autosave="save-search-knowledgebase" id="search-knowledgebase" name="search" results="15" type="search" />
+				<input class="button" type="submit" value="Search" />
+			</section>
+		</form>
+	</section>
+
 	<section>
 		<h1>Search results</h1>
 		<div class="noSearch" style="display:none">Please add a query to the url: <code>url/?query=knowledge</code></div>
 	</section>
 
 	<!-- searchbox will be copied to show content-->
-	<div class="searchBox" style="display: none">
-		<div class="title"></div>
-		<div class="resultHTML">Result</div>
-	</div>
+	<ol>
+    	<li class="searchBox" style="display: none">
+    		<h2 class="title"></h2>
+    		<p class="resultHTML">Result</p>
+    	</li>
+	</ol>
 
 </article>

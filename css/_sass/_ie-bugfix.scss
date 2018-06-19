@@ -18,10 +18,11 @@
             padding-bottom: 1em;
         }
         main {
-            background: url('/img/pattern-semi.png');
-            background-repeat: no-repeat;
-            background-size: cover;
+            background: none !important;
         }
+    }
+    .section-emphasized > div {
+        background: $color-semi-tint-4;
     }
     .header-main picture img {
         height: 3em;

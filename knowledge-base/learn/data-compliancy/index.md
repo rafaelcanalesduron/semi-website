@@ -3,7 +3,7 @@ layout: article-start
 title: Data Compliancy
 description: What does it mean for your organization from a safety and compliance point of view when you use SeMI?
 topic: Learn
-tags: ['business', 'why', 'product', 'compliance']
+tags: ['legal']
 video-link: 
 video-caption: 
 menu-order: 5

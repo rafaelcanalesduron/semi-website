@@ -56,17 +56,21 @@ function toMailchimp(t){
     }
 
     // send the data through
-    function sendData(data, callback) {
+    function sendData(postData, callback) {
 
         $.ajax({
-            type: "POST",
+            type:       "POST",
             url:        "https://us-central1-semi-186012.cloudfunctions.net/mailchimp",
-            data:       data,
+            data:       postData,
             dataType:   "json",
-            cache:      false
+            cache:      false,
+            success:    function(response) {
+                console.log(response)
+            }
           })
-          .done(callback())
-      
+          .done(function(){
+            callback()
+          })
     }
 
     // get the value of ...
@@ -99,7 +103,7 @@ function toMailchimp(t){
     sendData(formFields, function(){
         // sad but true, timeout to guarantee a success
         setTimeout(function(){
-            window.location.href = "/thank-you/";
+            window.location.href = "/thank-you/?response-type=" + t + "&product=" + getVal("PRODUCT");
         }, 1250);
         
     })
@@ -111,7 +115,7 @@ function toMailchimp(t){
  */
 // Set global search variables
 var searchBox 			= document.getElementsByClassName("searchBox")[0],
-	articleSectionName 	= "article",
+	articleSectionName 	= "ol",
 	GoogleApiKey 		= "AIzaSyCV4SC6uTz7bzYu1TmM_3iq2smlvbJOVLg",
 	GoogleSearchId 		= "008702682383656025817:4lkjxykfngo";
 
@@ -186,6 +190,11 @@ document
 		if(queryString != null && queryString != ""){
             // query is available in querystring so load the results
             loadResults(queryString);			
+            // if there is a searchbox, add the query
+            var searchBox = document.getElementById('search-knowledgebase');
+            if(searchBox.length !== -1){
+                searchBox.value = decodeURIComponent((queryString+'').replace(/\+/g, '%20'))
+            }
         }
         // set current link cursive
         var links = document.getElementById("toc");

@@ -3,7 +3,7 @@ layout: article-start
 title: Executive Summary
 description: Why is SeMI a great tool to enrich your current business offerings? In this primer you will learn why SeMI is so valuable for your business.
 topic: Learn
-tags: ['business', 'why']
+tags: ['business', 'summary']
 video-link: 
 video-caption: 
 menu-order: 1

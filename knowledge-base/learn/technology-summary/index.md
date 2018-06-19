@@ -3,7 +3,7 @@ layout: article-start
 title: Technology Summary
 description: This article provides a birds-eye view of SeMI technology stack. Including references to relating sources.
 topic: Learn
-tags: ['technology', 'why']
+tags: ['technology', 'summary']
 video-link: 
 video-caption: 
 menu-order: 2

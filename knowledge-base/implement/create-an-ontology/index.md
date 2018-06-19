@@ -3,7 +3,7 @@ layout: article-start
 title: Create an Ontology
 description: Your ontology to describe your data is the most important part of onboarding data. In this article, you will learn all best practices to achieve this.
 topic: Implement
-tags: ['Technology', 'Preparing']
+tags: ['technology']
 video-link: 
 video-caption: 
 menu-order: 1
