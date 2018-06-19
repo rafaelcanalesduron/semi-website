@@ -3,7 +3,7 @@ layout: article-tech
 title: Weaviate Documentation
 description: Technical documentation for using Weaviate.
 topic: Implement
-tags: ['Technology', 'Weaviate']
+tags: ['technology']
 video-link: 
 video-caption: 
 menu-order: 3

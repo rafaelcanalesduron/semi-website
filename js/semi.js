@@ -103,7 +103,7 @@ function toMailchimp(t){
     sendData(formFields, function(){
         // sad but true, timeout to guarantee a success
         setTimeout(function(){
-            window.location.href = "/thank-you/?response-type=" + t;
+            window.location.href = "/thank-you/?response-type=" + t + "&product=" + getVal("PRODUCT");
         }, 1250);
         
     })

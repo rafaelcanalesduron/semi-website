@@ -3,7 +3,7 @@ layout: article-start
 title: Onboarding Brief
 description: What it means to onboard to the SeMI Network.
 topic: Start
-tags: ['business', 'why', 'product']
+tags: ['business', 'technology']
 video-link: 
 video-caption: 
 menu-order: 3

@@ -3,7 +3,7 @@ layout: article-start
 title: Enriching of Data
 description: Sometimes data tells a lot more than the information you have at hand. In this article you will learn how to best enrich your data with meta-data.
 topic: Implement
-tags: ['technology', 'onboarding']
+tags: ['technology']
 video-link: 
 video-caption: 
 menu-order: 2

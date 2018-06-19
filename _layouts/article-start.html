@@ -27,7 +27,7 @@
                     <dd>
             			<ul class="tags">
                 			{% for tag in page.tags %}
-            					<li>{{ tag }}</li>
+								<li><a href="/tags/{{ tag }}/">{{ tag }}</a></li>
             				{% endfor %}
             			</ul>
                     </dd>

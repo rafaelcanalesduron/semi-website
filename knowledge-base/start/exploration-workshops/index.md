@@ -3,7 +3,7 @@ layout: article-start
 title: Exploration Workshop
 description: To make sure our customers get the most value from SeMI, we have introduced the exploration workshop to tailor a SeMI network to your needs.
 topic: Start
-tags: ['business', 'workshops']
+tags: ['business']
 video-link: 
 video-caption: 
 menu-order: 1

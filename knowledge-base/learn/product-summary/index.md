@@ -3,7 +3,7 @@ layout: article-start
 title: Product Summary
 description: What are the different SeMI products offerings? In this brief you will discover which product fits your organisation best. 
 topic: Learn
-tags: ['business', 'why', 'product']
+tags: ['business', 'summary']
 menu-order: 4
 ---
 
