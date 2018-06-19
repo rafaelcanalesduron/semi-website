@@ -15,6 +15,10 @@ The SeMI Use Case Exploration is a one day workshop, which SeMI offers to its as
 
 > We work with you to discover, define and deploy your first SeMI use case.
 
+<section class="help">
+    In case you are looking for a technology summary, <a href="/workshop/">here</a>.
+</section>
+
 ## Methodology
 The format of this workshop follows the Design Thinking paradigm of “Divergent &amp; Convergent” thinking. In practice this mean the first half of the day we spend on thinking broad and identify as many opportunity areas as possible (divergent thinking). The second half of the day is focused on identifying the most potent ideas and making them more tangible (convergent thinking). 
 
