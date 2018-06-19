@@ -161,7 +161,7 @@ function loadResults(i) {
 					newBox.getElementsByClassName("resultHTML")[0]
 						.innerHTML = element.htmlSnippet;
 					// append the box to the article
-					document.getElementsByTagName(articleSectionName)[0].appendChild(newBox);
+					document.getElementsByTagName(ol)[0].appendChild(newBox);
 				});
 
 		}
