@@ -190,6 +190,11 @@ document
 		if(queryString != null && queryString != ""){
             // query is available in querystring so load the results
             loadResults(queryString);			
+            // if there is a searchbox, add the query
+            var searchBox = document.getElementById('search-knowledgebase');
+            if(searchBox.length !== -1){
+                searchBox.value = decodeURIComponent((queryString+'').replace(/\+/g, '%20'))
+            }
         }
         // set current link cursive
         var links = document.getElementById("toc");
