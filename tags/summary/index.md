@@ -2,7 +2,7 @@
 layout: tag-overview
 title: tags - summary
 tagsToShow: summary
-section-intro-text: Foobar
+section-intro-text: An overview of SeMI summaries.
 ---
 
 {% include tag-overview.html %}
