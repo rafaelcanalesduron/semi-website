@@ -1,6 +1,6 @@
 User-agent: *
-Disallow: /styleguide/
-Disallow: /thank-you/
-Disallow: /search/
+Noindex: /styleguide/*
+Noindex: /thank-you/
+Noindex: /search/
 
 SITEMAP: https://www.semi.network/sitemap.xml
