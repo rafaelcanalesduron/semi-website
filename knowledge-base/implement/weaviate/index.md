@@ -35,7 +35,7 @@ Below you can find the documentation for Weaviate. Please note that Weaviate is 
   - [arguments](#arguments)
   - [debugging](#debugging)
 - [access tokens](#access-tokens)
-- [meta information](#eta-information)
+- [meta information](#meta-information)
 - [creating things & actions](#creating-things--actions)
   - [creating a thing](#creating-a-thing)
   - [creating an action](#creating-an-action)
