@@ -1,0 +1,12 @@
+---
+layout: article-start
+title: Inspiration
+description: This article provides inspiration for how you can use SeMI.
+topic: Learn
+tags: ['summary']
+video-link: 
+video-caption: 
+menu-order: 4
+---
+
+## Inspiration
