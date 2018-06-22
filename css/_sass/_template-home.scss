@@ -95,7 +95,6 @@
     margin: 2em 0 3em;
     > div {
         @include background-opacity($color-almostblack, .5);
-        //border-radius: $border-radius-1;
         margin: 0 auto;
         max-width: $component-primary-max-width;
         padding: 2em;
@@ -136,4 +135,35 @@
 
 .pattern-semi-bg {
     fill: red;
+}
+
+// Alternative landing page
+.page--landing {
+    main {
+        background-position: center center;
+        background-attachment: fixed;
+    }
+}
+
+.heading--landing {
+    text-align: center;
+    p {
+        color: $color-white;
+        a {
+            border-bottom-color: $color-white;
+            color: $color-white;
+        }
+    }
+    .button--cta {
+        font-size: 1.25rem;
+        margin-top: 2em;
+    }
+    @media screen and (min-width: 48em) {
+        h1 {
+            font-size: 4.25rem;
+        }
+        p {
+            font-size: 1.75rem;
+        }
+    }
 }
