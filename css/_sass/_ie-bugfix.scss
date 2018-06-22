@@ -18,7 +18,8 @@
             padding-bottom: 1em;
         }
         main {
-            background: none !important;
+            background-image: none;
+            background-color: $color-semi;
         }
     }
     .section-emphasized > div {
