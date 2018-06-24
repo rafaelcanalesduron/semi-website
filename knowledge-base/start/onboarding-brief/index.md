@@ -7,6 +7,7 @@ tags: ['business', 'technology']
 video-link: 
 video-caption: 
 menu-order: 3
+open-graph-type: article
 ---
 
 ## SeMI on-boarding
@@ -23,7 +24,7 @@ Discover and develop your key business questions in our SeMI Use Case Exploratio
 Sign up for a free workshop [here](/workshop/).
 
 ### Identify and collect data sources
-We help you to identify the key data and information sources that are needed for your use cases. We will also support you in getting (internal) approval to use these data sources. Generally, this is a challenging step in the process, as the use of data is bound by legal restrictions. For more information on this topic, please see our [legal brief](/knowledge-base/learn/data-compliancy/) on why your data is safe.
+We help you to identify the key data and information sources that are needed for your use cases. We will also support you in getting (internal) approval to use these data sources. Generally, this is a challenging step in the process, as the use of data is bound by legal restrictions. For more information on this topic, please see our [legal brief](/knowledge-base/learn/data-usage-and-compliancy/) on why your data is safe.
 
 ### Refine your data
 Refine your data into knowledge graphs using our SeMI tool and our knowledge base. The outcome of this step is an *ontology* that describes your data. An ontology is an explicit description of concepts in a domain (classes), with properties describing features, attributes, and interrelationships of the entities. This is is the most important part of on-boarding data.

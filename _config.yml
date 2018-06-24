@@ -18,6 +18,7 @@ exclude:
     - "*.enc"
     - vendor
     - README.md
+    - "*.draft"
 plugins:
     - jekyll-autoprefixer
 autoprefixer:

@@ -5,6 +5,7 @@ description: SeMI wants to finally enable its customers to give meaning to their
 topic: Learn
 tags: ['business']
 menu-order: 3
+open-graph-type: article
 ---
 
 ## Getting you off to a flying start
