@@ -216,6 +216,19 @@ document
                 }
             }
         }
+
+        // rotate homepage text
+        if(document.getElementById("cooltext")){
+            var listOfTexts = ["train your AI models", "create new products", "enhance your data"];
+            var listOfTextsCounter = 0;
+            setInterval(function(){
+              document.getElementById("cooltext").innerHTML = listOfTexts[listOfTextsCounter];
+              listOfTextsCounter = listOfTextsCounter + 1;
+              if(listOfTextsCounter == listOfTexts.length){
+                listOfTextsCounter = 0;
+              }
+            }, 3000);
+        }
 	}, false);
 
 /*

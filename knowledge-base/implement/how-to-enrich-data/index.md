@@ -7,6 +7,7 @@ tags: ['technology']
 video-link: 
 video-caption: 
 menu-order: 2
+open-graph-type: article
 ---
 
 > Meta-data lies at the core of SeMI.

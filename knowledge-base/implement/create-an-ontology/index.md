@@ -7,6 +7,7 @@ tags: ['technology']
 video-link: 
 video-caption: 
 menu-order: 1
+open-graph-type: article
 ---
 
 ## What is an ontology and why do you need it?
