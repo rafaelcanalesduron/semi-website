@@ -1,5 +1,5 @@
 ---
-layout: article-overview
+layout: layout-default
 title: Start with SeMI
 show-topic: Start
 topic: Start
@@ -8,8 +8,8 @@ section-intro-text: If you are ready to build your first use case, read these ar
 description: About starting with SeMI.
 ---
 
-<div class="article-container">
+<article>
     
-    {% include article-overview-list.html %}
+    INFO ABOUT WEAVIATE
 
-</div>
+</article>
