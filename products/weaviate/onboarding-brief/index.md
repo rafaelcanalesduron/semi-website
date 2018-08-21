@@ -1,16 +1,17 @@
 ---
 layout: article-start
-title: Onboarding Brief
+title: Onboarding the SeMI-network
 description: What it means to onboard to the SeMI Network.
 topic: Start
 tags: ['business', 'technology']
 video-link: 
 video-caption: 
-menu-order: 3
+menu-order: 4
 open-graph-type: article
 ---
 
 ## SeMI on-boarding
+
 We support you in getting your use cases up and running. Below you find a number of key steps in preparing deployment of a use case: 
 
 1. Discover and develop your key business questions in our exploration workshop.
@@ -19,6 +20,7 @@ We support you in getting your use cases up and running. Below you find a number
 4. Deploy your use case on your favourite system or cloud service.
 
 ### Exploration workshop
+
 Discover and develop your key business questions in our SeMI Use Case Exploration workshop. In this one-day workshop we introduce SeMI and develop your custom use cases. As a result the business value of SeMI will become tangible. The outcome of the workshop will enable further steps like: Alignment of your internal stakeholders, definition of a Proof of Concept, input into business cases, the possibility to join our Pilot Project, etcetera.
 
 Sign up for a free workshop [here](/workshop/).
