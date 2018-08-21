@@ -1,9 +1,12 @@
 weaviate_version: 0.8.6
 topic_order:
     - _
-    - Learn
-    - Start
-    - Implement
+    - What Is Guides
+    - How To Guides
+    - API
+    - Tutorials
+    - Resources
+    - Sample Data
 auto: true
 markdown: kramdown
 kramdown:  

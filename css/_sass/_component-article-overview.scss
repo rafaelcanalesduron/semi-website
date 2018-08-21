@@ -136,38 +136,74 @@
         }
     }
 }
-[data-group='Learn'] {
+[data-group='API'] {
+    background: $color-gray-5;
+    ~ dd {
+        border: 1px solid $color-gray-5;
+        a {
+            &:hover {
+                background: $color-gray-5;
+                outline-color: $color-gray-5;
+            }
+        }
+    }
+}
+[data-group='How To Guides'] {
+    background: $color-olive-analogous-tint--5;
+    ~ dd {
+        border: 1px solid $color-olive-analogous-tint--5;
+        a {
+            &:hover {
+                background: $color-olive-analogous-tint--5;
+                outline-color: $color-olive-analogous-tint--5;
+            }
+        }
+    }
+}
+[data-group='Resources'] {
+    background: $color-olive-triadic-tint--5;
+    ~ dd {
+        border: 1px solid $color-olive-triadic-tint--5;
+        a {
+            &:hover {
+                background: $color-olive-triadic-tint--5;
+                outline-color: $color-olive-triadic-tint--5;
+            }
+        }
+    }
+}
+[data-group='Sample Data'] {
     background: $color-almostblack-tint--5;
     ~ dd {
         border: 1px solid $color-almostblack-tint--5;
         a {
             &:hover {
                 background: $color-almostblack-tint--5;
-                outline-color: $color-almostblack-tint--5;;
+                outline-color: $color-almostblack-tint--5;
             }
         }
     }
 }
-[data-group='Start'] {
+[data-group='Tutorials'] {
     background: $color-almostblack-analogous-tint--5;
     ~ dd {
         border: 1px solid $color-almostblack-analogous-tint--5;
         a {
             &:hover {
                 background: $color-almostblack-analogous-tint--5;
-                outline-color: $color-almostblack-analogous-tint--5;;
+                outline-color: $color-almostblack-analogous-tint--5;
             }
         }
     }
 }
-[data-group='Implement'] {
+[data-group='What Is Guides'] {
     background: $color-almostblack-triadic-tint--5;
     ~ dd {
         border: 1px solid $color-almostblack-triadic-tint--5;
         a {
             &:hover {
                 background: $color-almostblack-triadic-tint--5;
-                outline-color: $color-almostblack-triadic-tint--5;;
+                outline-color: $color-almostblack-triadic-tint--5;
             }
         }
     }
