@@ -1,0 +1,87 @@
+---
+layout: styleguide
+title: Graphic Elements
+---
+
+<article class="semi-sg">
+	
+	<section>
+    	<h1>Graphic Elements</h1>
+    	<p>SeMI uses distinct graphic elements to depict concepts inherent to the brand, its value proposition and products.</p>
+      
+        <h2>Principles – How to construct graphic elements</h2>
+        
+        <h3>The grid</h3>
+        <p>In order to create a balance between consistency and flexibility SeMI uses an isometric grid as the starting point to generate graphic elements.</p>
+        
+        <table>
+            <tr>
+                <th><img class="semi-sg-..." src="..."> </th>
+            </tr>
+            <tr>
+                <th>Isometric grid</th>
+            </tr>
+            <tr>
+                <th>Download as: <a href="/img/styleguide/iso-grid.ai">AI</a>, <a href="/img/styleguide/iso-grid.sketch">Sketch</a></th>
+            </tr>
+            </table>
+                
+        <h3>Networks</h3>
+        <p>Lines and dots can be traced on the grid to draw networks.</p>
+        <p>SeMI uses a basic network pattern either as a standalone graphic element or as a component of illustrations.</p>
+        
+        <h3>Planes and volumes</h3>
+        <p>Draw planes on the grid to generate volumes.</p>
+        
+        <h3>Rounded accents</h3>
+        <p>To create contrast with sharp edges and accentuate certain elements, use rounded shapes.</p>
+        
+        <h3>Icons</h3>
+        <p>SeMI uses simple and straightforward iconography to represent concrete concepts.</p>
+        
+	</section>
+    
+    <section>
+        <h2>Conceptual illustrations</h2>
+        <p>Use illustrations to call the attention of your audience and differentiate content. Although illustrations remain mostly abstract, they should convey certain meaning for the audience.</p>
+        <p>Currently SeMI uses illustrations when referring to abstract concepts, concrete concepts or layered concepts.</p>
+        
+        <h3>Abstract concepts</h3>
+        <p>As a firm in the digital/tech domain, SeMI deals with abstract concepts that are difficult to represent with simple iconography. Many of these concepts are rooted in emerging technologies such as IoT, data analytics, knowledge graphs, natural language processing, etc.</p>
+        <p>SeMI uses networks and planes to represent such concepts. For instance, this type of illustrations are used to represent SeMI’s business horizontals.</p>
+        
+        <h3>Concrete concepts</h3>
+        <p>To represent more tangible and easier to communicate concepts such as established industries, SeMI uses a combination of simple, self-explanatory icons and planes to accentuate them.</p>
+        <p>Stand-alone illustrations depicting concrete concepts are composed of a few layered elements. For example, SeMI uses this to refer to its business verticals: healthcare, finance, transportation, engineering and retail.</p>
+
+        <h3>Layering concepts</h3>
+        <p>To illustrate very particular use cases, concrete and abstract graphics can be combined by layering them on each other.</p>
+        <p>Conceiving graphics as layers allows us to rapidly generate illustrations for new particular concepts. Multiple layers can be combined as long as they are not over saturated with.</p>
+        
+        </section>
+       
+       <section>
+        <h2>Showcase graphics</h2>
+        <p>Mounted mockups are used to showcase particular features of SeMI’s products in its particular device or context use.</p>
+        </section>
+        
+        <section>
+        <h2>Product logos and brands</h2>
+        <p>While rooted in the overall SeMI brand, each SeMI product has its own brand identity. Their main expression are product icons. These are constructed using planes and lines on the base grid, generating three-dimensional looking items that reference the product.</p>
+        
+        <h3>Weaviate</h3>
+        <p>An abstracted version of Weaviate’s ‘W’ is constructed using planes and lines that simulate a volumetric figure.</p>
+        <p>Weaviate uses the Indigo and Lime colors of SeMI’s color palette. Depending on the intended use, there are different versions of the logo available.</p>
+        
+        <h4>Weaviate OS</h4>
+        
+        <h4>Weaviate Enterprise</h4>
+        
+        <h3>SeMI Consulting Services</h3>
+        <p>A ‘C’ wrapped around an hexagon is formed using planes to construct SeMI’s consulting logo.</p>
+
+        <p>SeMI Consulting uses the Magenta and Indigo colors of SeMI’s color palette. Different versions of the logo can be used for particular situations.</p>
+        
+        </section>  
+
+</article>
